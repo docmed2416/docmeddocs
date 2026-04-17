@@ -1,0 +1,5 @@
+{
+  "filePath": "components/ui/separator.tsx",
+  "title": "Separator Component",
+  "content": "A visually distinct dividing line to separate content.\n\n## Exports\n\n### `Separator`\n\nA React component that renders a separator. It wraps the `@radix-ui/react-separator` component.\n\n### Props\n\nThis component accepts all props from `SeparatorPrimitive.Root`.\n\n*   `className` (string): Additional CSS classes to apply to the separator.\n*   `orientation` (enum: `'horizontal'` | `'vertical'`): The orientation of the separator. Defaults to `'horizontal'`.\n*   `decorative` (boolean): Whether the separator is purely decorative. Defaults to `true`.\n\n## Usage\n\n```tsx\nimport { Separator } from \"@/components/ui/separator\";\n\nfunction MyComponent() {\n  return (\n    <div>\n      <p>Content above the separator.</p>\n      <Separator />\n      <p>Content below the separator.</p>\n\n      <div className=\"flex h-screen items-center space-x-4 text-xl\">\n        <span>Left Content</span>\n        <Separator orientation=\"vertical\" />\n        <span>Right Content</span>\n      </div>\n    </div>\n  );\n}\n```"
+}
