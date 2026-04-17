@@ -1,0 +1,5 @@
+{
+  "filePath": "app/dashboard/layout.tsx",
+  "title": "Dashboard Layout Component",
+  "content": "This component defines the overall layout for the dashboard section of the application.\n\nIt uses a flexbox arrangement to create a two-column layout: a fixed sidebar on the left and the main content area that takes up the remaining space on the right.\n\n**Purpose:**\nTo provide a consistent structural foundation for all pages within the `/dashboard` route.\n\n**Key Components/Features:**\n- **`Sidebar`**: Imported from `@/components/ui/sidebar`, this component renders the navigation sidebar.\n- **Main Content Area**: The `children` prop is rendered within a `<main>` tag that allows for vertical scrolling (`overflow-y-auto`).\n- **Styling**: Utilizes Tailwind CSS classes for layout (`flex`, `h-screen`, `bg-background`, `overflow-hidden`) and responsiveness.\n\n**Usage:**\nThis layout component is used in `app/dashboard/layout.tsx` to wrap all dashboard pages. Any component rendered as a child of this layout will appear in the main content area to the right of the sidebar."
+}
