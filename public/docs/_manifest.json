@@ -145,6 +145,11 @@
     "docKey": "components__ui__sidebar.tsx"
   },
   {
+    "filePath": "doc-repo-template/src/App.css",
+    "title": "App CSS - Global Styles",
+    "docKey": "doc-repo-template__src__App.css"
+  },
+  {
     "filePath": "README.md",
     "title": "DocMed README",
     "docKey": "README.md"
