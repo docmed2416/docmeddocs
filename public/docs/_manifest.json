@@ -150,6 +150,11 @@
     "docKey": "doc-repo-template__src__App.css"
   },
   {
+    "filePath": "doc-repo-template/src/main.tsx",
+    "title": "main.tsx",
+    "docKey": "doc-repo-template__src__main.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
