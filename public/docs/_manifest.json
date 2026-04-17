@@ -140,6 +140,11 @@
     "docKey": "components__ui__modern-animated-sign-in.tsx"
   },
   {
+    "filePath": "components/ui/scroll-area.tsx",
+    "title": "ScrollArea Component",
+    "docKey": "components__ui__scroll-area.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
