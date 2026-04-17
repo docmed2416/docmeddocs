@@ -176,7 +176,7 @@
   },
   {
     "filePath": "lib/qstash.ts",
-    "title": "QStash Client and Job Publishing",
+    "title": "QStash Integration",
     "docKey": "lib__qstash.ts"
   },
   {
