@@ -170,6 +170,11 @@
     "docKey": "lib__firebase-admin.ts"
   },
   {
+    "filePath": "lib/qstash.ts",
+    "title": "QStash Integration",
+    "docKey": "lib__qstash.ts"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md",
     "docKey": "README.md"
