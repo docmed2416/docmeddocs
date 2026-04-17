@@ -95,6 +95,11 @@
     "docKey": "app__layout.tsx"
   },
   {
+    "filePath": "app/page.tsx",
+    "title": "app/page.tsx",
+    "docKey": "app__page.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
