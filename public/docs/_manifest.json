@@ -85,6 +85,11 @@
     "docKey": "app__dashboard__settings__page.tsx"
   },
   {
+    "filePath": "app/globals.css",
+    "title": "Global Styles and Theme Configuration",
+    "docKey": "app__globals.css"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
