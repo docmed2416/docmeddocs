@@ -140,6 +140,11 @@
     "docKey": "components__ui__separator.tsx"
   },
   {
+    "filePath": "components/ui/sidebar.tsx",
+    "title": "Sidebar Component",
+    "docKey": "components__ui__sidebar.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
