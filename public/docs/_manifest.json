@@ -115,6 +115,11 @@
     "docKey": "components__ui__avatar.tsx"
   },
   {
+    "filePath": "components/ui/badge.tsx",
+    "title": "Badge UI Component",
+    "docKey": "components__ui__badge.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
