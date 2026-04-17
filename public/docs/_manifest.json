@@ -150,6 +150,11 @@
     "docKey": "doc-repo-template__src__App.css"
   },
   {
+    "filePath": "doc-repo-template/src/App.tsx",
+    "title": "App.tsx - Main Application Component",
+    "docKey": "doc-repo-template__src__App.tsx"
+  },
+  {
     "filePath": "doc-repo-template/src/main.tsx",
     "title": "main.tsx",
     "docKey": "doc-repo-template__src__main.tsx"
