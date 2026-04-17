@@ -80,6 +80,11 @@
     "docKey": "app__dashboard__settings__page.tsx"
   },
   {
+    "filePath": "app/globals.css",
+    "title": "Global CSS Variables and Styles",
+    "docKey": "app__globals.css"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md",
     "docKey": "README.md"
