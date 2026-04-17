@@ -95,6 +95,11 @@
     "docKey": "app__page.tsx"
   },
   {
+    "filePath": "app/sign-in/[[...sign-in]]/page.tsx",
+    "title": "Sign In Page (`app/sign-in/[[...sign-in]]/page.tsx`)",
+    "docKey": "app__sign-in__[[...sign-in]]__page.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md",
     "docKey": "README.md"
