@@ -25,6 +25,11 @@
     "docKey": "app__api__github__process-one-file__route.ts"
   },
   {
+    "filePath": "app/api/github/select-repo/route.ts",
+    "title": "API Route: POST /api/github/select-repo",
+    "docKey": "app__api__github__select-repo__route.ts"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
