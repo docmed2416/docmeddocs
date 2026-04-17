@@ -140,6 +140,11 @@
     "docKey": "components__ui__scroll-area.tsx"
   },
   {
+    "filePath": "components/ui/separator.tsx",
+    "title": "Separator UI Component",
+    "docKey": "components__ui__separator.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md",
     "docKey": "README.md"
