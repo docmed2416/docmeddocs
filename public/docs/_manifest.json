@@ -115,6 +115,11 @@
     "docKey": "components__ui__badge.tsx"
   },
   {
+    "filePath": "components/ui/dropdown-menu.tsx",
+    "title": "Dropdown Menu Component",
+    "docKey": "components__ui__dropdown-menu.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md",
     "docKey": "README.md"
