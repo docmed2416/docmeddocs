@@ -135,6 +135,11 @@
     "docKey": "components__ui__globe-hero.tsx"
   },
   {
+    "filePath": "components/ui/modern-animated-sign-in.tsx",
+    "title": "Modern Animated Sign-In Components",
+    "docKey": "components__ui__modern-animated-sign-in.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
