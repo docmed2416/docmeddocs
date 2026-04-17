@@ -155,6 +155,11 @@
     "docKey": "doc-repo-template__src__App.css"
   },
   {
+    "filePath": "doc-repo-template/src/App.tsx",
+    "title": "App.tsx - Main Application Component",
+    "docKey": "doc-repo-template__src__App.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md",
     "docKey": "README.md"
