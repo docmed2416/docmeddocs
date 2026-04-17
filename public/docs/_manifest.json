@@ -70,6 +70,11 @@
     "docKey": "app__dashboard__layout.tsx"
   },
   {
+    "filePath": "app/dashboard/page.tsx",
+    "title": "Dashboard Page",
+    "docKey": "app__dashboard__page.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "DocMed README",
     "docKey": "README.md"
