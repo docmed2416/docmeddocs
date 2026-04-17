@@ -1,0 +1,5 @@
+{
+  "filePath": "app/dashboard/page.tsx",
+  "title": "Dashboard Page",
+  "content": "This file defines the main dashboard page for the DocMed application.\n\n## Purpose\n\nThe dashboard page serves as the landing screen for authenticated users, providing a welcome message and an indication that their workspace is ready.\n\n## Key Exports\n\n*   **`DashboardPage`**: A React functional component that renders the dashboard UI.\n\n## Usage Example\n\nThis component is likely rendered at the `/dashboard` route of the application. It displays a welcoming message and a visual cue that the user's documentation workspace is prepared.\n\n```tsx\n// In your routing configuration or app entry point:\nimport DashboardPage from './app/dashboard/page';\n\n// ... render DashboardPage component when navigating to '/dashboard'\n```"
+}
