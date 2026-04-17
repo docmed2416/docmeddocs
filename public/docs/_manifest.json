@@ -20,6 +20,11 @@
     "docKey": "app__api__github__init-doc-repo__route.ts"
   },
   {
+    "filePath": "app/api/github/process-one-file/route.ts",
+    "title": "GitHub File Processing API Route",
+    "docKey": "app__api__github__process-one-file__route.ts"
+  },
+  {
     "filePath": "README.md",
     "title": "DocMed README",
     "docKey": "README.md"
