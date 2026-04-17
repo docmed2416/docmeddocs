@@ -85,6 +85,11 @@
     "docKey": "app__globals.css"
   },
   {
+    "filePath": "app/layout.tsx",
+    "title": "Root Layout Component",
+    "docKey": "app__layout.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md",
     "docKey": "README.md"
