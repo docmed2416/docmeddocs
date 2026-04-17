@@ -155,6 +155,11 @@
     "docKey": "doc-repo-template__src__App.tsx"
   },
   {
+    "filePath": "doc-repo-template/src/main.tsx",
+    "title": "main.tsx - Application Entry Point",
+    "docKey": "doc-repo-template__src__main.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "DocMed README",
     "docKey": "README.md"
