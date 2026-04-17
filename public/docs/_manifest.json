@@ -60,6 +60,11 @@
     "docKey": "app__dashboard__integrations___components__RepoPairCard.tsx"
   },
   {
+    "filePath": "app/dashboard/integrations/_components/RepoPicker.tsx",
+    "title": "RepoPicker Component",
+    "docKey": "app__dashboard__integrations___components__RepoPicker.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
