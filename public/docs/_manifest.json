@@ -30,6 +30,11 @@
     "docKey": "app__api__github__repos__route.ts"
   },
   {
+    "filePath": "app/api/github/select-repo/route.ts",
+    "title": "API Route: Select GitHub Repository",
+    "docKey": "app__api__github__select-repo__route.ts"
+  },
+  {
     "filePath": "app/api/repo-pairs/[pairId]/route.ts",
     "title": "Repo Pair API Routes",
     "docKey": "app__api__repo-pairs__[pairId]__route.ts"
