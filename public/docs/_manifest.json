@@ -75,6 +75,11 @@
     "docKey": "app__dashboard__layout.tsx"
   },
   {
+    "filePath": "app/dashboard/page.tsx",
+    "title": "Dashboard Page",
+    "docKey": "app__dashboard__page.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
