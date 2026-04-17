@@ -5,6 +5,11 @@
     "docKey": "app__api__github__callback__route.ts"
   },
   {
+    "filePath": "app/api/github/connect/route.ts",
+    "title": "GitHub OAuth Connection Route",
+    "docKey": "app__api__github__connect__route.ts"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md",
     "docKey": "README.md"
