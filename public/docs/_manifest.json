@@ -90,6 +90,11 @@
     "docKey": "app__layout.tsx"
   },
   {
+    "filePath": "app/page.tsx",
+    "title": "App Entry Point (app/page.tsx)",
+    "docKey": "app__page.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "DocMed README",
     "docKey": "README.md"
