@@ -180,6 +180,11 @@
     "docKey": "lib__utils.ts"
   },
   {
+    "filePath": "proxy.ts",
+    "title": "Clerk Authentication Middleware for DocMed",
+    "docKey": "proxy.ts"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
