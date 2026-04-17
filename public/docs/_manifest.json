@@ -1,5 +1,10 @@
 [
   {
+    "filePath": "app/api/github/callback/route.ts",
+    "title": "GitHub OAuth Callback API Route",
+    "docKey": "app__api__github__callback__route.ts"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
