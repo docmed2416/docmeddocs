@@ -180,6 +180,11 @@
     "docKey": "lib__utils.ts"
   },
   {
+    "filePath": "proxy.ts",
+    "title": "Clerk Middleware Proxy",
+    "docKey": "proxy.ts"
+  },
+  {
     "filePath": "README.md",
     "title": "DocMed README",
     "docKey": "README.md"
