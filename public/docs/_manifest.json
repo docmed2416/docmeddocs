@@ -110,6 +110,11 @@
     "docKey": "components__ui__badge.tsx"
   },
   {
+    "filePath": "components/ui/button.tsx",
+    "title": "Button Component",
+    "docKey": "components__ui__button.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "DocMed README",
     "docKey": "README.md"
