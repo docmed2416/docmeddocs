@@ -120,6 +120,11 @@
     "docKey": "components__ui__button.tsx"
   },
   {
+    "filePath": "components/ui/globe-hero.tsx",
+    "title": "DotGlobeHero Component",
+    "docKey": "components__ui__globe-hero.tsx"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
