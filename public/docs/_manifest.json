@@ -80,6 +80,11 @@
     "docKey": "app__dashboard__page.tsx"
   },
   {
+    "filePath": "app/globals.css",
+    "title": "Global Stylesheet (globals.css)",
+    "docKey": "app__globals.css"
+  },
+  {
     "filePath": "app/layout.tsx",
     "title": "Root Layout (`app/layout.tsx`)",
     "docKey": "app__layout.tsx"
