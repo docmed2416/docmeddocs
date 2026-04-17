@@ -180,6 +180,11 @@
     "docKey": "lib__qstash.ts"
   },
   {
+    "filePath": "lib/repo-pairs.ts",
+    "title": "Repository Pair Management API",
+    "docKey": "lib__repo-pairs.ts"
+  },
+  {
     "filePath": "README.md",
     "title": "README.md - DocMed Project Overview",
     "docKey": "README.md"
