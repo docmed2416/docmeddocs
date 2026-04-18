@@ -210,6 +210,11 @@
     "docKey": "doc-repo-template__src__TabBar.tsx"
   },
   {
+    "filePath": "doc-repo-template/src/types.ts",
+    "title": "Type Definitions",
+    "docKey": "doc-repo-template__src__types.ts"
+  },
+  {
     "filePath": "lib/commits.ts",
     "title": "Commit Log Management",
     "docKey": "lib__commits.ts"
