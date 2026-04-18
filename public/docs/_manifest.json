@@ -148,5 +148,10 @@
     "filePath": "components/ui/dropdown-menu.tsx",
     "title": "Dropdown Menu Component",
     "docKey": "components__ui__dropdown-menu.tsx"
+  },
+  {
+    "filePath": "components/ui/scroll-area.tsx",
+    "title": "ScrollArea Component",
+    "docKey": "components__ui__scroll-area.tsx"
   }
 ]
