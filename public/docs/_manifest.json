@@ -243,5 +243,10 @@
     "filePath": "lib/qstash.ts",
     "title": "QStash Integration for File Processing",
     "docKey": "lib__qstash.ts"
+  },
+  {
+    "filePath": "lib/utils.ts",
+    "title": "Class Name Utility (cn)",
+    "docKey": "lib__utils.ts"
   }
 ]
