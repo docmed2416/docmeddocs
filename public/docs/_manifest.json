@@ -238,5 +238,10 @@
     "filePath": "lib/github-installations.ts",
     "title": "GitHub Installations Management",
     "docKey": "lib__github-installations.ts"
+  },
+  {
+    "filePath": "lib/repo-pairs.ts",
+    "title": "Repository Pair Management",
+    "docKey": "lib__repo-pairs.ts"
   }
 ]
