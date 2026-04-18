@@ -28,5 +28,10 @@
     "filePath": "app/api/github/installations/route.ts",
     "title": "GitHub Installations API Route",
     "docKey": "app__api__github__installations__route.ts"
+  },
+  {
+    "filePath": "app/api/github/process-one-file/route.ts",
+    "title": "GitHub File Processing API Route",
+    "docKey": "app__api__github__process-one-file__route.ts"
   }
 ]
