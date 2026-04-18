@@ -183,5 +183,10 @@
     "filePath": "doc-repo-template/src/App.css",
     "title": "App CSS - Global Styles and Theming",
     "docKey": "doc-repo-template__src__App.css"
+  },
+  {
+    "filePath": "doc-repo-template/src/App.tsx",
+    "title": "App.tsx - DocMed Application Entry Point",
+    "docKey": "doc-repo-template__src__App.tsx"
   }
 ]
