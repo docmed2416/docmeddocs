@@ -10,6 +10,11 @@
     "docKey": "app__api__github__clear-slot__route.ts"
   },
   {
+    "filePath": "app/api/github/disconnect/route.ts",
+    "title": "GitHub Disconnect API Route",
+    "docKey": "app__api__github__disconnect__route.ts"
+  },
+  {
     "filePath": "app/api/github/init-doc-repo/route.ts",
     "title": "GitHub Doc Repo Initialization API Route",
     "docKey": "app__api__github__init-doc-repo__route.ts"
