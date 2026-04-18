@@ -1,5 +1,10 @@
 [
   {
+    "filePath": "doc-repo-template/src/App.css",
+    "title": "App.css - Global Stylesheets",
+    "docKey": "doc-repo-template__src__App.css"
+  },
+  {
     "filePath": "doc-repo-template/src/TabBar.tsx",
     "title": "TabBar Component",
     "docKey": "doc-repo-template__src__TabBar.tsx"
