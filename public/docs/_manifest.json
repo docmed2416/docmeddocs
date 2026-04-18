@@ -208,5 +208,10 @@
     "filePath": "doc-repo-template/src/TabBar.tsx",
     "title": "TabBar Component",
     "docKey": "doc-repo-template__src__TabBar.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/types.ts",
+    "title": "Type Definitions",
+    "docKey": "doc-repo-template__src__types.ts"
   }
 ]
