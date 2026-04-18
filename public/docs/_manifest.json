@@ -155,6 +155,11 @@
     "docKey": "components__ui__dropdown-menu.tsx"
   },
   {
+    "filePath": "components/ui/modern-animated-sign-in.tsx",
+    "title": "Modern Animated Sign-In Components",
+    "docKey": "components__ui__modern-animated-sign-in.tsx"
+  },
+  {
     "filePath": "components/ui/scroll-area.tsx",
     "title": "ScrollArea Component",
     "docKey": "components__ui__scroll-area.tsx"
