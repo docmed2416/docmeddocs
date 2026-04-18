@@ -135,6 +135,11 @@
     "docKey": "app__sign-up__[[...sign-up]]__page.tsx"
   },
   {
+    "filePath": "components/ui/avatar.tsx",
+    "title": "Avatar Component",
+    "docKey": "components__ui__avatar.tsx"
+  },
+  {
     "filePath": "components/ui/button.tsx",
     "title": "Button Component",
     "docKey": "components__ui__button.tsx"
