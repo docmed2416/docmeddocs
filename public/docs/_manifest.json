@@ -48,5 +48,10 @@
     "filePath": "app/api/github/uninstall-app/route.ts",
     "title": "GitHub App Uninstall API Route",
     "docKey": "app__api__github__uninstall-app__route.ts"
+  },
+  {
+    "filePath": "app/api/github/use-installation/route.ts",
+    "title": "POST /api/github/use-installation",
+    "docKey": "app__api__github__use-installation__route.ts"
   }
 ]
