@@ -163,5 +163,10 @@
     "filePath": "components/ui/scroll-area.tsx",
     "title": "Scroll Area Component",
     "docKey": "components__ui__scroll-area.tsx"
+  },
+  {
+    "filePath": "components/ui/sidebar.tsx",
+    "title": "Sidebar Component",
+    "docKey": "components__ui__sidebar.tsx"
   }
 ]
