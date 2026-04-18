@@ -133,5 +133,10 @@
     "filePath": "app/sign-up/[[...sign-up]]/page.tsx",
     "title": "Sign Up Page",
     "docKey": "app__sign-up__[[...sign-up]]__page.tsx"
+  },
+  {
+    "filePath": "components/ui/avatar.tsx",
+    "title": "Avatar Component",
+    "docKey": "components__ui__avatar.tsx"
   }
 ]
