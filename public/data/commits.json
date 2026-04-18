@@ -22,5 +22,11 @@
     "message": "fix: always show sidebar collapse btn, lighten trust/stats/header/globe backgrounds",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T23:08:01.156Z"
+  },
+  {
+    "id": "6b6080a1a0ddb353084e5b6eea62027c3bf56f00",
+    "message": "fix: tighten shouldDocument prompt to be stricter about skipping non-source files",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T23:15:08.270Z"
   }
 ]
