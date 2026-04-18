@@ -250,6 +250,11 @@
     "docKey": "lib__repo-pairs.ts"
   },
   {
+    "filePath": "lib/utils.ts",
+    "title": "Class Name Utility (cn)",
+    "docKey": "lib__utils.ts"
+  },
+  {
     "filePath": "proxy.ts",
     "title": "Auth Proxy Configuration",
     "docKey": "proxy.ts"
