@@ -223,5 +223,10 @@
     "filePath": "lib/firebase-admin.ts",
     "title": "Firebase Admin Initialization",
     "docKey": "lib__firebase-admin.ts"
+  },
+  {
+    "filePath": "lib/gemini.ts",
+    "title": "Gemini Documentation Generation Utilities",
+    "docKey": "lib__gemini.ts"
   }
 ]
