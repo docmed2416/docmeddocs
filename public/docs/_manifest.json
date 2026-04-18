@@ -145,6 +145,11 @@
     "docKey": "components__ui__button.tsx"
   },
   {
+    "filePath": "components/ui/dropdown-menu.tsx",
+    "title": "Dropdown Menu UI Component",
+    "docKey": "components__ui__dropdown-menu.tsx"
+  },
+  {
     "filePath": "components/ui/modern-animated-sign-in.tsx",
     "title": "Modern Animated Sign-In Components",
     "docKey": "components__ui__modern-animated-sign-in.tsx"
