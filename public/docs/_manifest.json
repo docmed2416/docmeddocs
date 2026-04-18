@@ -218,5 +218,10 @@
     "filePath": "lib/firebase-admin.ts",
     "title": "Firebase Admin SDK Integration",
     "docKey": "lib__firebase-admin.ts"
+  },
+  {
+    "filePath": "lib/github-app.ts",
+    "title": "GitHub App Integration",
+    "docKey": "lib__github-app.ts"
   }
 ]
