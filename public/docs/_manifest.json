@@ -1,1 +1,262 @@
-[]
+[
+  {
+    "filePath": "app/api/github/callback/route.ts",
+    "title": "GitHub OAuth Callback Handler",
+    "docKey": "app__api__github__callback__route.ts"
+  },
+  {
+    "filePath": "app/api/github/clear-slot/route.ts",
+    "title": "POST /api/github/clear-slot",
+    "docKey": "app__api__github__clear-slot__route.ts"
+  },
+  {
+    "filePath": "app/api/github/connect/route.ts",
+    "title": "GitHub App Installation Route",
+    "docKey": "app__api__github__connect__route.ts"
+  },
+  {
+    "filePath": "app/api/github/disconnect/route.ts",
+    "title": "API Route: GitHub Disconnect (`/api/github/disconnect`)",
+    "docKey": "app__api__github__disconnect__route.ts"
+  },
+  {
+    "filePath": "app/api/github/init-doc-repo/route.ts",
+    "title": "Initialize Documentation Repository API Route",
+    "docKey": "app__api__github__init-doc-repo__route.ts"
+  },
+  {
+    "filePath": "app/api/github/installations/route.ts",
+    "title": "GitHub Installations API Route",
+    "docKey": "app__api__github__installations__route.ts"
+  },
+  {
+    "filePath": "app/api/github/process-one-file/route.ts",
+    "title": "GitHub File Processing API Route",
+    "docKey": "app__api__github__process-one-file__route.ts"
+  },
+  {
+    "filePath": "app/api/github/repos/route.ts",
+    "title": "GitHub Repository API Route",
+    "docKey": "app__api__github__repos__route.ts"
+  },
+  {
+    "filePath": "app/api/github/select-repo/route.ts",
+    "title": "API Route: POST /api/github/select-repo",
+    "docKey": "app__api__github__select-repo__route.ts"
+  },
+  {
+    "filePath": "app/api/github/uninstall-app/route.ts",
+    "title": "POST /api/github/uninstall-app",
+    "docKey": "app__api__github__uninstall-app__route.ts"
+  },
+  {
+    "filePath": "app/api/github/use-installation/route.ts",
+    "title": "GitHub Installation API Route (`use-installation`)",
+    "docKey": "app__api__github__use-installation__route.ts"
+  },
+  {
+    "filePath": "app/api/repo-pairs/[pairId]/route.ts",
+    "title": "Repository Pair API Route Handler",
+    "docKey": "app__api__repo-pairs__[pairId]__route.ts"
+  },
+  {
+    "filePath": "app/api/repo-pairs/route.ts",
+    "title": "Repository Pair API Routes",
+    "docKey": "app__api__repo-pairs__route.ts"
+  },
+  {
+    "filePath": "app/api/webhooks/github/[userId]/[pairId]/route.ts",
+    "title": "GitHub Webhook Handler",
+    "docKey": "app__api__webhooks__github__[userId]__[pairId]__route.ts"
+  },
+  {
+    "filePath": "app/dashboard/integrations/_components/AddPairButton.tsx",
+    "title": "AddPairButton Component",
+    "docKey": "app__dashboard__integrations___components__AddPairButton.tsx"
+  },
+  {
+    "filePath": "app/dashboard/integrations/_components/ExistingAccountPicker.tsx",
+    "title": "ExistingAccountPicker Component",
+    "docKey": "app__dashboard__integrations___components__ExistingAccountPicker.tsx"
+  },
+  {
+    "filePath": "app/dashboard/integrations/_components/RepoPairCard.tsx",
+    "title": "RepoPairCard Component",
+    "docKey": "app__dashboard__integrations___components__RepoPairCard.tsx"
+  },
+  {
+    "filePath": "app/dashboard/integrations/_components/RepoPicker.tsx",
+    "title": "RepoPicker Component",
+    "docKey": "app__dashboard__integrations___components__RepoPicker.tsx"
+  },
+  {
+    "filePath": "app/dashboard/integrations/page.tsx",
+    "title": "Integrations Page (`app/dashboard/integrations/page.tsx`)",
+    "docKey": "app__dashboard__integrations__page.tsx"
+  },
+  {
+    "filePath": "app/dashboard/layout.tsx",
+    "title": "Dashboard Layout",
+    "docKey": "app__dashboard__layout.tsx"
+  },
+  {
+    "filePath": "app/dashboard/page.tsx",
+    "title": "Dashboard Page (app/dashboard/page.tsx)",
+    "docKey": "app__dashboard__page.tsx"
+  },
+  {
+    "filePath": "app/dashboard/settings/page.tsx",
+    "title": "Settings Page (`app/dashboard/settings/page.tsx`)",
+    "docKey": "app__dashboard__settings__page.tsx"
+  },
+  {
+    "filePath": "app/globals.css",
+    "title": "Global Styles and Theme Configuration",
+    "docKey": "app__globals.css"
+  },
+  {
+    "filePath": "app/layout.tsx",
+    "title": "Root Layout Component (`app/layout.tsx`)",
+    "docKey": "app__layout.tsx"
+  },
+  {
+    "filePath": "app/page.tsx",
+    "title": "app/page.tsx - DocMed Landing Page",
+    "docKey": "app__page.tsx"
+  },
+  {
+    "filePath": "app/sign-in/[[...sign-in]]/page.tsx",
+    "title": "Sign-In Page (`app/sign-in/[[...sign-in]]/page.tsx`)",
+    "docKey": "app__sign-in__[[...sign-in]]__page.tsx"
+  },
+  {
+    "filePath": "app/sign-up/[[...sign-up]]/page.tsx",
+    "title": "Sign Up Page (`[[...sign-up]]/page.tsx`)",
+    "docKey": "app__sign-up__[[...sign-up]]__page.tsx"
+  },
+  {
+    "filePath": "components/ui/avatar.tsx",
+    "title": "Avatar Component",
+    "docKey": "components__ui__avatar.tsx"
+  },
+  {
+    "filePath": "components/ui/badge.tsx",
+    "title": "Badge Component",
+    "docKey": "components__ui__badge.tsx"
+  },
+  {
+    "filePath": "components/ui/button.tsx",
+    "title": "Button Component",
+    "docKey": "components__ui__button.tsx"
+  },
+  {
+    "filePath": "components/ui/dropdown-menu.tsx",
+    "title": "Dropdown Menu Component",
+    "docKey": "components__ui__dropdown-menu.tsx"
+  },
+  {
+    "filePath": "components/ui/globe-hero.tsx",
+    "title": "DotGlobeHero Component",
+    "docKey": "components__ui__globe-hero.tsx"
+  },
+  {
+    "filePath": "components/ui/modern-animated-sign-in.tsx",
+    "title": "Modern Animated Sign-In Components",
+    "docKey": "components__ui__modern-animated-sign-in.tsx"
+  },
+  {
+    "filePath": "components/ui/scroll-area.tsx",
+    "title": "ScrollArea Component",
+    "docKey": "components__ui__scroll-area.tsx"
+  },
+  {
+    "filePath": "components/ui/separator.tsx",
+    "title": "Separator Component",
+    "docKey": "components__ui__separator.tsx"
+  },
+  {
+    "filePath": "components/ui/sidebar.tsx",
+    "title": "Sidebar Component",
+    "docKey": "components__ui__sidebar.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/App.css",
+    "title": "App CSS - Global Styles and Theming",
+    "docKey": "doc-repo-template__src__App.css"
+  },
+  {
+    "filePath": "doc-repo-template/src/App.tsx",
+    "title": "App.tsx - DocMed Application Entry Point",
+    "docKey": "doc-repo-template__src__App.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/FileTree.tsx",
+    "title": "FileTree Component",
+    "docKey": "doc-repo-template__src__FileTree.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/lib/tree.ts",
+    "title": "Tree Building Utility",
+    "docKey": "doc-repo-template__src__lib__tree.ts"
+  },
+  {
+    "filePath": "doc-repo-template/src/main.tsx",
+    "title": "Main Application Entry Point",
+    "docKey": "doc-repo-template__src__main.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/TabBar.tsx",
+    "title": "TabBar Component",
+    "docKey": "doc-repo-template__src__TabBar.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/types.ts",
+    "title": "Type Definitions",
+    "docKey": "doc-repo-template__src__types.ts"
+  },
+  {
+    "filePath": "lib/commits.ts",
+    "title": "Commit Log Management",
+    "docKey": "lib__commits.ts"
+  },
+  {
+    "filePath": "lib/firebase-admin.ts",
+    "title": "Firebase Admin SDK Integration",
+    "docKey": "lib__firebase-admin.ts"
+  },
+  {
+    "filePath": "lib/gemini.ts",
+    "title": "Gemini Documentation Generation Utilities",
+    "docKey": "lib__gemini.ts"
+  },
+  {
+    "filePath": "lib/github-app.ts",
+    "title": "GitHub App Integration",
+    "docKey": "lib__github-app.ts"
+  },
+  {
+    "filePath": "lib/github-installations.ts",
+    "title": "GitHub Installations Management",
+    "docKey": "lib__github-installations.ts"
+  },
+  {
+    "filePath": "lib/qstash.ts",
+    "title": "QStash Client and File Job Publishing",
+    "docKey": "lib__qstash.ts"
+  },
+  {
+    "filePath": "lib/repo-pairs.ts",
+    "title": "Repository Pair Management",
+    "docKey": "lib__repo-pairs.ts"
+  },
+  {
+    "filePath": "lib/utils.ts",
+    "title": "Class Name Utility (cn)",
+    "docKey": "lib__utils.ts"
+  },
+  {
+    "filePath": "proxy.ts",
+    "title": "Auth Proxy Configuration",
+    "docKey": "proxy.ts"
+  }
+]
