@@ -190,6 +190,11 @@
     "docKey": "doc-repo-template__src__FileTree.tsx"
   },
   {
+    "filePath": "doc-repo-template/src/main.tsx",
+    "title": "Main Application Entry Point",
+    "docKey": "doc-repo-template__src__main.tsx"
+  },
+  {
     "filePath": "doc-repo-template/src/TabBar.tsx",
     "title": "TabBar Component",
     "docKey": "doc-repo-template__src__TabBar.tsx"
