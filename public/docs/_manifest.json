@@ -8,5 +8,10 @@
     "filePath": "app/api/github/connect/route.ts",
     "title": "GitHub App Connection API Route",
     "docKey": "app__api__github__connect__route.ts"
+  },
+  {
+    "filePath": "app/api/github/disconnect/route.ts",
+    "title": "POST /api/github/disconnect",
+    "docKey": "app__api__github__disconnect__route.ts"
   }
 ]
