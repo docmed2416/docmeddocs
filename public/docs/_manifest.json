@@ -223,5 +223,10 @@
     "filePath": "lib/gemini.ts",
     "title": "Gemini Documentation Generation Utilities",
     "docKey": "lib__gemini.ts"
+  },
+  {
+    "filePath": "lib/github-installations.ts",
+    "title": "GitHub Installations Management",
+    "docKey": "lib__github-installations.ts"
   }
 ]
