@@ -183,5 +183,10 @@
     "filePath": "doc-repo-template/src/App.tsx",
     "title": "App Component",
     "docKey": "doc-repo-template__src__App.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/lib/tree.ts",
+    "title": "Tree Builder Module",
+    "docKey": "doc-repo-template__src__lib__tree.ts"
   }
 ]
