@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "filePath": "app/page.tsx",
+    "title": "App Entry Point (app/page.tsx)",
+    "docKey": "app__page.tsx"
+  }
+]
