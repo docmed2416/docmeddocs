@@ -218,5 +218,10 @@
     "filePath": "lib/commits.ts",
     "title": "Commit Log Management",
     "docKey": "lib__commits.ts"
+  },
+  {
+    "filePath": "lib/gemini.ts",
+    "title": "Gemini Documentation Generation Utilities",
+    "docKey": "lib__gemini.ts"
   }
 ]
