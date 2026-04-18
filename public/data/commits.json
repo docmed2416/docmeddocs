@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "id": "9e0d1545e214a4c1a0949bf8d21314beb3e434ec",
+    "message": "fix: resolve Unknown account by reading login from GitHub App installation API\n\n- Add getInstallationLogin() which uses the app JWT to fetch installation\n  metadata (account.login) instead of the broken installation-token /user call\n- listConnectedInstallations falls back to githubLogin stored in pair docs\n  for installations saved before the githubInstallations collection existed",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T19:48:51.851Z"
+  }
+]
