@@ -48,5 +48,10 @@
     "filePath": "app/api/github/use-installation/route.ts",
     "title": "GitHub Installation API Route (`app/api/github/use-installation/route.ts`)",
     "docKey": "app__api__github__use-installation__route.ts"
+  },
+  {
+    "filePath": "app/api/webhooks/github/[userId]/[pairId]/route.ts",
+    "title": "GitHub Webhook Handler",
+    "docKey": "app__api__webhooks__github__[userId]__[pairId]__route.ts"
   }
 ]
