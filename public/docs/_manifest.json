@@ -165,6 +165,11 @@
     "docKey": "components__ui__modern-animated-sign-in.tsx"
   },
   {
+    "filePath": "components/ui/scroll-area.tsx",
+    "title": "ScrollArea Component",
+    "docKey": "components__ui__scroll-area.tsx"
+  },
+  {
     "filePath": "components/ui/separator.tsx",
     "title": "Separator Component",
     "docKey": "components__ui__separator.tsx"
