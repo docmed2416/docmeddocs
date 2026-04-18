@@ -220,6 +220,11 @@
     "docKey": "lib__firebase-admin.ts"
   },
   {
+    "filePath": "lib/gemini.ts",
+    "title": "Gemini Documentation Generation",
+    "docKey": "lib__gemini.ts"
+  },
+  {
     "filePath": "lib/github-app.ts",
     "title": "GitHub App Integration",
     "docKey": "lib__github-app.ts"
