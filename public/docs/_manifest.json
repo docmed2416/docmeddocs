@@ -158,5 +158,10 @@
     "filePath": "components/ui/globe-hero.tsx",
     "title": "DotGlobeHero Component",
     "docKey": "components__ui__globe-hero.tsx"
+  },
+  {
+    "filePath": "components/ui/scroll-area.tsx",
+    "title": "ScrollArea Component",
+    "docKey": "components__ui__scroll-area.tsx"
   }
 ]
