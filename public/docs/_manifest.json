@@ -103,5 +103,10 @@
     "filePath": "app/dashboard/settings/page.tsx",
     "title": "Settings Page (`app/dashboard/settings/page.tsx`)",
     "docKey": "app__dashboard__settings__page.tsx"
+  },
+  {
+    "filePath": "app/globals.css",
+    "title": "Global Stylesheet (globals.css)",
+    "docKey": "app__globals.css"
   }
 ]
