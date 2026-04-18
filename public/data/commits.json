@@ -4,5 +4,11 @@
     "message": "chore: replace logo-with-text with icon-only logo everywhere, remove docmed_logo_test.png",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T20:14:24.722Z"
+  },
+  {
+    "id": "4baf2c8c4737647dd0e1b7c8f63a43b723ddf397",
+    "message": "feat: landing page content and nav cleanup\n\n- Navbar: removed Pricing/Docs, added Contact linking to #cta section\n- Hero badge: increased contrast (border/bg opacity bumped)\n- Hero paragraph + no-credit-card text: improved contrast\n- TrustBar: replaced fake company names with real product attributes\n- Features: Version Healing → PR-Based Updates, Universal Integrations → GitHub App Integration\n- Stats: replaced 30+ integrations and 99.9% uptime with accurate facts\n- CTA: removed SOC 2 compliant, replaced with GitHub App powered\n- Footer: removed Product/Developers/Company link columns, expanded brand\n  description, added single Navigate column, bottom links now point to\n  Features / How it Works / Contact",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T20:22:30.439Z"
   }
 ]
