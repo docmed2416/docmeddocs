@@ -53,5 +53,10 @@
     "filePath": "app/api/github/use-installation/route.ts",
     "title": "POST /api/github/use-installation",
     "docKey": "app__api__github__use-installation__route.ts"
+  },
+  {
+    "filePath": "app/api/repo-pairs/[pairId]/route.ts",
+    "title": "Repo Pair API Routes",
+    "docKey": "app__api__repo-pairs__[pairId]__route.ts"
   }
 ]
