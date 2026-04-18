@@ -98,5 +98,10 @@
     "filePath": "app/dashboard/page.tsx",
     "title": "Dashboard Page (app/dashboard/page.tsx)",
     "docKey": "app__dashboard__page.tsx"
+  },
+  {
+    "filePath": "app/dashboard/settings/page.tsx",
+    "title": "Settings Page (`app/dashboard/settings/page.tsx`)",
+    "docKey": "app__dashboard__settings__page.tsx"
   }
 ]
