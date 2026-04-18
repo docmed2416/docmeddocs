@@ -33,5 +33,10 @@
     "filePath": "app/api/github/process-one-file/route.ts",
     "title": "GitHub File Processing API Route",
     "docKey": "app__api__github__process-one-file__route.ts"
+  },
+  {
+    "filePath": "app/api/github/repos/route.ts",
+    "title": "GitHub Repository API Route",
+    "docKey": "app__api__github__repos__route.ts"
   }
 ]
