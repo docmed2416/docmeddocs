@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "filePath": "app/api/github/connect/route.ts",
+    "title": "GitHub App Installation Route",
+    "docKey": "app__api__github__connect__route.ts"
+  }
+]
