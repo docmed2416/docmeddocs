@@ -93,5 +93,10 @@
     "filePath": "app/dashboard/page.tsx",
     "title": "Dashboard Page (`app/dashboard/page.tsx`)",
     "docKey": "app__dashboard__page.tsx"
+  },
+  {
+    "filePath": "app/globals.css",
+    "title": "Global Stylesheet (globals.css)",
+    "docKey": "app__globals.css"
   }
 ]
