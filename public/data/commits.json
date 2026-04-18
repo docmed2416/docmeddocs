@@ -16,5 +16,11 @@
     "message": "fix: split docKey on __ instead of / to match actual naming convention",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T20:24:39.473Z"
+  },
+  {
+    "id": "170ae8608745438dc50e27e1935a6e8effc5b589",
+    "message": "feat: simplify footer to logo + copyright, update CTA badge to sign up for free",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T20:28:12.551Z"
   }
 ]
