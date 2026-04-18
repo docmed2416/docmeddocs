@@ -10,5 +10,11 @@
     "message": "feat: landing page content and nav cleanup\n\n- Navbar: removed Pricing/Docs, added Contact linking to #cta section\n- Hero badge: increased contrast (border/bg opacity bumped)\n- Hero paragraph + no-credit-card text: improved contrast\n- TrustBar: replaced fake company names with real product attributes\n- Features: Version Healing → PR-Based Updates, Universal Integrations → GitHub App Integration\n- Stats: replaced 30+ integrations and 99.9% uptime with accurate facts\n- CTA: removed SOC 2 compliant, replaced with GitHub App powered\n- Footer: removed Product/Developers/Company link columns, expanded brand\n  description, added single Navigate column, bottom links now point to\n  Features / How it Works / Contact",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T20:22:30.439Z"
+  },
+  {
+    "id": "512d068384cf774261f484b1cf01b714e71397a0",
+    "message": "fix: split docKey on __ instead of / to match actual naming convention",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T20:24:39.473Z"
   }
 ]
