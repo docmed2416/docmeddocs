@@ -46,5 +46,11 @@
     "message": "fix: replace fake scrollbar classes with real webkit scrollbar styling",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T23:21:39.022Z"
+  },
+  {
+    "id": "3e275e860f165226c2159cad653c95f6b97c1880",
+    "message": "feat: add DocMed text next to logo in navbar",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T23:49:10.339Z"
   }
 ]
