@@ -143,5 +143,10 @@
     "filePath": "components/ui/badge.tsx",
     "title": "Badge UI Component",
     "docKey": "components__ui__badge.tsx"
+  },
+  {
+    "filePath": "components/ui/dropdown-menu.tsx",
+    "title": "Dropdown Menu Component",
+    "docKey": "components__ui__dropdown-menu.tsx"
   }
 ]
