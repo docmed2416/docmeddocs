@@ -228,5 +228,10 @@
     "filePath": "lib/github-app.ts",
     "title": "GitHub App Integration",
     "docKey": "lib__github-app.ts"
+  },
+  {
+    "filePath": "lib/github-installations.ts",
+    "title": "GitHub Installations Management",
+    "docKey": "lib__github-installations.ts"
   }
 ]
