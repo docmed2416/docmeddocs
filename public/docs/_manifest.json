@@ -240,6 +240,11 @@
     "docKey": "lib__github-installations.ts"
   },
   {
+    "filePath": "lib/qstash.ts",
+    "title": "QStash Client and File Job Publishing",
+    "docKey": "lib__qstash.ts"
+  },
+  {
     "filePath": "lib/repo-pairs.ts",
     "title": "Repository Pair Management",
     "docKey": "lib__repo-pairs.ts"
