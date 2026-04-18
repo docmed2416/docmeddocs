@@ -228,5 +228,10 @@
     "filePath": "lib/gemini.ts",
     "title": "Gemini AI Integration for Documentation",
     "docKey": "lib__gemini.ts"
+  },
+  {
+    "filePath": "lib/github-app.ts",
+    "title": "GitHub App Integration",
+    "docKey": "lib__github-app.ts"
   }
 ]
