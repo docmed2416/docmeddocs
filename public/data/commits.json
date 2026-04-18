@@ -4,5 +4,11 @@
     "message": "fix: update CTA button text to Start Free",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T20:37:19.089Z"
+  },
+  {
+    "id": "4d24fd59cefa283870f237bc519c227e721d94ba",
+    "message": "feat: add breadcrumb navigation to doc pages",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T20:50:07.502Z"
   }
 ]
