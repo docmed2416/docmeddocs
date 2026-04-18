@@ -115,6 +115,11 @@
     "docKey": "app__globals.css"
   },
   {
+    "filePath": "app/layout.tsx",
+    "title": "Root Layout Component (app/layout.tsx)",
+    "docKey": "app__layout.tsx"
+  },
+  {
     "filePath": "app/page.tsx",
     "title": "App Page - DocMed Landing Page",
     "docKey": "app__page.tsx"
