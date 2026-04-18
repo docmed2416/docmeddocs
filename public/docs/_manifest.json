@@ -43,5 +43,10 @@
     "filePath": "app/api/github/select-repo/route.ts",
     "title": "API Route: POST /api/github/select-repo",
     "docKey": "app__api__github__select-repo__route.ts"
+  },
+  {
+    "filePath": "app/api/github/uninstall-app/route.ts",
+    "title": "POST /api/github/uninstall-app",
+    "docKey": "app__api__github__uninstall-app__route.ts"
   }
 ]
