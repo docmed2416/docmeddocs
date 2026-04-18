@@ -3,5 +3,10 @@
     "filePath": "app/api/github/connect/route.ts",
     "title": "GitHub App Installation Route",
     "docKey": "app__api__github__connect__route.ts"
+  },
+  {
+    "filePath": "app/api/github/disconnect/route.ts",
+    "title": "API Route: GitHub Disconnect (`/api/github/disconnect`)",
+    "docKey": "app__api__github__disconnect__route.ts"
   }
 ]
