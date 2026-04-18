@@ -40,5 +40,11 @@
     "message": "fix: widen settings page, right-side scrollbar, center billing placeholder",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T23:19:50.318Z"
+  },
+  {
+    "id": "efdef53eb2f8838436db4e9bf8a753e64ddabaa6",
+    "message": "fix: replace fake scrollbar classes with real webkit scrollbar styling",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T23:21:39.022Z"
   }
 ]
