@@ -138,5 +138,10 @@
     "filePath": "components/ui/badge.tsx",
     "title": "Badge Component",
     "docKey": "components__ui__badge.tsx"
+  },
+  {
+    "filePath": "components/ui/button.tsx",
+    "title": "Button Component",
+    "docKey": "components__ui__button.tsx"
   }
 ]
