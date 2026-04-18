@@ -93,5 +93,10 @@
     "filePath": "app/dashboard/integrations/page.tsx",
     "title": "Integrations Page",
     "docKey": "app__dashboard__integrations__page.tsx"
+  },
+  {
+    "filePath": "app/dashboard/layout.tsx",
+    "title": "Dashboard Layout",
+    "docKey": "app__dashboard__layout.tsx"
   }
 ]
