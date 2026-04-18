@@ -33,5 +33,10 @@
     "filePath": "app/api/github/repos/route.ts",
     "title": "GitHub Repositories API Route",
     "docKey": "app__api__github__repos__route.ts"
+  },
+  {
+    "filePath": "app/api/github/select-repo/route.ts",
+    "title": "GitHub Repository Selection API Route",
+    "docKey": "app__api__github__select-repo__route.ts"
   }
 ]
