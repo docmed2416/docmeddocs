@@ -178,5 +178,10 @@
     "filePath": "components/ui/sidebar.tsx",
     "title": "Sidebar Component",
     "docKey": "components__ui__sidebar.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/App.css",
+    "title": "App Styles (App.css)",
+    "docKey": "doc-repo-template__src__App.css"
   }
 ]
