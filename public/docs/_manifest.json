@@ -180,6 +180,11 @@
     "docKey": "components__ui__sidebar.tsx"
   },
   {
+    "filePath": "doc-repo-template/src/App.css",
+    "title": "App.css - Global Stylesheet",
+    "docKey": "doc-repo-template__src__App.css"
+  },
+  {
     "filePath": "doc-repo-template/src/App.tsx",
     "title": "App Component",
     "docKey": "doc-repo-template__src__App.tsx"
