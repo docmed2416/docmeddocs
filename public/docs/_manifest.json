@@ -43,5 +43,10 @@
     "filePath": "app/api/github/select-repo/route.ts",
     "title": "GitHub Repository Selection API Route",
     "docKey": "app__api__github__select-repo__route.ts"
+  },
+  {
+    "filePath": "app/api/github/uninstall-app/route.ts",
+    "title": "GitHub App Uninstall API Route",
+    "docKey": "app__api__github__uninstall-app__route.ts"
   }
 ]
