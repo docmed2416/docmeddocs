@@ -238,5 +238,10 @@
     "filePath": "lib/github-installations.ts",
     "title": "GitHub Installations Management",
     "docKey": "lib__github-installations.ts"
+  },
+  {
+    "filePath": "lib/qstash.ts",
+    "title": "QStash Client for File Job Processing",
+    "docKey": "lib__qstash.ts"
   }
 ]
