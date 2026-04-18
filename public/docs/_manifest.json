@@ -1,5 +1,10 @@
 [
   {
+    "filePath": "app/api/github/clear-slot/route.ts",
+    "title": "POST /api/github/clear-slot",
+    "docKey": "app__api__github__clear-slot__route.ts"
+  },
+  {
     "filePath": "app/api/github/connect/route.ts",
     "title": "GitHub App Connection API Route",
     "docKey": "app__api__github__connect__route.ts"
