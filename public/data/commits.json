@@ -16,5 +16,11 @@
     "message": "feat: retheme Clerk UserProfile to match app dark theme",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T21:18:47.700Z"
+  },
+  {
+    "id": "f2cc7388f9482db88a3d03b4ef85a007ecf2abaf",
+    "message": "fix: always show sidebar collapse btn, lighten trust/stats/header/globe backgrounds",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T23:08:01.156Z"
   }
 ]
