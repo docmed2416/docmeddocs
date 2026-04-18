@@ -118,5 +118,10 @@
     "filePath": "app/page.tsx",
     "title": "App Page - DocMed Homepage",
     "docKey": "app__page.tsx"
+  },
+  {
+    "filePath": "app/sign-in/[[...sign-in]]/page.tsx",
+    "title": "Sign-In Page (SignInPage)",
+    "docKey": "app__sign-in__[[...sign-in]]__page.tsx"
   }
 ]
