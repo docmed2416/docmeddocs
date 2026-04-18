@@ -243,5 +243,10 @@
     "filePath": "lib/utils.ts",
     "title": "Class Name Merging Utility (cn)",
     "docKey": "lib__utils.ts"
+  },
+  {
+    "filePath": "proxy.ts",
+    "title": "Auth Proxy Middleware (proxy.ts)",
+    "docKey": "proxy.ts"
   }
 ]
