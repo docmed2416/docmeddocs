@@ -4,5 +4,11 @@
     "message": "fix: center navbar links by balancing left and right widths",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T21:11:39.897Z"
+  },
+  {
+    "id": "9d1b7f1072087b185a0d727abfa486cb822ce093",
+    "message": "feat: set favicon using Next.js app/icon.png convention",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T21:16:31.890Z"
   }
 ]
