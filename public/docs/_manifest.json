@@ -153,5 +153,10 @@
     "filePath": "components/ui/globe-hero.tsx",
     "title": "DotGlobeHero Component",
     "docKey": "components__ui__globe-hero.tsx"
+  },
+  {
+    "filePath": "components/ui/separator.tsx",
+    "title": "Separator Component",
+    "docKey": "components__ui__separator.tsx"
   }
 ]
