@@ -108,5 +108,10 @@
     "filePath": "app/globals.css",
     "title": "Global Stylesheet (globals.css)",
     "docKey": "app__globals.css"
+  },
+  {
+    "filePath": "app/page.tsx",
+    "title": "App Page - DocMed Homepage",
+    "docKey": "app__page.tsx"
   }
 ]
