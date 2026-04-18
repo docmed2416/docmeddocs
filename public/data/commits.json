@@ -34,5 +34,11 @@
     "message": "feat: replace Clerk UserProfile with fully custom themed settings page",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-18T23:18:14.916Z"
+  },
+  {
+    "id": "ccfd9f1dc1109fe1ac6d4be07a9cb0c7b26caf7b",
+    "message": "fix: widen settings page, right-side scrollbar, center billing placeholder",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-18T23:19:50.318Z"
   }
 ]
