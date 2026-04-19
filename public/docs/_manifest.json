@@ -213,5 +213,10 @@
     "filePath": "lib/commits.ts",
     "title": "Commit Log Management",
     "docKey": "lib__commits.ts"
+  },
+  {
+    "filePath": "lib/firebase-admin.ts",
+    "title": "Firebase Admin SDK Integration",
+    "docKey": "lib__firebase-admin.ts"
   }
 ]
