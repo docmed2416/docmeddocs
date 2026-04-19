@@ -3,5 +3,10 @@
     "filePath": "app/api/github/callback/route.ts",
     "title": "GitHub OAuth Callback Handler",
     "docKey": "app__api__github__callback__route.ts"
+  },
+  {
+    "filePath": "app/api/github/init-doc-repo/route.ts",
+    "title": "GitHub Doc Repository Initialization API Route",
+    "docKey": "app__api__github__init-doc-repo__route.ts"
   }
 ]
