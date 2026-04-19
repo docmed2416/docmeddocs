@@ -118,5 +118,10 @@
     "filePath": "app/layout.tsx",
     "title": "Root Layout (`app/layout.tsx`)",
     "docKey": "app__layout.tsx"
+  },
+  {
+    "filePath": "app/page.tsx",
+    "title": "DocMed Landing Page (app/page.tsx)",
+    "docKey": "app__page.tsx"
   }
 ]
