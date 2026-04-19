@@ -185,6 +185,11 @@
     "docKey": "doc-repo-template__src__App.tsx"
   },
   {
+    "filePath": "doc-repo-template/src/lib/tree.ts",
+    "title": "Tree Building Utilities",
+    "docKey": "doc-repo-template__src__lib__tree.ts"
+  },
+  {
     "filePath": "doc-repo-template/src/TabBar.tsx",
     "title": "TabBar Component",
     "docKey": "doc-repo-template__src__TabBar.tsx"
