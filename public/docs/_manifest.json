@@ -218,5 +218,10 @@
     "filePath": "lib/firebase-admin.ts",
     "title": "Firebase Admin SDK Integration",
     "docKey": "lib__firebase-admin.ts"
+  },
+  {
+    "filePath": "lib/gemini.ts",
+    "title": "Gemini Integration for Documentation Generation",
+    "docKey": "lib__gemini.ts"
   }
 ]
