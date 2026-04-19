@@ -1,0 +1,5 @@
+{
+  "filePath": "lib/utils.ts",
+  "title": "Utility Functions (cn)",
+  "content": "This file provides utility functions for managing CSS class names, primarily for use with Tailwind CSS and clsx.\n\n## Key Exports\n\n### `cn(...inputs: ClassValue[]): string`\n\nA utility function that combines and merges CSS class names. It uses `clsx` to conditionally join class names and `tailwind-merge` to resolve overlapping Tailwind CSS classes.\n\n#### Usage\n\n```typescript\n// Example usage with conditional classes\nconst isActive = true;\nconst className = cn(\n  'px-4 py-2 rounded-md',\n  isActive && 'bg-blue-500 text-white',\n  !isActive && 'bg-gray-200 text-gray-700'\n);\n\n// className will be 'px-4 py-2 rounded-md bg-blue-500 text-white' if isActive is true\n// className will be 'px-4 py-2 rounded-md bg-gray-200 text-gray-700' if isActive is false\n```"
+}
