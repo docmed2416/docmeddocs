@@ -88,5 +88,10 @@
     "filePath": "app/dashboard/integrations/_components/RepoPicker.tsx",
     "title": "RepoPicker Component",
     "docKey": "app__dashboard__integrations___components__RepoPicker.tsx"
+  },
+  {
+    "filePath": "app/dashboard/integrations/page.tsx",
+    "title": "Integrations Page",
+    "docKey": "app__dashboard__integrations__page.tsx"
   }
 ]
