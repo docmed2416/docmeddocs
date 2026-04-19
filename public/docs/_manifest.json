@@ -63,5 +63,10 @@
     "filePath": "app/api/repo-pairs/route.ts",
     "title": "Repository Pair API Routes",
     "docKey": "app__api__repo-pairs__route.ts"
+  },
+  {
+    "filePath": "app/api/webhooks/github/[userId]/[pairId]/route.ts",
+    "title": "GitHub Webhook Handler",
+    "docKey": "app__api__webhooks__github__[userId]__[pairId]__route.ts"
   }
 ]
