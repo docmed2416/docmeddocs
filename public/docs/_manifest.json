@@ -225,6 +225,11 @@
     "docKey": "lib__gemini.ts"
   },
   {
+    "filePath": "lib/github-app.ts",
+    "title": "GitHub App Authentication and Management",
+    "docKey": "lib__github-app.ts"
+  },
+  {
     "filePath": "lib/github-installations.ts",
     "title": "GitHub Installations Management",
     "docKey": "lib__github-installations.ts"
