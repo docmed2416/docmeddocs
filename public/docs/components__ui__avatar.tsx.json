@@ -1,0 +1,5 @@
+{
+  "filePath": "components/ui/avatar.tsx",
+  "title": "Avatar Component",
+  "content": "The Avatar component provides a way to display user profile pictures or initials.\n\n## Exports\n\n- **Avatar**: The root component for the avatar. Accepts standard `<img>` props or children for fallback content.\n- **AvatarImage**: The component for displaying the avatar image. Should be a child of `Avatar`.\n- **AvatarFallback**: The component for displaying fallback content (e.g., initials) when the image cannot be loaded. Should be a child of `Avatar`.\n\n## Usage\n\n```tsx\nimport { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';\n\nfunction UserProfile() {\n  return (\n    <Avatar>\n      <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n      <AvatarFallback>CN</AvatarFallback>\n    </Avatar>\n  );\n}\n\nexport default UserProfile;\n```"
+}

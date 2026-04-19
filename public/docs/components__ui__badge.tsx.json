@@ -1,0 +1,5 @@
+{
+  "filePath": "components/ui/badge.tsx",
+  "title": "Badge Component",
+  "content": "The Badge component is a reusable UI element designed to display status, labels, or categories. It leverages `class-variance-authority` for flexible styling based on variants.\n\n## Key Exports\n\n- **Badge**: The main React component for rendering a badge.\n- **badgeVariants**: The `cva` function used to define the styling variants for the badge.\n\n## Props\n\n- **variant**: Controls the visual style of the badge. Accepts `default`, `secondary`, `destructive`, or `outline`.\n- **className**: Allows for additional custom styling classes.\n- Other standard `div` element props are also supported.\n\n## Usage Example\n\n```jsx\nimport { Badge } from '@/components/ui/badge';\n\nfunction Example() {\n  return (\n    <>\n      <Badge>Default</Badge>\n      <Badge variant=\"secondary\">Secondary</Badge>\n      <Badge variant=\"destructive\">Destructive</Badge>\n      <Badge variant=\"outline\">Outline</Badge>\n    </>\n  );\n}\n```"
+}
