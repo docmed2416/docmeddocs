@@ -248,5 +248,10 @@
     "filePath": "lib/utils.ts",
     "title": "Utility Functions (cn)",
     "docKey": "lib__utils.ts"
+  },
+  {
+    "filePath": "proxy.ts",
+    "title": "Clerk Middleware for DocMed",
+    "docKey": "proxy.ts"
   }
 ]
