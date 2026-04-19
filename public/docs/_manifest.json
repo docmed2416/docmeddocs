@@ -143,5 +143,10 @@
     "filePath": "components/ui/button.tsx",
     "title": "Button Component",
     "docKey": "components__ui__button.tsx"
+  },
+  {
+    "filePath": "components/ui/dropdown-menu.tsx",
+    "title": "Dropdown Menu Component",
+    "docKey": "components__ui__dropdown-menu.tsx"
   }
 ]
