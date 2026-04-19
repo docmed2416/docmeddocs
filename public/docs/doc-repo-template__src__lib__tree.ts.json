@@ -1,0 +1,5 @@
+{
+  "filePath": "doc-repo-template/src/lib/tree.ts",
+  "title": "Tree Building Utilities",
+  "content": "This module provides utilities for building a hierarchical tree structure from a flat list of manifest entries.\n\n**Purpose:**\nTo organize documentation entries into a navigable tree structure, typically used for rendering navigation menus or breadcrumbs in a documentation website.\n\n**Key Exports:**\n*   `FileNode`: Represents a file in the tree, containing its `name`, `key` (unique identifier), and `title`.\n*   `FolderNode`: Represents a folder in the tree, containing its `name` and an array of `children` (which can be `FileNode`s or other `FolderNode`s).\n*   `TreeNode`: A union type representing either a `FileNode` or a `FolderNode`.\n*   `buildTree(entries: ManifestEntry[]): TreeNode[]`: Takes an array of `ManifestEntry` objects and constructs a hierarchical `TreeNode` array. It processes `docKey` strings to determine folder and file structure.\n\n**Internal Functions:**\n*   `sortNodes(nodes: TreeNode[]): void`: Recursively sorts an array of `TreeNode`s, prioritizing folders and then sorting alphabetically by name."
+}
