@@ -173,5 +173,10 @@
     "filePath": "components/ui/separator.tsx",
     "title": "Separator Component",
     "docKey": "components__ui__separator.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/App.css",
+    "title": "App CSS",
+    "docKey": "doc-repo-template__src__App.css"
   }
 ]
