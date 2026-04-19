@@ -1,0 +1,5 @@
+{
+  "filePath": "app/api/github/installations/route.ts",
+  "title": "GitHub Installations API Route",
+  "content": "This API route, `app/api/github/installations/route.ts`, handles GET requests to retrieve a list of GitHub installations associated with the authenticated user.\n\n**Purpose:**\nTo provide an endpoint for fetching a user's connected GitHub application installations, enabling the application to interact with their repositories.\n\n**Key Exports/Functions:**\n*   `GET()`: An asynchronous function that serves as the API handler for GET requests.\n\n**Logic:**\n1.  It uses `@clerk/nextjs/server` to authenticate the user and retrieve their `userId`.\n2.  If the user is not authenticated (`!userId`), it returns a `401 Unauthorized` error.\n3.  It calls the `listConnectedInstallations` function from `@/lib/repo-pairs`, passing the `userId` to fetch the installations.\n4.  It returns the fetched installations as a JSON response.\n\n**Usage Example:**\nWhen a GET request is made to `/api/github/installations`, the server will respond with a JSON array of GitHub installations connected to the logged-in user."
+}
