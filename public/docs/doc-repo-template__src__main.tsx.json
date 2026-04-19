@@ -1,0 +1,5 @@
+{
+  "filePath": "doc-repo-template/src/main.tsx",
+  "title": "Main Application Entry Point",
+  "content": "This file serves as the primary entry point for the React application. It sets up the React StrictMode and renders the main `App` component into the DOM.\n\n**Purpose:**\n\n*   Initializes the React application.\n*   Enables React's StrictMode for development-time checks and warnings.\n*   Mounts the root `App` component to the HTML element with the ID 'root'.\n\n**Key Exports/Functions:**\n\n*   `createRoot`: From `react-dom/client`, used to create a root for React rendering.\n*   `StrictMode`: From `react`, enables additional checks and warnings in development.\n*   `App`: The main component of the application, imported from `./App`.\n\n**Usage Example:**\n\nThis file is typically not directly modified after initial setup. It defines how the application bootstraps. The rendering logic is as follows:\n\n```typescript\ncreateRoot(document.getElementById(\"root\")!).render(\n  <StrictMode>\n    <App />\n  </StrictMode>\n);\n```"
+}
