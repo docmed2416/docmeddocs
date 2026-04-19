@@ -5,6 +5,11 @@
     "docKey": "app__api__github__callback__route.ts"
   },
   {
+    "filePath": "app/api/github/clear-slot/route.ts",
+    "title": "Clear GitHub Repository Slot API Route",
+    "docKey": "app__api__github__clear-slot__route.ts"
+  },
+  {
     "filePath": "app/api/github/connect/route.ts",
     "title": "GitHub App Installation Redirect",
     "docKey": "app__api__github__connect__route.ts"
