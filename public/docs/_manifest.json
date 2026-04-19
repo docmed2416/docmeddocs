@@ -58,5 +58,10 @@
     "filePath": "app/api/repo-pairs/[pairId]/route.ts",
     "title": "Repo Pairs API Routes",
     "docKey": "app__api__repo-pairs__[pairId]__route.ts"
+  },
+  {
+    "filePath": "app/api/repo-pairs/route.ts",
+    "title": "Repository Pair API Routes",
+    "docKey": "app__api__repo-pairs__route.ts"
   }
 ]
