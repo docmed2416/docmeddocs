@@ -205,6 +205,11 @@
     "docKey": "components__ui__separator.tsx"
   },
   {
+    "filePath": "components/ui/toast.tsx",
+    "title": "Toast Component",
+    "docKey": "components__ui__toast.tsx"
+  },
+  {
     "filePath": "doc-repo-template/src/App.css",
     "title": "App CSS",
     "docKey": "doc-repo-template__src__App.css"
