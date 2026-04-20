@@ -215,6 +215,11 @@
     "docKey": "doc-repo-template__src__types.ts"
   },
   {
+    "filePath": "lib/billing/tiers.ts",
+    "title": "Billing Tiers Configuration",
+    "docKey": "lib__billing__tiers.ts"
+  },
+  {
     "filePath": "lib/commits.ts",
     "title": "Commit Log Management",
     "docKey": "lib__commits.ts"
