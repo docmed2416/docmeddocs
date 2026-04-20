@@ -16,5 +16,11 @@
     "message": "feat: replace free tier with 7-day trial, enforce expiry end to end\n\n- Add trialStartedAt/trialEndsAt to SubscriptionDoc\n- ensureTrialSubscription() auto-creates trial on first usage check\n- getUsageSnapshot blocks canAddPair/canInitRepo after trial expires\n- Pricing grid now shows Trial card first with Start free trial link to /sign-up\n- Dashboard shows amber countdown banner and red expired banner\n- Fix hardcoded upgrade plan values (Basic 3/5, Pro 10/20, Enterprise 25/60 $149.99)",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-20T22:04:55.138Z"
+  },
+  {
+    "id": "88bb3839d4fc1cc384d128b4eb18526105473c2f",
+    "message": "feat: surface pricing on landing page with yearly toggle\n\nAdd PricingSection to the home page between Stats and CTA, restyle\nto match the landing theme (motion stagger, primary glow, highlighted\nPro tier), and add a monthly/yearly billing toggle that applies a 10%\nyearly discount. Wire billingCycle through the checkout API with\nSTRIPE_PRICE_ID_*_YEARLY env vars, and resolve either cycle's price ID\nin getTierByPriceId for webhook handling.",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-20T22:55:21.977Z"
   }
 ]
