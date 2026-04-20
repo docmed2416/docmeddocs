@@ -1,0 +1,5 @@
+{
+  "filePath": "app/api/billing/usage/route.ts",
+  "title": "Billing Usage API Route",
+  "content": "This file defines the API endpoint for retrieving billing usage information.\n\n**Purpose:**\nTo provide a secure API route that allows authenticated users to fetch their current billing usage data.\n\n**Key Exports/Functions:**\n- `GET`: An asynchronous HTTP GET request handler.\n\n**Logic:**\n1.  It first authenticates the user using Clerk's `auth()` middleware. If the user is not authenticated (`userId` is null), it returns a `401 Unauthorized` response.\n2.  If authenticated, it calls the `getUsageSnapshot(userId)` function to retrieve the user's usage data.\n3.  It returns the retrieved usage snapshot as a JSON response.\n4.  In case of any errors during the process, it returns a `500 Internal Server Error` response with an appropriate error message.\n\n**Usage Example:**\nMaking a GET request to `/api/billing/usage` when authenticated will return a JSON object containing the user's billing usage details."
+}
