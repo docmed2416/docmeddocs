@@ -1,0 +1,5 @@
+{
+  "filePath": "lib/billing/stripe.ts",
+  "title": "Stripe Billing Integration",
+  "content": "This module provides a singleton instance for interacting with the Stripe API for billing purposes.\n\n## Key Exports\n\n*   `getStripe()`: Returns a configured `Stripe` instance. It initializes the instance using the `STRIPE_SECRET_KEY` environment variable if not already initialized.\n\n## Usage\n\n```typescript\nimport { getStripe } from './lib/billing/stripe';\n\nconst stripe = getStripe();\n\n// Now you can use the stripe instance to interact with Stripe API\n// For example:\n// const customers = await stripe.customers.list();\n```"
+}
