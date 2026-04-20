@@ -4,5 +4,11 @@
     "message": "feat: add PricingSection component",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-19T01:24:17.480Z"
+  },
+  {
+    "id": "d938dbbdb0f7940ee5793db2e9ae24556d76bd5b",
+    "message": "feat: add Stripe subscription tiers with usage enforcement\n\nImplements four billing tiers (Basic $29.99, Pro $49.99, Enterprise $99.99,\nContact Us) with per-user active pair and monthly repo init limits enforced\nserver-side via Firestore. Stripe Checkout, Customer Portal, and webhook\nhandling are fully integrated with idempotency guards and atomic counters.\n\n- lib/billing: tiers config, Firestore subscription/usage repo, usage snapshot\n  and limit guards, lazy Stripe client (API 2026-03-25.dahlia)\n- API: /billing/checkout, /billing/portal, /billing/usage, /billing/contact,\n  /webhooks/stripe (raw-body signature verification, event idempotency)\n- Gated POST /api/repo-pairs and POST /api/github/init-doc-repo with 402 on\n  limit breach; revalidatePath keeps frontend counters current after mutations\n- Dashboard: active pair counter (n/limit) on integrations page, toast on cap,\n  upgrade-or-wait card in empty slots when monthly inits are exhausted\n- Settings: full billing panel with usage bars, cycle reset date, manage plan\n  and upgrade CTAs replacing the coming-soon placeholder\n- Pricing section: four real tiers from tiers.ts with live Checkout CTAs and\n  inline Contact Us modal with rate limiting\n- Toast system: Framer Motion toast provider mounted in dashboard layout",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-20T17:33:07.544Z"
   }
 ]
