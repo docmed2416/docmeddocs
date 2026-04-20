@@ -1,5 +1,10 @@
 [
   {
+    "filePath": "app/api/billing/checkout/route.ts",
+    "title": "Checkout API Route",
+    "docKey": "app__api__billing__checkout__route.ts"
+  },
+  {
     "filePath": "app/api/billing/contact/route.ts",
     "title": "Contact API Route",
     "docKey": "app__api__billing__contact__route.ts"
