@@ -245,6 +245,11 @@
     "docKey": "doc-repo-template__src__types.ts"
   },
   {
+    "filePath": "lib/billing/stripe.ts",
+    "title": "Stripe Billing Integration",
+    "docKey": "lib__billing__stripe.ts"
+  },
+  {
     "filePath": "lib/billing/subscription.ts",
     "title": "Billing Subscription Management",
     "docKey": "lib__billing__subscription.ts"
