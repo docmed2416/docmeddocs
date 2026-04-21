@@ -225,6 +225,11 @@
     "docKey": "doc-repo-template__src__types.ts"
   },
   {
+    "filePath": "lib/billing/subscription.ts",
+    "title": "DocMed Billing Subscription Management",
+    "docKey": "lib__billing__subscription.ts"
+  },
+  {
     "filePath": "lib/commits.ts",
     "title": "Commit Log Management",
     "docKey": "lib__commits.ts"
