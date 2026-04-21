@@ -1,5 +1,10 @@
 [
   {
+    "filePath": "app/api/billing/checkout/route.ts",
+    "title": "Checkout API Route",
+    "docKey": "app__api__billing__checkout__route.ts"
+  },
+  {
     "filePath": "app/api/github/callback/route.ts",
     "title": "GitHub OAuth Callback Handler",
     "docKey": "app__api__github__callback__route.ts"
