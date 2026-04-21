@@ -230,6 +230,11 @@
     "docKey": "doc-repo-template__src__types.ts"
   },
   {
+    "filePath": "lib/billing/usage.ts",
+    "title": "Usage Tracking and Limits",
+    "docKey": "lib__billing__usage.ts"
+  },
+  {
     "filePath": "lib/commits.ts",
     "title": "Commit Log Management",
     "docKey": "lib__commits.ts"
