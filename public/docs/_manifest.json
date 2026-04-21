@@ -230,6 +230,11 @@
     "docKey": "lib__billing__subscription.ts"
   },
   {
+    "filePath": "lib/billing/usage.ts",
+    "title": "Billing Usage Module",
+    "docKey": "lib__billing__usage.ts"
+  },
+  {
     "filePath": "lib/commits.ts",
     "title": "Commit Log Management",
     "docKey": "lib__commits.ts"
