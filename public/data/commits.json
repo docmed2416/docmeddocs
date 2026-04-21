@@ -52,5 +52,11 @@
     "message": "Clarify documentation repository reference in README\n\nUpdated wording in the README to clarify the documentation repository.",
     "pusher": "ashad767",
     "timestamp": "2026-04-21T00:20:35.417Z"
+  },
+  {
+    "id": "88b27017933240252b5da03f452860cc6fb53340",
+    "message": "fix: open billing tab and hard-redirect to stripe urls\n\nSettings page ignored ?tab=billing — initial tab was hardcoded to\nprofile. Read it from useSearchParams (wrapped in Suspense for Next\n16 prerender) and sync tab state when the query changes.\n\nAlso switch Stripe checkout/portal redirects from router.push to\nwindow.location.assign. App Router's router.push doesn't reliably\ndo cross-origin navigations, so clicking Upgrade or Manage Plan\nwas landing inside the app instead of Stripe's hosted pages.",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-21T00:32:41.887Z"
   }
 ]
