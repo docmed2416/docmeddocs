@@ -21,7 +21,7 @@
   },
   {
     "filePath": "app/api/github/init-doc-repo/route.ts",
-    "title": "GitHub Doc Repository Initialization API Route",
+    "title": "Initialize Documentation Repository API Route",
     "docKey": "app__api__github__init-doc-repo__route.ts"
   },
   {
