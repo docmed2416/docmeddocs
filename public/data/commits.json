@@ -46,5 +46,11 @@
     "message": "fix: disable connect and repo-select buttons when inits exhausted\n\nWhen the monthly init limit is reached (or the trial has expired),\nthe account picker and Select/Change repo buttons led users into\nflows that dead-end at a 402 from init-doc-repo. Gray them out with\na \"Monthly init limit reached\" tooltip so the upgrade path surfaced\nby UpgradeOrWaitCard is the only action.",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-21T00:20:01.465Z"
+  },
+  {
+    "id": "fcb419fedfc146dd60f1e3cf7fcac905762729c7",
+    "message": "Clarify documentation repository reference in README\n\nUpdated wording in the README to clarify the documentation repository.",
+    "pusher": "ashad767",
+    "timestamp": "2026-04-21T00:20:35.417Z"
   }
 ]
