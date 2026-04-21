@@ -250,6 +250,11 @@
     "docKey": "lib__qstash.ts"
   },
   {
+    "filePath": "lib/rate-limit.ts",
+    "title": "Rate Limiting Utility",
+    "docKey": "lib__rate-limit.ts"
+  },
+  {
     "filePath": "lib/repo-pairs.ts",
     "title": "Repository Pair Management",
     "docKey": "lib__repo-pairs.ts"
