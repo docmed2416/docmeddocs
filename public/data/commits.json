@@ -64,5 +64,11 @@
     "message": "Update README.md",
     "pusher": "ashad767",
     "timestamp": "2026-04-21T00:34:02.248Z"
+  },
+  {
+    "id": "cb30114a20b942386db0e354a446b9cdcfb4a9dd",
+    "message": "fix: surface checkout errors and redirect anon users to sign-up\n\nWrap the checkout route in try/catch so Stripe/env failures return\nJSON with the real error instead of a generic 500. On the landing\npage pricing card, treat 404 the same as 401 — Clerk middleware\nreturns 404 for unauthenticated API calls, so anon visitors clicking\nUpgrade should be routed to sign-up with the tier preserved.",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-21T00:43:51.391Z"
   }
 ]
