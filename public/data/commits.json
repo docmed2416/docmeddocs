@@ -76,5 +76,11 @@
     "message": "Fix wording in README for documentation repository\n\nUpdated wording for consistency in README.",
     "pusher": "ashad767",
     "timestamp": "2026-04-21T00:45:30.080Z"
+  },
+  {
+    "id": "cfe5cc326336c18d14e3c6b86b48f1727611e672",
+    "message": "feat: billing + dashboard polish and sign-up flow fixes\n\n- Hide trial banners on paid plans; add red banner when a paid plan\n  is set to cancel at period end (\"Your plan ends in X days\").\n- Track cancel_at_period_end end-to-end through Stripe webhook →\n  subscription doc → usage snapshot → settings UI.\n- Replace \"Pairs Configured\" stat with \"Files Documented\", powered\n  by a new Firestore counter incremented when QStash jobs write a\n  doc JSON + manifest entry.\n- Sidebar user footer: show a skeleton while Clerk hydrates auth or\n  during sign-out redirect to avoid flashing the previous user.\n- Sign-up: wrap Clerk CAPTCHA slot with reserved height, a\n  \"Loading verification…\" spinner detected via MutationObserver,\n  and centering so the injected widget doesn't jump layout.\n- Align feature-card highlight badges (\"60-second setup\" etc.) at\n  the bottom of each card regardless of description length.",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-21T01:09:07.445Z"
   }
 ]
