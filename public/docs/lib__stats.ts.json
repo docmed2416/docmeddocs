@@ -1,0 +1,5 @@
+{
+  "filePath": "lib/stats.ts",
+  "title": "Statistics Module",
+  "content": "This module provides functions for managing and retrieving user statistics related to documentation.\n\n## Key Exports\n\n*   `incrementFilesDocumented(userId: string): Promise<void>`: Increments the `filesDocumented` counter for a given user.\n*   `getFilesDocumentedCount(userId: string): Promise<number>`: Retrieves the current `filesDocumented` count for a given user. Returns 0 if the user has no statistics yet.\n\n## Usage Example\n\n```typescript\nimport { incrementFilesDocumented, getFilesDocumentedCount } from './lib/stats';\n\nasync function processDocumentation(userId: string) {\n  // After documenting a file...\n  await incrementFilesDocumented(userId);\n\n  // To get the current count...\n  const count = await getFilesDocumentedCount(userId);\n  console.log(`User ${userId} has documented ${count} files.`);\n}\n```"
+}
