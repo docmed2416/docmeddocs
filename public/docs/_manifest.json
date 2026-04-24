@@ -23,5 +23,10 @@
     "filePath": "app/api/github/callback/route.ts",
     "title": "GitHub OAuth Callback API Route",
     "docKey": "app__api__github__callback__route.ts"
+  },
+  {
+    "filePath": "app/api/github/clear-slot/route.ts",
+    "title": "Clear Slot API Route",
+    "docKey": "app__api__github__clear-slot__route.ts"
   }
 ]
