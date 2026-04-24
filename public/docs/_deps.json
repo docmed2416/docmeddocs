@@ -154,5 +154,8 @@
   ],
   "components/ui/button.tsx": [
     "lib/utils.ts"
+  ],
+  "components/ui/badge.tsx": [
+    "lib/utils.ts"
   ]
 }
