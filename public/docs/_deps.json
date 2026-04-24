@@ -108,5 +108,11 @@
     "app/dashboard/integrations/_components/RepoPicker",
     "app/dashboard/integrations/_components/ExistingAccountPicker"
   ],
-  "app/dashboard/integrations/_components/RepoPicker.tsx": []
+  "app/dashboard/integrations/_components/RepoPicker.tsx": [],
+  "app/dashboard/integrations/page.tsx": [
+    "lib/repo-pairs.ts",
+    "lib/billing/usage.ts",
+    "app/dashboard/integrations/_components/RepoPairCard.tsx",
+    "app/dashboard/integrations/_components/AddPairButton.tsx"
+  ]
 }
