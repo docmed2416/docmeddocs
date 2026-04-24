@@ -1,0 +1,25 @@
+{
+  "filePath": "app/api/github/reprocess-commit/route.ts",
+  "title": "Reprocess Commit API Route",
+  "content": "Handles the reprocessing of a specific commit for a connected GitHub repository pair.\n\nThis API route is triggered to re-ingest commit information into the documentation repository. It validates the input, checks rate limits, and then queues background jobs to update the documentation repository with the commit details and potentially create a new branch and publish file jobs for processing.\n\n**Key Functions:**\n\n*   **`POST /app/api/github/reprocess-commit/route.ts`**: The main API endpoint that receives the `pairId` and `commitId`.\n*   **`appendCommitToDocRepo`**: Appends a commit record to the `commits.json` file in the documentation repository.\n*   **`createDocBranch`**: Creates a new branch in the documentation repository.\n\n**Logic Flow:**\n\n1.  Authenticate the user.\n2.  Parse and validate the request body for `pairId` and `commitId`.\n3.  Retrieve target and documentation repository details.\n4.  Resolve authentication tokens for both repositories.\n5.  Verify the existence of the `commitId` in the target repository.\n6.  Enforce rate limiting for the reprocess commit action.\n7.  Identify files added, modified, or removed in the commit.\n8.  Queue background jobs for updating the documentation repository:\n    *   Append the commit record to `commits.json`.\n    *   Record the commit in the internal commit log.\n    *   If there are file changes, create a new branch in the doc repo and publish file processing jobs.\n\n**Usage Example:**\n\nA `POST` request to `/app/api/github/reprocess-commit` with a JSON body like:\n\n```json\n{\n  \"pairId\": \"your-pair-id\",\n  \"commitId\": \"your-commit-sha\"\n}\n```",
+  "dependencies": [
+    "lib/repo-pairs.ts",
+    "lib/qstash.ts",
+    "lib/commits.ts",
+    "lib/rate-limit.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:22:59.380Z",
+      "title": "Reprocess Commit API Route",
+      "content": "Handles the reprocessing of a specific commit for a connected GitHub repository pair.\n\nThis API route is triggered to re-ingest commit information into the documentation repository. It validates the input, checks rate limits, and then queues background jobs to update the documentation repository with the commit details and potentially create a new branch and publish file jobs for processing.\n\n**Key Functions:**\n\n*   **`POST /app/api/github/reprocess-commit/route.ts`**: The main API endpoint that receives the `pairId` and `commitId`.\n*   **`appendCommitToDocRepo`**: Appends a commit record to the `commits.json` file in the documentation repository.\n*   **`createDocBranch`**: Creates a new branch in the documentation repository.\n\n**Logic Flow:**\n\n1.  Authenticate the user.\n2.  Parse and validate the request body for `pairId` and `commitId`.\n3.  Retrieve target and documentation repository details.\n4.  Resolve authentication tokens for both repositories.\n5.  Verify the existence of the `commitId` in the target repository.\n6.  Enforce rate limiting for the reprocess commit action.\n7.  Identify files added, modified, or removed in the commit.\n8.  Queue background jobs for updating the documentation repository:\n    *   Append the commit record to `commits.json`.\n    *   Record the commit in the internal commit log.\n    *   If there are file changes, create a new branch in the doc repo and publish file processing jobs.\n\n**Usage Example:**\n\nA `POST` request to `/app/api/github/reprocess-commit` with a JSON body like:\n\n```json\n{\n  \"pairId\": \"your-pair-id\",\n  \"commitId\": \"your-commit-sha\"\n}\n```",
+      "dependencies": [
+        "lib/repo-pairs.ts",
+        "lib/qstash.ts",
+        "lib/commits.ts",
+        "lib/rate-limit.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
