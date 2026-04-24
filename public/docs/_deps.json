@@ -190,5 +190,16 @@
   "components/ui/toast.tsx": [],
   "doc-repo-template/src/FileTree.tsx": [
     "./lib/tree"
+  ],
+  "doc-repo-template/src/App.tsx": [
+    "./types",
+    "./lib/tree",
+    "./FileTree",
+    "./TabBar",
+    "./HomeView",
+    "./CommitsView",
+    "./DependencyMapView",
+    "./DocView",
+    "./FolderView"
   ]
 }
