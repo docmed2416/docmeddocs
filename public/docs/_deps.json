@@ -1,0 +1,7 @@
+{
+  "app/api/webhooks/github/[userId]/[pairId]/route.ts": [
+    "lib/repo-pairs.ts",
+    "lib/qstash.ts",
+    "lib/commits.ts"
+  ]
+}
