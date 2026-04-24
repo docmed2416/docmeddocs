@@ -171,5 +171,8 @@
   "components/ui/pricing-section.tsx": [
     "@/lib/utils",
     "@/lib/billing/tiers"
+  ],
+  "components/ui/globe-hero.tsx": [
+    "lib/utils.ts"
   ]
 }
