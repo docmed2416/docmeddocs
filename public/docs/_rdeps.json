@@ -178,5 +178,8 @@
   ],
   "app/sign-in/page": [
     "app/sign-up/[[...sign-up]]/page.tsx"
+  ],
+  "lib/utils.ts": [
+    "components/ui/avatar.tsx"
   ]
 }
