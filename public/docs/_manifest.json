@@ -298,5 +298,10 @@
     "filePath": "lib/qstash.ts",
     "title": "QStash Client and File Job Publishing",
     "docKey": "lib__qstash.ts"
+  },
+  {
+    "filePath": "lib/rate-limit.ts",
+    "title": "Rate Limiting Module",
+    "docKey": "lib__rate-limit.ts"
   }
 ]
