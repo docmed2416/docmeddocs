@@ -234,5 +234,11 @@
   ],
   "lib/rate-limit.ts": [
     "./firebase-admin"
+  ],
+  "lib/user-deletion.ts": [
+    "./firebase-admin",
+    "./repo-pairs",
+    "./billing/subscription",
+    "./billing/stripe"
   ]
 }
