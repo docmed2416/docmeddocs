@@ -1,0 +1,19 @@
+{
+  "filePath": "components/ui/separator.tsx",
+  "title": "Separator Component",
+  "content": "## Separator\n\nA visual divider between content.\n\nThis component is a wrapper around `@radix-ui/react-separator` providing consistent styling and integration with the DocMed UI library.\n\n### Key Exports\n\n*   **Separator**: The main component for rendering a separator.\n\n### Props\n\n*   `className`: `string` - Optional CSS class to apply to the separator.\n*   `orientation`: `\"horizontal\" | \"vertical\"` - Defines the orientation of the separator. Defaults to `\"horizontal\"`.\n*   `decorative`: `boolean` - Indicates if the separator is purely decorative. Defaults to `true`.\n*   ...other props compatible with `@radix-ui/react-separator`.\n\n### Usage Example\n\n```tsx\nimport { Separator } from \"@/components/ui/separator\";\n\nfunction MyComponent() {\n  return (\n    <div>\n      <p>Content above the separator.</p>\n      <Separator />\n      <p>Content below the separator.</p>\n\n      <div className=\"flex items-center h-32\">\n        <p>Left Content</p>\n        <Separator orientation=\"vertical\" className=\"mx-4\" />\n        <p>Right Content</p>\n      </div>\n    </div>\n  );\n}\n```",
+  "dependencies": [
+    "lib/utils.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:26:50.236Z",
+      "title": "Separator Component",
+      "content": "## Separator\n\nA visual divider between content.\n\nThis component is a wrapper around `@radix-ui/react-separator` providing consistent styling and integration with the DocMed UI library.\n\n### Key Exports\n\n*   **Separator**: The main component for rendering a separator.\n\n### Props\n\n*   `className`: `string` - Optional CSS class to apply to the separator.\n*   `orientation`: `\"horizontal\" | \"vertical\"` - Defines the orientation of the separator. Defaults to `\"horizontal\"`.\n*   `decorative`: `boolean` - Indicates if the separator is purely decorative. Defaults to `true`.\n*   ...other props compatible with `@radix-ui/react-separator`.\n\n### Usage Example\n\n```tsx\nimport { Separator } from \"@/components/ui/separator\";\n\nfunction MyComponent() {\n  return (\n    <div>\n      <p>Content above the separator.</p>\n      <Separator />\n      <p>Content below the separator.</p>\n\n      <div className=\"flex items-center h-32\">\n        <p>Left Content</p>\n        <Separator orientation=\"vertical\" className=\"mx-4\" />\n        <p>Right Content</p>\n      </div>\n    </div>\n  );\n}\n```",
+      "dependencies": [
+        "lib/utils.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
