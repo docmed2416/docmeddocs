@@ -18,5 +18,10 @@
     "filePath": "app/api/billing/usage/route.ts",
     "title": "Billing Usage API Route",
     "docKey": "app__api__billing__usage__route.ts"
+  },
+  {
+    "filePath": "app/api/github/callback/route.ts",
+    "title": "GitHub OAuth Callback API Route",
+    "docKey": "app__api__github__callback__route.ts"
   }
 ]
