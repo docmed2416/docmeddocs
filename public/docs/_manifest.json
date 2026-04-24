@@ -195,6 +195,11 @@
     "docKey": "components__ui__dropdown-menu.tsx"
   },
   {
+    "filePath": "components/ui/globe-hero.tsx",
+    "title": "DotGlobeHero Component",
+    "docKey": "components__ui__globe-hero.tsx"
+  },
+  {
     "filePath": "components/ui/modern-animated-sign-in.tsx",
     "title": "Modern Animated Sign-In UI Components",
     "docKey": "components__ui__modern-animated-sign-in.tsx"
