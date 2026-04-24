@@ -144,5 +144,9 @@
   ],
   "app/sign-in/[[...sign-in]]/page.tsx": [
     "components/ui/modern-animated-sign-in"
+  ],
+  "app/sign-up/[[...sign-up]]/page.tsx": [
+    "components/ui/modern-animated-sign-in",
+    "app/sign-in/page"
   ]
 }
