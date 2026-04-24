@@ -4,5 +4,11 @@
     "lib/repo-pairs",
     "lib/stats",
     "lib/qstash"
+  ],
+  "doc-repo-template/src/App.tsx": [
+    "src/types.ts",
+    "src/lib/tree.ts",
+    "src/FileTree.tsx",
+    "src/TabBar.tsx"
   ]
 }
