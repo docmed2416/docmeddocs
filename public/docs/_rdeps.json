@@ -58,7 +58,6 @@
   ],
   "lib/repo-pairs": [
     "app/api/github/clear-slot/route.ts",
-    "app/api/github/process-one-file/route.ts",
     "app/api/repo-pairs/switch-active/route.ts",
     "app/dashboard/page.tsx"
   ],
@@ -72,15 +71,6 @@
   ],
   "app/api/github/init-doc-repo/route.ts": [
     "app/api/github/init-doc-repo/route.ts"
-  ],
-  "@upstash/qstash": [
-    "app/api/github/process-one-file/route.ts"
-  ],
-  "next/server": [
-    "app/api/github/process-one-file/route.ts"
-  ],
-  "lib/gemini": [
-    "app/api/github/process-one-file/route.ts"
   ],
   "lib/qstash": [
     "app/api/github/process-one-file/route.ts"
@@ -99,7 +89,8 @@
   "@/lib/repo-pairs": [
     "app/api/github/use-installation/route.ts",
     "app/dashboard/integrations/_components/RepoPairCard.tsx",
-    "lib/billing/usage.ts"
+    "lib/billing/usage.ts",
+    "app/api/github/process-one-file/route.ts"
   ],
   "@/lib/github-installations": [
     "app/api/github/use-installation/route.ts"
@@ -235,25 +226,7 @@
     "doc-repo-template/src/App.tsx",
     "doc-repo-template/src/TabBar.tsx"
   ],
-  "doc-repo-template/src/FileTree.tsx": [
-    "doc-repo-template/src/App.tsx"
-  ],
   "./TabBar": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./HomeView": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./CommitsView": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./DependencyMapView": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./DocView": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./FolderView": [
     "doc-repo-template/src/App.tsx"
   ],
   "doc-repo-template/src/App.tsx": [
@@ -277,5 +250,26 @@
   ],
   "./repo-pairs": [
     "lib/user-deletion.ts"
+  ],
+  "doc-repo-template/src/types.ts": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "doc-repo-template/src/FileTree.tsx": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "doc-repo-template/src/TabBar.tsx": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "@upstash/qstash": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "@/lib/gemini": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "@/lib/qstash": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "@/lib/stats": [
+    "app/api/github/process-one-file/route.ts"
   ]
 }

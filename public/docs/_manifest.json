@@ -231,7 +231,7 @@
   },
   {
     "filePath": "doc-repo-template/src/App.tsx",
-    "title": "DocMed Main Application Component",
+    "title": "DocMed App Component",
     "docKey": "doc-repo-template__src__App.tsx"
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "filePath": "doc-repo-template/src/types.ts",
-    "title": "DocMed Types",
+    "title": "DocMed Type Definitions",
     "docKey": "doc-repo-template__src__types.ts"
   },
   {
