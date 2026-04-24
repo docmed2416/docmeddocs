@@ -180,6 +180,7 @@
     "app/sign-up/[[...sign-up]]/page.tsx"
   ],
   "lib/utils.ts": [
-    "components/ui/avatar.tsx"
+    "components/ui/avatar.tsx",
+    "components/ui/button.tsx"
   ]
 }
