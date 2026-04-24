@@ -208,5 +208,10 @@
     "filePath": "components/ui/pricing-section.tsx",
     "title": "Pricing Section Component",
     "docKey": "components__ui__pricing-section.tsx"
+  },
+  {
+    "filePath": "components/ui/scroll-area.tsx",
+    "title": "ScrollArea Component",
+    "docKey": "components__ui__scroll-area.tsx"
   }
 ]
