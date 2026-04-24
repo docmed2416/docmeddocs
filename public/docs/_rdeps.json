@@ -197,5 +197,11 @@
   ],
   "next/image": [
     "components/ui/modern-animated-sign-in.tsx"
+  ],
+  "@/lib/utils": [
+    "components/ui/pricing-section.tsx"
+  ],
+  "@/lib/billing/tiers": [
+    "components/ui/pricing-section.tsx"
   ]
 }
