@@ -219,32 +219,13 @@
     "components/ui/sidebar.tsx"
   ],
   "./lib/tree": [
-    "doc-repo-template/src/FileTree.tsx",
-    "doc-repo-template/src/App.tsx"
+    "doc-repo-template/src/FileTree.tsx"
   ],
   "./types": [
     "doc-repo-template/src/App.tsx",
     "doc-repo-template/src/TabBar.tsx"
   ],
-  "doc-repo-template/src/FileTree.tsx": [
-    "doc-repo-template/src/App.tsx"
-  ],
   "./TabBar": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./HomeView": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./CommitsView": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./DependencyMapView": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./DocView": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "./FolderView": [
     "doc-repo-template/src/App.tsx"
   ],
   "doc-repo-template/src/App.tsx": [
@@ -283,5 +264,17 @@
   ],
   "lib/stats.ts": [
     "app/api/github/process-one-file/route.ts"
+  ],
+  "doc-repo-template/src/types.ts": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "src/lib/tree.ts": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "doc-repo-template/src/FileTree.tsx": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "doc-repo-template/src/TabBar.tsx": [
+    "doc-repo-template/src/App.tsx"
   ]
 }
