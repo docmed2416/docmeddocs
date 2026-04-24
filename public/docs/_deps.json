@@ -53,5 +53,10 @@
     "lib/qstash.ts",
     "lib/commits.ts",
     "lib/rate-limit.ts"
+  ],
+  "app/api/github/uninstall-app/route.ts": [
+    "lib/repo-pairs.ts",
+    "lib/github-app.ts",
+    "lib/github-installations.ts"
   ]
 }
