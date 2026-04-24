@@ -230,6 +230,11 @@
     "docKey": "components__ui__toast.tsx"
   },
   {
+    "filePath": "doc-repo-template/src/App.tsx",
+    "title": "DocMed Main Application Component",
+    "docKey": "doc-repo-template__src__App.tsx"
+  },
+  {
     "filePath": "doc-repo-template/src/FileTree.tsx",
     "title": "FileTree Component",
     "docKey": "doc-repo-template__src__FileTree.tsx"
