@@ -53,7 +53,8 @@
   "@clerk/nextjs/server": [
     "app/api/github/clear-slot/route.ts",
     "app/api/repo-pairs/switch-active/route.ts",
-    "app/dashboard/page.tsx"
+    "app/dashboard/page.tsx",
+    "proxy.ts"
   ],
   "lib/repo-pairs": [
     "app/api/github/clear-slot/route.ts",
