@@ -268,5 +268,10 @@
     "filePath": "lib/billing/tiers.ts",
     "title": "Billing Tiers Configuration",
     "docKey": "lib__billing__tiers.ts"
+  },
+  {
+    "filePath": "lib/billing/usage.ts",
+    "title": "Usage Tracking and Limits",
+    "docKey": "lib__billing__usage.ts"
   }
 ]
