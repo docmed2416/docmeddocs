@@ -1,0 +1,19 @@
+{
+  "filePath": "app/api/user/delete/route.ts",
+  "title": "Delete User API Route",
+  "content": "This file defines a POST API route handler for deleting a user completely from the system.\n\n**Purpose:**\nProvides an endpoint to initiate the complete deletion of an authenticated user. This process is intended to be irreversible and should handle all associated data cleanup.\n\n**Key Exports:**\n- `POST`: An asynchronous function that handles POST requests to the `/api/user/delete` endpoint.\n\n**Logic:**\n1. **Authentication:** It first checks if the user is authenticated using Clerk's `auth()` function. If not authenticated, it returns a 401 Unauthorized response.\n2. **User Deletion:** If authenticated, it calls the `deleteUserCompletely` function from `@/lib/user-deletion` passing the `userId`.\n3. **Error Handling:** It includes a try-catch block to log any errors during the deletion process and returns a 500 Internal Server Error response with an appropriate error message.\n4. **Success Response:** On successful deletion, it returns a JSON response `{ ok: true }`.\n\n**Usage Example:**\nA client-side application would make a POST request to `/api/user/delete` to trigger the user's account deletion.",
+  "dependencies": [
+    "@/lib/user-deletion"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:23:41.979Z",
+      "title": "Delete User API Route",
+      "content": "This file defines a POST API route handler for deleting a user completely from the system.\n\n**Purpose:**\nProvides an endpoint to initiate the complete deletion of an authenticated user. This process is intended to be irreversible and should handle all associated data cleanup.\n\n**Key Exports:**\n- `POST`: An asynchronous function that handles POST requests to the `/api/user/delete` endpoint.\n\n**Logic:**\n1. **Authentication:** It first checks if the user is authenticated using Clerk's `auth()` function. If not authenticated, it returns a 401 Unauthorized response.\n2. **User Deletion:** If authenticated, it calls the `deleteUserCompletely` function from `@/lib/user-deletion` passing the `userId`.\n3. **Error Handling:** It includes a try-catch block to log any errors during the deletion process and returns a 500 Internal Server Error response with an appropriate error message.\n4. **Success Response:** On successful deletion, it returns a JSON response `{ ok: true }`.\n\n**Usage Example:**\nA client-side application would make a POST request to `/api/user/delete` to trigger the user's account deletion.",
+      "dependencies": [
+        "@/lib/user-deletion"
+      ],
+      "commitId": null
+    }
+  ]
+}
