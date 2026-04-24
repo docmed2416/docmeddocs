@@ -231,5 +231,8 @@
   ],
   "lib/github-installations.ts": [
     "./firebase-admin"
+  ],
+  "lib/rate-limit.ts": [
+    "./firebase-admin"
   ]
 }
