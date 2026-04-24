@@ -47,5 +47,11 @@
   ],
   "app/api/github/repos/route.ts": [
     "lib/repo-pairs.ts"
+  ],
+  "app/api/github/reprocess-commit/route.ts": [
+    "lib/repo-pairs.ts",
+    "lib/qstash.ts",
+    "lib/commits.ts",
+    "lib/rate-limit.ts"
   ]
 }
