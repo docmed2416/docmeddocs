@@ -141,5 +141,8 @@
   "app/page.tsx": [
     "@/components/ui/globe-hero",
     "@/components/ui/pricing-section"
+  ],
+  "app/sign-in/[[...sign-in]]/page.tsx": [
+    "components/ui/modern-animated-sign-in"
   ]
 }
