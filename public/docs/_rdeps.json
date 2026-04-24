@@ -24,5 +24,11 @@
   ],
   "lib/github-installations.ts": [
     "app/api/github/callback/route.ts"
+  ],
+  "@clerk/nextjs/server": [
+    "app/api/github/clear-slot/route.ts"
+  ],
+  "lib/repo-pairs": [
+    "app/api/github/clear-slot/route.ts"
   ]
 }
