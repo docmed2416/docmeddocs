@@ -228,5 +228,10 @@
     "filePath": "components/ui/toast.tsx",
     "title": "Toast Component",
     "docKey": "components__ui__toast.tsx"
+  },
+  {
+    "filePath": "doc-repo-template/src/FileTree.tsx",
+    "title": "FileTree Component",
+    "docKey": "doc-repo-template__src__FileTree.tsx"
   }
 ]
