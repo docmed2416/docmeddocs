@@ -118,5 +118,12 @@
   "app/dashboard/layout.tsx": [
     "@/components/ui/sidebar",
     "@/components/ui/toast"
+  ],
+  "app/dashboard/page.tsx": [
+    "@clerk/nextjs/server",
+    "lib/repo-pairs",
+    "lib/commits",
+    "lib/stats",
+    "lucide-react"
   ]
 }
