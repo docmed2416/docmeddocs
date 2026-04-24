@@ -313,5 +313,10 @@
     "filePath": "lib/user-deletion.ts",
     "title": "User Deletion Utilities",
     "docKey": "lib__user-deletion.ts"
+  },
+  {
+    "filePath": "lib/utils.ts",
+    "title": "Class Name Utility (`cn`)",
+    "docKey": "lib__utils.ts"
   }
 ]
