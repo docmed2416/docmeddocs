@@ -9,7 +9,8 @@
   ],
   "lib/billing/tiers.ts": [
     "app/api/billing/checkout/route.ts",
-    "app/api/webhooks/stripe/route.ts"
+    "app/api/webhooks/stripe/route.ts",
+    "lib/billing/subscription.ts"
   ],
   "lib/billing/subscription.ts": [
     "app/api/billing/checkout/route.ts",
@@ -250,5 +251,8 @@
   ],
   "doc-repo-template/src/App.tsx": [
     "doc-repo-template/src/main.tsx"
+  ],
+  "lib/firebase-admin.ts": [
+    "lib/billing/subscription.ts"
   ]
 }
