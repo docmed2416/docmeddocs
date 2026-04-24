@@ -209,5 +209,9 @@
   "doc-repo-template/src/main.tsx": [
     "./App.tsx"
   ],
-  "lib/billing/stripe.ts": []
+  "lib/billing/stripe.ts": [],
+  "lib/billing/subscription.ts": [
+    "lib/firebase-admin.ts",
+    "lib/billing/tiers.ts"
+  ]
 }
