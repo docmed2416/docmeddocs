@@ -15,5 +15,11 @@
     "@/lib/billing/subscription",
     "@/lib/billing/tiers",
     "@/lib/repo-pairs"
+  ],
+  "app/api/webhooks/stripe/route.ts": [
+    "lib/billing/stripe",
+    "lib/billing/subscription",
+    "lib/billing/tiers",
+    "lib/repo-pairs"
   ]
 }
