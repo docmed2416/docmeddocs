@@ -39,11 +39,13 @@
     "app/api/github/uninstall-app/route.ts"
   ],
   "@clerk/nextjs/server": [
-    "app/api/github/clear-slot/route.ts"
+    "app/api/github/clear-slot/route.ts",
+    "app/api/repo-pairs/switch-active/route.ts"
   ],
   "lib/repo-pairs": [
     "app/api/github/clear-slot/route.ts",
-    "app/api/github/process-one-file/route.ts"
+    "app/api/github/process-one-file/route.ts",
+    "app/api/repo-pairs/switch-active/route.ts"
   ],
   "lib/qstash.ts": [
     "app/api/github/init-doc-repo/route.ts",
@@ -81,5 +83,11 @@
   ],
   "@/lib/github-installations": [
     "app/api/github/use-installation/route.ts"
+  ],
+  "lib/billing/subscription": [
+    "app/api/repo-pairs/switch-active/route.ts"
+  ],
+  "lib/billing/tiers": [
+    "app/api/repo-pairs/switch-active/route.ts"
   ]
 }
