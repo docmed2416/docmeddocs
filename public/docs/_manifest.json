@@ -230,6 +230,11 @@
     "docKey": "lib__billing__subscription.ts"
   },
   {
+    "filePath": "lib/billing/tiers.ts",
+    "title": "Billing Tier Configuration",
+    "docKey": "lib__billing__tiers.ts"
+  },
+  {
     "filePath": "lib/commits.ts",
     "title": "Commit Log Management",
     "docKey": "lib__commits.ts"
