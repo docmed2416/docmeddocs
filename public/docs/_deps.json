@@ -125,5 +125,15 @@
     "lib/commits",
     "lib/stats",
     "lucide-react"
+  ],
+  "app/dashboard/settings/page.tsx": [
+    "@clerk/nextjs",
+    "components/ui/avatar",
+    "app/api/user/delete",
+    "app/api/repo-pairs",
+    "app/api/repo-pairs/switch-active",
+    "app/api/billing/usage",
+    "app/api/billing/portal",
+    "app/api/billing/checkout"
   ]
 }
