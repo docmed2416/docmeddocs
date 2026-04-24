@@ -6,5 +6,8 @@
     "lib/billing/stripe.ts",
     "lib/billing/tiers.ts",
     "lib/billing/subscription.ts"
+  ],
+  "app/api/billing/usage/route.ts": [
+    "lib/billing/usage.ts"
   ]
 }
