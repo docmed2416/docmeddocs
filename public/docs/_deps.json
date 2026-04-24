@@ -22,5 +22,6 @@
   "app/api/github/clear-slot/route.ts": [
     "@clerk/nextjs/server",
     "lib/repo-pairs"
-  ]
+  ],
+  "app/api/github/connect/route.ts": []
 }
