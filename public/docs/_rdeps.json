@@ -1,0 +1,5 @@
+{
+  "@/lib/firebase-admin": [
+    "app/api/billing/contact/route.ts"
+  ]
+}
