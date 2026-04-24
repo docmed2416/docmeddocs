@@ -205,5 +205,8 @@
   "doc-repo-template/src/TabBar.tsx": [
     "./types"
   ],
-  "doc-repo-template/src/types.ts": []
+  "doc-repo-template/src/types.ts": [],
+  "doc-repo-template/src/main.tsx": [
+    "./App.tsx"
+  ]
 }
