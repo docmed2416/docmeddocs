@@ -1,0 +1,19 @@
+{
+  "filePath": "components/ui/avatar.tsx",
+  "title": "Avatar Component",
+  "content": "Provides a basic, accessible Avatar component for displaying user or entity images and fallbacks. It's built using Radix UI's Avatar primitive.\n\n## Key Exports\n\n*   **`Avatar`**: The root component for the avatar. Accepts `className` and any props supported by `AvatarPrimitive.Root`.\n    *   **Props**: Inherits props from `AvatarPrimitive.Root`.\n*   **`AvatarImage`**: Displays the user's avatar image. Accepts `className` and any props supported by `AvatarPrimitive.Image`.\n    *   **Props**: Inherits props from `AvatarPrimitive.Image`.\n*   **`AvatarFallback`**: Displays a fallback character or icon when the image cannot be loaded. Accepts `className` and any props supported by `AvatarPrimitive.Fallback`.\n    *   **Props**: Inherits props from `AvatarPrimitive.Fallback`.\n\n## Usage\n\n```tsx\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nfunction UserProfile() {\n  return (\n    <Avatar>\n      <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n      <AvatarFallback>CN</AvatarFallback>\n    </Avatar>\n  );\n}\n\nexport default UserProfile;\n```",
+  "dependencies": [
+    "lib/utils.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:25:58.064Z",
+      "title": "Avatar Component",
+      "content": "Provides a basic, accessible Avatar component for displaying user or entity images and fallbacks. It's built using Radix UI's Avatar primitive.\n\n## Key Exports\n\n*   **`Avatar`**: The root component for the avatar. Accepts `className` and any props supported by `AvatarPrimitive.Root`.\n    *   **Props**: Inherits props from `AvatarPrimitive.Root`.\n*   **`AvatarImage`**: Displays the user's avatar image. Accepts `className` and any props supported by `AvatarPrimitive.Image`.\n    *   **Props**: Inherits props from `AvatarPrimitive.Image`.\n*   **`AvatarFallback`**: Displays a fallback character or icon when the image cannot be loaded. Accepts `className` and any props supported by `AvatarPrimitive.Fallback`.\n    *   **Props**: Inherits props from `AvatarPrimitive.Fallback`.\n\n## Usage\n\n```tsx\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nfunction UserProfile() {\n  return (\n    <Avatar>\n      <AvatarImage src=\"https://github.com/shadcn.png\" alt=\"@shadcn\" />\n      <AvatarFallback>CN</AvatarFallback>\n    </Avatar>\n  );\n}\n\nexport default UserProfile;\n```",
+      "dependencies": [
+        "lib/utils.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}

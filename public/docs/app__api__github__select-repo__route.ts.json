@@ -1,0 +1,19 @@
+{
+  "filePath": "app/api/github/select-repo/route.ts",
+  "title": "GitHub Repository Selection API Route",
+  "content": "This API route handles the selection and management of GitHub repositories for a given user and `pairId`. It allows users to designate a 'target' repository and a 'doc' repository. For 'target' repositories, it also manages the creation and deletion of GitHub webhooks to listen for `push` events.\n\n## Key Exports/Functions\n\n*   **`POST(request: NextRequest)`**: The main handler for `POST` requests to this route.\n    *   Authenticates the user using Clerk.\n    *   Parses the request body for `pairId`, `type` ('target' or 'doc'), and `repoFullName`.\n    *   Validates the request parameters.\n    *   Calls `setRepoSelection` to update the repository selection in the database.\n    *   If the `type` is 'target', it attempts to create a GitHub webhook on the selected repository:\n        *   Resolves an authentication token.\n        *   Deletes any existing webhook on the old target repository if the `repoFullName` has changed.\n        *   Generates a webhook secret.\n        *   Constructs the webhook URL using the `userId` and `pairId`.\n        *   Sends a `POST` request to the GitHub API to create the webhook.\n        *   If the webhook creation is successful, it saves the webhook ID and secret using `saveWebhookInfo`.\n\n## Dependencies\n\n*   `@clerk/nextjs/server`\n*   `@/lib/repo-pairs`",
+  "dependencies": [
+    "lib/repo-pairs.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:23:11.049Z",
+      "title": "GitHub Repository Selection API Route",
+      "content": "This API route handles the selection and management of GitHub repositories for a given user and `pairId`. It allows users to designate a 'target' repository and a 'doc' repository. For 'target' repositories, it also manages the creation and deletion of GitHub webhooks to listen for `push` events.\n\n## Key Exports/Functions\n\n*   **`POST(request: NextRequest)`**: The main handler for `POST` requests to this route.\n    *   Authenticates the user using Clerk.\n    *   Parses the request body for `pairId`, `type` ('target' or 'doc'), and `repoFullName`.\n    *   Validates the request parameters.\n    *   Calls `setRepoSelection` to update the repository selection in the database.\n    *   If the `type` is 'target', it attempts to create a GitHub webhook on the selected repository:\n        *   Resolves an authentication token.\n        *   Deletes any existing webhook on the old target repository if the `repoFullName` has changed.\n        *   Generates a webhook secret.\n        *   Constructs the webhook URL using the `userId` and `pairId`.\n        *   Sends a `POST` request to the GitHub API to create the webhook.\n        *   If the webhook creation is successful, it saves the webhook ID and secret using `saveWebhookInfo`.\n\n## Dependencies\n\n*   `@clerk/nextjs/server`\n*   `@/lib/repo-pairs`",
+      "dependencies": [
+        "lib/repo-pairs.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}

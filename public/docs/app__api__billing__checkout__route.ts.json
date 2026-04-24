@@ -1,0 +1,23 @@
+{
+  "filePath": "app/api/billing/checkout/route.ts",
+  "title": "Checkout API Route",
+  "content": "This API route handles the creation of Stripe checkout sessions for subscription purchases.\n\n**Purpose:**\n\n*   Initiates the Stripe checkout process for users to subscribe to different tiers (basic, pro, enterprise) with monthly or yearly billing cycles.\n*   Creates or retrieves a Stripe customer associated with the logged-in user.\n*   Generates a Stripe checkout session URL and redirects the user to Stripe's payment page.\n\n**Key Logic:**\n\n*   **Authentication:** Ensures the user is authenticated via Clerk.\n*   **Input Validation:** Uses Zod to validate the incoming request body for `tierId` and `billingCycle`.\n*   **Stripe Integration:**\n    *   Retrieves Stripe API instance.\n    *   Creates a Stripe customer if one doesn't exist for the user.\n    *   Creates a Stripe checkout session with `mode: 'subscription'`.\n    *   Configures `line_items`, `client_reference_id`, `metadata`, `success_url`, and `cancel_url` for the checkout session.\n*   **Subscription Management:** Interacts with `upsertSubscription` to link Stripe customer IDs with user IDs.\n\n**Usage Example:**\n\nA `POST` request to this endpoint with a JSON body like the following will initiate the checkout process:\n\n```json\n{\n  \"tierId\": \"pro\",\n  \"billingCycle\": \"monthly\"\n}\n```\n\nUpon successful creation, the API will return a JSON response containing the checkout session URL:\n\n```json\n{\n  \"url\": \"https://checkout.stripe.com/pay/...\"\n}\n```\n",
+  "dependencies": [
+    "lib/billing/stripe.ts",
+    "lib/billing/tiers.ts",
+    "lib/billing/subscription.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:19:17.828Z",
+      "title": "Checkout API Route",
+      "content": "This API route handles the creation of Stripe checkout sessions for subscription purchases.\n\n**Purpose:**\n\n*   Initiates the Stripe checkout process for users to subscribe to different tiers (basic, pro, enterprise) with monthly or yearly billing cycles.\n*   Creates or retrieves a Stripe customer associated with the logged-in user.\n*   Generates a Stripe checkout session URL and redirects the user to Stripe's payment page.\n\n**Key Logic:**\n\n*   **Authentication:** Ensures the user is authenticated via Clerk.\n*   **Input Validation:** Uses Zod to validate the incoming request body for `tierId` and `billingCycle`.\n*   **Stripe Integration:**\n    *   Retrieves Stripe API instance.\n    *   Creates a Stripe customer if one doesn't exist for the user.\n    *   Creates a Stripe checkout session with `mode: 'subscription'`.\n    *   Configures `line_items`, `client_reference_id`, `metadata`, `success_url`, and `cancel_url` for the checkout session.\n*   **Subscription Management:** Interacts with `upsertSubscription` to link Stripe customer IDs with user IDs.\n\n**Usage Example:**\n\nA `POST` request to this endpoint with a JSON body like the following will initiate the checkout process:\n\n```json\n{\n  \"tierId\": \"pro\",\n  \"billingCycle\": \"monthly\"\n}\n```\n\nUpon successful creation, the API will return a JSON response containing the checkout session URL:\n\n```json\n{\n  \"url\": \"https://checkout.stripe.com/pay/...\"\n}\n```\n",
+      "dependencies": [
+        "lib/billing/stripe.ts",
+        "lib/billing/tiers.ts",
+        "lib/billing/subscription.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}

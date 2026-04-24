@@ -1,0 +1,15 @@
+{
+  "filePath": "lib/firebase-admin.ts",
+  "title": "Firebase Admin Initialization",
+  "content": "This module provides utilities for initializing and accessing the Firebase Admin SDK within the DocMed application. It ensures that the Firebase Admin SDK is initialized only once and provides a singleton instance of the Firestore database.\n\n### Purpose\n\n- **Centralized Firebase Initialization:** Manages the initialization of the Firebase Admin SDK, preventing redundant setup.\n- **Environment Variable Configuration:** Reads Firebase project credentials from environment variables (`FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY`).\n- **Singleton Firestore Instance:** Exposes a single, shared instance of the Firestore database client.\n\n### Key Exports\n\n- `getAdminDb()`: Returns a singleton instance of the Firestore `Firestore` client. This function will initialize the Firebase Admin SDK if it hasn't been already.\n\n### Usage\n\n```typescript\nimport { getAdminDb } from \"./firebase-admin\";\n\nasync function getUsers() {\n  const db = getAdminDb();\n  const usersRef = db.collection(\"users\");\n  const snapshot = await usersRef.get();\n  snapshot.forEach(doc => {\n    console.log(doc.id, \"=>\", doc.data());\n  });\n}\n```",
+  "dependencies": [],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:28:27.648Z",
+      "title": "Firebase Admin Initialization",
+      "content": "This module provides utilities for initializing and accessing the Firebase Admin SDK within the DocMed application. It ensures that the Firebase Admin SDK is initialized only once and provides a singleton instance of the Firestore database.\n\n### Purpose\n\n- **Centralized Firebase Initialization:** Manages the initialization of the Firebase Admin SDK, preventing redundant setup.\n- **Environment Variable Configuration:** Reads Firebase project credentials from environment variables (`FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY`).\n- **Singleton Firestore Instance:** Exposes a single, shared instance of the Firestore database client.\n\n### Key Exports\n\n- `getAdminDb()`: Returns a singleton instance of the Firestore `Firestore` client. This function will initialize the Firebase Admin SDK if it hasn't been already.\n\n### Usage\n\n```typescript\nimport { getAdminDb } from \"./firebase-admin\";\n\nasync function getUsers() {\n  const db = getAdminDb();\n  const usersRef = db.collection(\"users\");\n  const snapshot = await usersRef.get();\n  snapshot.forEach(doc => {\n    console.log(doc.id, \"=>\", doc.data());\n  });\n}\n```",
+      "dependencies": [],
+      "commitId": null
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "filePath": "app/api/billing/usage/route.ts",
+  "title": "Billing Usage API Route",
+  "content": "This file defines the API endpoint for retrieving billing usage data.\n\n## GET /\n\nHandles GET requests to `/api/billing/usage` to fetch the current user's billing usage snapshot.\n\n### Authentication\n\nRequires user authentication via Clerk. If the user is not authenticated, it returns a `401 Unauthorized` response.\n\n### Functionality\n\n1.  Authenticates the user using Clerk's `auth()` function.\n2.  Retrieves the `userId` from the authenticated session.\n3.  Calls `getUsageSnapshot(userId)` to fetch the usage data.\n4.  Returns the usage snapshot as JSON.\n5.  Handles potential errors during the process, returning a `500 Internal Server Error` with an error message.\n\n### Usage Example\n\n```bash\ncurl http://localhost:3000/api/billing/usage\n```\n\nThis would return a JSON object representing the user's billing usage, or an error if unauthenticated or if an internal error occurs.",
+  "dependencies": [
+    "lib/billing/usage.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:19:23.706Z",
+      "title": "Billing Usage API Route",
+      "content": "This file defines the API endpoint for retrieving billing usage data.\n\n## GET /\n\nHandles GET requests to `/api/billing/usage` to fetch the current user's billing usage snapshot.\n\n### Authentication\n\nRequires user authentication via Clerk. If the user is not authenticated, it returns a `401 Unauthorized` response.\n\n### Functionality\n\n1.  Authenticates the user using Clerk's `auth()` function.\n2.  Retrieves the `userId` from the authenticated session.\n3.  Calls `getUsageSnapshot(userId)` to fetch the usage data.\n4.  Returns the usage snapshot as JSON.\n5.  Handles potential errors during the process, returning a `500 Internal Server Error` with an error message.\n\n### Usage Example\n\n```bash\ncurl http://localhost:3000/api/billing/usage\n```\n\nThis would return a JSON object representing the user's billing usage, or an error if unauthenticated or if an internal error occurs.",
+      "dependencies": [
+        "lib/billing/usage.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}

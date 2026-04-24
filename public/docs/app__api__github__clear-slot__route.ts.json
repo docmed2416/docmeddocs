@@ -1,0 +1,21 @@
+{
+  "filePath": "app/api/github/clear-slot/route.ts",
+  "title": "Clear Slot API Route",
+  "content": "This API route handler is responsible for clearing a repository slot connection, specifically for GitHub repositories. It allows users to disconnect either the \"target\" repository or the \"doc\" repository associated with a pair. Crucially, this function clears the connection in the backend but does **not** uninstall the GitHub App itself. For full uninstallation, the `/api/github/disconnect` endpoint should be used.\n\n**Purpose:**\n- Remove a GitHub repository connection from a pair.\n- Clear the webhook associated with the target repository (if applicable).\n\n**Key Exports/Functions:**\n- `POST(request: NextRequest)`: The main handler for POST requests to this endpoint.\n\n**Request Body:**\n- `pairId`: The unique identifier for the repository pair.\n- `type`: Specifies which repository type to clear. Must be either `\"target\"` or `\"doc\"`.\n\n**Logic:**\n1. Authenticates the user using Clerk.\n2. Parses the request body to get `pairId` and `type`.\n3. Validates the input parameters.\n4. Retrieves the relevant repository information using `getTargetRepoFull` or `getDocRepoFull`.\n5. If the `type` is `\"target\"` and a webhook exists, it attempts to delete the webhook from GitHub using the resolved token.\n6. Calls `clearRepoConnection` to remove the repository connection from the database.\n\n**Usage Example:**\nSending a POST request to `/api/github/clear-slot` with the following JSON body would clear the \"target\" repository connection for a pair with ID `pair-123`:\n\n```json\n{\n  \"pairId\": \"pair-123\",\n  \"type\": \"target\"\n}\n```\n\nAnd to clear the \"doc\" repository:\n\n```json\n{\n  \"pairId\": \"pair-123\",\n  \"type\": \"doc\"\n}\n```",
+  "dependencies": [
+    "@clerk/nextjs/server",
+    "lib/repo-pairs"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:19:43.014Z",
+      "title": "Clear Slot API Route",
+      "content": "This API route handler is responsible for clearing a repository slot connection, specifically for GitHub repositories. It allows users to disconnect either the \"target\" repository or the \"doc\" repository associated with a pair. Crucially, this function clears the connection in the backend but does **not** uninstall the GitHub App itself. For full uninstallation, the `/api/github/disconnect` endpoint should be used.\n\n**Purpose:**\n- Remove a GitHub repository connection from a pair.\n- Clear the webhook associated with the target repository (if applicable).\n\n**Key Exports/Functions:**\n- `POST(request: NextRequest)`: The main handler for POST requests to this endpoint.\n\n**Request Body:**\n- `pairId`: The unique identifier for the repository pair.\n- `type`: Specifies which repository type to clear. Must be either `\"target\"` or `\"doc\"`.\n\n**Logic:**\n1. Authenticates the user using Clerk.\n2. Parses the request body to get `pairId` and `type`.\n3. Validates the input parameters.\n4. Retrieves the relevant repository information using `getTargetRepoFull` or `getDocRepoFull`.\n5. If the `type` is `\"target\"` and a webhook exists, it attempts to delete the webhook from GitHub using the resolved token.\n6. Calls `clearRepoConnection` to remove the repository connection from the database.\n\n**Usage Example:**\nSending a POST request to `/api/github/clear-slot` with the following JSON body would clear the \"target\" repository connection for a pair with ID `pair-123`:\n\n```json\n{\n  \"pairId\": \"pair-123\",\n  \"type\": \"target\"\n}\n```\n\nAnd to clear the \"doc\" repository:\n\n```json\n{\n  \"pairId\": \"pair-123\",\n  \"type\": \"doc\"\n}\n```",
+      "dependencies": [
+        "@clerk/nextjs/server",
+        "lib/repo-pairs"
+      ],
+      "commitId": null
+    }
+  ]
+}

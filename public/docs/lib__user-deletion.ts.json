@@ -1,0 +1,25 @@
+{
+  "filePath": "lib/user-deletion.ts",
+  "title": "User Deletion Utilities",
+  "content": "This module provides utility functions for the complete deletion of a user from the DocMed system.\n\nIt handles the removal of associated resources such as GitHub webhooks, Stripe subscriptions, and Firestore data.\n\n**Key Exports:**\n\n*   `deleteUserCompletely(userId: string)`: The main function to initiate the complete deletion process for a given user ID.\n\n**Internal Functions:**\n\n*   `deleteGithubWebhooks(userId: string)`: Removes any GitHub webhooks associated with the user's repository connections.\n*   `cancelStripeSubscription(userId: string)`: Cancels the Stripe subscription for the user if one exists.\n*   `deleteFirestoreData(userId: string)`: Recursively deletes all Firestore data belonging to the specified user.\n\n**Usage Example:**\n\n```typescript\nimport { deleteUserCompletely } from './lib/user-deletion';\n\nasync function handleUserAccountDeletion(userIdToDelete: string) {\n  try {\n    await deleteUserCompletely(userIdToDelete);\n    console.log(`User ${userIdToDelete} deleted successfully.`);\n  } catch (error) {\n    console.error(`Failed to delete user ${userIdToDelete}:`, error);\n  }\n}\n\nhandleUserAccountDeletion('some-user-id-123');\n```",
+  "dependencies": [
+    "./firebase-admin",
+    "./repo-pairs",
+    "./billing/subscription",
+    "./billing/stripe"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:29:02.566Z",
+      "title": "User Deletion Utilities",
+      "content": "This module provides utility functions for the complete deletion of a user from the DocMed system.\n\nIt handles the removal of associated resources such as GitHub webhooks, Stripe subscriptions, and Firestore data.\n\n**Key Exports:**\n\n*   `deleteUserCompletely(userId: string)`: The main function to initiate the complete deletion process for a given user ID.\n\n**Internal Functions:**\n\n*   `deleteGithubWebhooks(userId: string)`: Removes any GitHub webhooks associated with the user's repository connections.\n*   `cancelStripeSubscription(userId: string)`: Cancels the Stripe subscription for the user if one exists.\n*   `deleteFirestoreData(userId: string)`: Recursively deletes all Firestore data belonging to the specified user.\n\n**Usage Example:**\n\n```typescript\nimport { deleteUserCompletely } from './lib/user-deletion';\n\nasync function handleUserAccountDeletion(userIdToDelete: string) {\n  try {\n    await deleteUserCompletely(userIdToDelete);\n    console.log(`User ${userIdToDelete} deleted successfully.`);\n  } catch (error) {\n    console.error(`Failed to delete user ${userIdToDelete}:`, error);\n  }\n}\n\nhandleUserAccountDeletion('some-user-id-123');\n```",
+      "dependencies": [
+        "./firebase-admin",
+        "./repo-pairs",
+        "./billing/subscription",
+        "./billing/stripe"
+      ],
+      "commitId": null
+    }
+  ]
+}

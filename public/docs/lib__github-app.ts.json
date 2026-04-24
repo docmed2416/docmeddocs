@@ -1,0 +1,15 @@
+{
+  "filePath": "lib/github-app.ts",
+  "title": "GitHub App Authentication and API Interaction",
+  "content": "This module provides utilities for interacting with the GitHub App API, primarily for authentication and managing installations.\n\n## Key Exports\n\n*   **`getInstallationToken(installationId: number)`**: Retrieves an OAuth token for a specific GitHub App installation.\n*   **`getInstallationLogin(installationId: number)`**: Fetches the login name (username or organization name) associated with a GitHub App installation.\n*   **`deleteInstallation(installationId: number)`**: Deletes a GitHub App installation. **Use with caution.**\n\n## Usage Example\n\n```typescript\nimport { getInstallationToken, getInstallationLogin } from './lib/github-app';\n\nasync function example() {\n  const installationId = 12345; // Replace with a valid installation ID\n\n  try {\n    const token = await getInstallationToken(installationId);\n    console.log('Installation Token:', token);\n\n    const login = await getInstallationLogin(installationId);\n    console.log('Installation Login:', login);\n\n    // To delete an installation (use with extreme caution):\n    // await deleteInstallation(installationId);\n    // console.log('Installation deleted.');\n\n  } catch (error) {\n    console.error('Error interacting with GitHub App:', error);\n  }\n}\n\nexample();\n```",
+  "dependencies": [],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:28:34.051Z",
+      "title": "GitHub App Authentication and API Interaction",
+      "content": "This module provides utilities for interacting with the GitHub App API, primarily for authentication and managing installations.\n\n## Key Exports\n\n*   **`getInstallationToken(installationId: number)`**: Retrieves an OAuth token for a specific GitHub App installation.\n*   **`getInstallationLogin(installationId: number)`**: Fetches the login name (username or organization name) associated with a GitHub App installation.\n*   **`deleteInstallation(installationId: number)`**: Deletes a GitHub App installation. **Use with caution.**\n\n## Usage Example\n\n```typescript\nimport { getInstallationToken, getInstallationLogin } from './lib/github-app';\n\nasync function example() {\n  const installationId = 12345; // Replace with a valid installation ID\n\n  try {\n    const token = await getInstallationToken(installationId);\n    console.log('Installation Token:', token);\n\n    const login = await getInstallationLogin(installationId);\n    console.log('Installation Login:', login);\n\n    // To delete an installation (use with extreme caution):\n    // await deleteInstallation(installationId);\n    // console.log('Installation deleted.');\n\n  } catch (error) {\n    console.error('Error interacting with GitHub App:', error);\n  }\n}\n\nexample();\n```",
+      "dependencies": [],
+      "commitId": null
+    }
+  ]
+}

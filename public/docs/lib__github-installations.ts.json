@@ -1,0 +1,19 @@
+{
+  "filePath": "lib/github-installations.ts",
+  "title": "DocMed GitHub Installations Management",
+  "content": "This module provides functionality for managing GitHub installation records associated with users in the DocMed application.\n\nIt interacts with a Firebase Admin database to store and retrieve these records.\n\n**Key Exports:**\n\n*   **`InstallationRecord`**: A TypeScript type defining the structure of a GitHub installation record, including `installationId` and `githubLogin`.\n*   **`saveInstallation(userId: string, record: InstallationRecord): Promise<void>`**: Saves a GitHub installation record for a given user. The `installationId` is used as the document ID within the user's `githubInstallations` subcollection.\n*   **`listInstallations(userId: string): Promise<InstallationRecord[]>`**: Retrieves all GitHub installation records for a specified user.\n*   **`deleteInstallationRecord(userId: string, installationId: number): Promise<void>`**: Deletes a specific GitHub installation record for a user based on their `installationId`.\n\n**Usage Example:**\n\n```typescript\nimport { saveInstallation, listInstallations, deleteInstallationRecord, InstallationRecord } from './lib/github-installations';\n\nasync function manageUserInstallations(userId: string) {\n  const newInstallation: InstallationRecord = {\n    installationId: 12345,\n    githubLogin: \"example-user\",\n  };\n\n  // Save a new installation\n  await saveInstallation(userId, newInstallation);\n  console.log('Installation saved.');\n\n  // List all installations for the user\n  const installations = await listInstallations(userId);\n  console.log('User installations:', installations);\n\n  // Delete an installation\n  await deleteInstallationRecord(userId, 12345);\n  console.log('Installation deleted.');\n}\n```",
+  "dependencies": [
+    "./firebase-admin"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:28:47.449Z",
+      "title": "DocMed GitHub Installations Management",
+      "content": "This module provides functionality for managing GitHub installation records associated with users in the DocMed application.\n\nIt interacts with a Firebase Admin database to store and retrieve these records.\n\n**Key Exports:**\n\n*   **`InstallationRecord`**: A TypeScript type defining the structure of a GitHub installation record, including `installationId` and `githubLogin`.\n*   **`saveInstallation(userId: string, record: InstallationRecord): Promise<void>`**: Saves a GitHub installation record for a given user. The `installationId` is used as the document ID within the user's `githubInstallations` subcollection.\n*   **`listInstallations(userId: string): Promise<InstallationRecord[]>`**: Retrieves all GitHub installation records for a specified user.\n*   **`deleteInstallationRecord(userId: string, installationId: number): Promise<void>`**: Deletes a specific GitHub installation record for a user based on their `installationId`.\n\n**Usage Example:**\n\n```typescript\nimport { saveInstallation, listInstallations, deleteInstallationRecord, InstallationRecord } from './lib/github-installations';\n\nasync function manageUserInstallations(userId: string) {\n  const newInstallation: InstallationRecord = {\n    installationId: 12345,\n    githubLogin: \"example-user\",\n  };\n\n  // Save a new installation\n  await saveInstallation(userId, newInstallation);\n  console.log('Installation saved.');\n\n  // List all installations for the user\n  const installations = await listInstallations(userId);\n  console.log('User installations:', installations);\n\n  // Delete an installation\n  await deleteInstallationRecord(userId, 12345);\n  console.log('Installation deleted.');\n}\n```",
+      "dependencies": [
+        "./firebase-admin"
+      ],
+      "commitId": null
+    }
+  ]
+}

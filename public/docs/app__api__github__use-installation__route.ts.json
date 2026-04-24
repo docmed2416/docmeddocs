@@ -1,0 +1,21 @@
+{
+  "filePath": "app/api/github/use-installation/route.ts",
+  "title": "GitHub Installation API Route",
+  "content": "This API route (`POST /app/api/github/use-installation`) allows authenticated users to associate a GitHub installation with a specific repository pair and type (target or documentation).\n\n**Purpose:**\n\n- To link a user's GitHub installation to a specific repository pair within the DocMed application.\n- To store the `installationId` and `githubLogin` for future use when interacting with the GitHub API on behalf of the user for that specific repository pair.\n\n**Key Logic:**\n\n1.  **Authentication:** Verifies that the user is authenticated using Clerk.\n2.  **Request Validation:** Checks for the presence and validity of `pairId`, `type`, and `installationId` in the request body.\n3.  **Installation Verification:** Crucially, it lists all installations associated with the authenticated `userId` and verifies that the provided `installationId` actually belongs to the user. This prevents unauthorized access or association of installations.\n4.  **Connection Setup:** If the installation is verified, it calls `setRepoConnection` to store the connection details, including `installationId` and `githubLogin`, marking the repository connection as `connected: true`.\n\n**Dependencies:**\n\n- `@clerk/nextjs/server`: For authentication.\n- `@ /lib/repo-pairs`: For managing repository connections.\n- `@ /lib/github-installations`: For listing user's GitHub installations.\n\n**Usage Example:**\n\nAn authenticated user would send a POST request to `/app/api/github/use-installation` with a JSON body like this:\n\n```json\n{\n  \"pairId\": \"user-repo-pair-123\",\n  \"type\": \"target\",\n  \"installationId\": 456789,\n  \"githubLogin\": \"octocat\"\n}\n```\n\nThis would associate the GitHub installation with ID `456789` and login `octocat` with the `target` repository of the `user-repo-pair-123`.\n",
+  "dependencies": [
+    "@/lib/repo-pairs",
+    "@/lib/github-installations"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:23:23.529Z",
+      "title": "GitHub Installation API Route",
+      "content": "This API route (`POST /app/api/github/use-installation`) allows authenticated users to associate a GitHub installation with a specific repository pair and type (target or documentation).\n\n**Purpose:**\n\n- To link a user's GitHub installation to a specific repository pair within the DocMed application.\n- To store the `installationId` and `githubLogin` for future use when interacting with the GitHub API on behalf of the user for that specific repository pair.\n\n**Key Logic:**\n\n1.  **Authentication:** Verifies that the user is authenticated using Clerk.\n2.  **Request Validation:** Checks for the presence and validity of `pairId`, `type`, and `installationId` in the request body.\n3.  **Installation Verification:** Crucially, it lists all installations associated with the authenticated `userId` and verifies that the provided `installationId` actually belongs to the user. This prevents unauthorized access or association of installations.\n4.  **Connection Setup:** If the installation is verified, it calls `setRepoConnection` to store the connection details, including `installationId` and `githubLogin`, marking the repository connection as `connected: true`.\n\n**Dependencies:**\n\n- `@clerk/nextjs/server`: For authentication.\n- `@ /lib/repo-pairs`: For managing repository connections.\n- `@ /lib/github-installations`: For listing user's GitHub installations.\n\n**Usage Example:**\n\nAn authenticated user would send a POST request to `/app/api/github/use-installation` with a JSON body like this:\n\n```json\n{\n  \"pairId\": \"user-repo-pair-123\",\n  \"type\": \"target\",\n  \"installationId\": 456789,\n  \"githubLogin\": \"octocat\"\n}\n```\n\nThis would associate the GitHub installation with ID `456789` and login `octocat` with the `target` repository of the `user-repo-pair-123`.\n",
+      "dependencies": [
+        "@/lib/repo-pairs",
+        "@/lib/github-installations"
+      ],
+      "commitId": null
+    }
+  ]
+}

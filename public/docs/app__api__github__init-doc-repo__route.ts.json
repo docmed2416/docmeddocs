@@ -1,0 +1,29 @@
+{
+  "filePath": "app/api/github/init-doc-repo/route.ts",
+  "title": "Initialize Documentation Repository Route Handler",
+  "content": "This file defines the API route handler for initializing a documentation repository within the DocMed application. It handles the POST request to set up a new documentation repository, integrating with GitHub and managing billing and asynchronous tasks.\n\n**Purpose:**\n\n- Authenticates the user via Clerk.\n- Checks monthly repository initialization limits based on user billing information.\n- Retrieves connected documentation and target repositories.\n- Resolves necessary GitHub authentication tokens.\n- Cleans up the existing documentation repository (closes PRs, deletes branches).\n- Reads and processes template files from a local `doc-repo-template` directory.\n- Creates a new Git tree and commit in the documentation repository.\n- Updates the default branch of the documentation repository to point to the new commit.\n- Increments the user's monthly initialization count.\n- If a target repository is connected, it triggers asynchronous jobs:\n    - Fetches all files from the target repository.\n    - Filters files based on `shouldSkipFile` logic.\n    - Creates a new branch in the documentation repository for the documentation files.\n    - Publishes file upsert jobs to QStash for processing.\n\n**Key Functions and Logic:**\n\n- `readTemplateFiles(dir: string, base: string): TreeEntry[]`: Recursively reads files from a given directory, preparing them as `TreeEntry` objects for GitHub API interaction.\n- `getAllTargetRepoFiles(token: string, repoFullName: string): Promise<string[]>`: Fetches all file paths from a given GitHub repository.\n- `cleanupDocRepo(token: string, docRepoFullName: string): Promise<void>`: Cleans up an existing documentation repository by closing open PRs and deleting non-default branches.\n- `bootstrapEmptyRepo(token: string, owner: string, repo: string): Promise<void>`: Creates an initial commit in an empty GitHub repository.\n- `createDocBranch(token: string, docRepoFullName: string, branchName: string): Promise<void>`: Creates a new Git branch in a specified repository.\n- `POST(request: NextRequest)`: The main route handler for initializing the documentation repository.",
+  "dependencies": [
+    "lib/repo-pairs.ts",
+    "lib/qstash.ts",
+    "lib/gemini.ts",
+    "lib/billing/usage.ts",
+    "lib/billing/subscription.ts",
+    "app/api/github/init-doc-repo/route.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:22:32.661Z",
+      "title": "Initialize Documentation Repository Route Handler",
+      "content": "This file defines the API route handler for initializing a documentation repository within the DocMed application. It handles the POST request to set up a new documentation repository, integrating with GitHub and managing billing and asynchronous tasks.\n\n**Purpose:**\n\n- Authenticates the user via Clerk.\n- Checks monthly repository initialization limits based on user billing information.\n- Retrieves connected documentation and target repositories.\n- Resolves necessary GitHub authentication tokens.\n- Cleans up the existing documentation repository (closes PRs, deletes branches).\n- Reads and processes template files from a local `doc-repo-template` directory.\n- Creates a new Git tree and commit in the documentation repository.\n- Updates the default branch of the documentation repository to point to the new commit.\n- Increments the user's monthly initialization count.\n- If a target repository is connected, it triggers asynchronous jobs:\n    - Fetches all files from the target repository.\n    - Filters files based on `shouldSkipFile` logic.\n    - Creates a new branch in the documentation repository for the documentation files.\n    - Publishes file upsert jobs to QStash for processing.\n\n**Key Functions and Logic:**\n\n- `readTemplateFiles(dir: string, base: string): TreeEntry[]`: Recursively reads files from a given directory, preparing them as `TreeEntry` objects for GitHub API interaction.\n- `getAllTargetRepoFiles(token: string, repoFullName: string): Promise<string[]>`: Fetches all file paths from a given GitHub repository.\n- `cleanupDocRepo(token: string, docRepoFullName: string): Promise<void>`: Cleans up an existing documentation repository by closing open PRs and deleting non-default branches.\n- `bootstrapEmptyRepo(token: string, owner: string, repo: string): Promise<void>`: Creates an initial commit in an empty GitHub repository.\n- `createDocBranch(token: string, docRepoFullName: string, branchName: string): Promise<void>`: Creates a new Git branch in a specified repository.\n- `POST(request: NextRequest)`: The main route handler for initializing the documentation repository.",
+      "dependencies": [
+        "lib/repo-pairs.ts",
+        "lib/qstash.ts",
+        "lib/gemini.ts",
+        "lib/billing/usage.ts",
+        "lib/billing/subscription.ts",
+        "app/api/github/init-doc-repo/route.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "filePath": "components/ui/button.tsx",
+  "title": "Button Component",
+  "content": "A flexible and accessible button component for the DocMed UI.\n\nThis component is built using `class-variance-authority` for managing variants and sizes, and `react-slot` for enabling the `asChild` prop.\n\n**Key Exports:**\n\n*   **`Button`**: The main React component for rendering buttons.\n*   **`buttonVariants`**: A utility function from `class-variance-authority` that generates CSS classes based on variant and size props.\n\n**Props:**\n\n*   `variant` (string): Controls the visual style of the button. Options include `default`, `destructive`, `outline`, `secondary`, `ghost`, `link`.\n*   `size` (string): Controls the size of the button. Options include `default`, `sm`, `lg`, `icon`.\n*   `asChild` (boolean, default: `false`): If `true`, the button will render as a `Slot` component from Radix UI, allowing it to be a direct child of another component and inherit its props. This is useful for composing buttons with other elements like icons.\n*   Standard HTML button attributes are also supported (e.g., `onClick`, `disabled`).\n\n**Usage Example:**\n\n```tsx\nimport { Button } from \"@/components/ui/button\";\n\nfunction MyComponent() {\n  return (\n    <>\n      <Button>Default Button</Button>\n      <Button variant=\"destructive\" size=\"lg\">Destructive Large</Button>\n      <Button variant=\"outline\" asChild>\n        <a href=\"#\" className=\"flex items-center gap-2\">\n          <svg className=\"h-4 w-4\" />\n          Link Button\n        </a>\n      </Button>\n    </>\n  );\n}\n```",
+  "dependencies": [
+    "lib/utils.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:26:04.482Z",
+      "title": "Button Component",
+      "content": "A flexible and accessible button component for the DocMed UI.\n\nThis component is built using `class-variance-authority` for managing variants and sizes, and `react-slot` for enabling the `asChild` prop.\n\n**Key Exports:**\n\n*   **`Button`**: The main React component for rendering buttons.\n*   **`buttonVariants`**: A utility function from `class-variance-authority` that generates CSS classes based on variant and size props.\n\n**Props:**\n\n*   `variant` (string): Controls the visual style of the button. Options include `default`, `destructive`, `outline`, `secondary`, `ghost`, `link`.\n*   `size` (string): Controls the size of the button. Options include `default`, `sm`, `lg`, `icon`.\n*   `asChild` (boolean, default: `false`): If `true`, the button will render as a `Slot` component from Radix UI, allowing it to be a direct child of another component and inherit its props. This is useful for composing buttons with other elements like icons.\n*   Standard HTML button attributes are also supported (e.g., `onClick`, `disabled`).\n\n**Usage Example:**\n\n```tsx\nimport { Button } from \"@/components/ui/button\";\n\nfunction MyComponent() {\n  return (\n    <>\n      <Button>Default Button</Button>\n      <Button variant=\"destructive\" size=\"lg\">Destructive Large</Button>\n      <Button variant=\"outline\" asChild>\n        <a href=\"#\" className=\"flex items-center gap-2\">\n          <svg className=\"h-4 w-4\" />\n          Link Button\n        </a>\n      </Button>\n    </>\n  );\n}\n```",
+      "dependencies": [
+        "lib/utils.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}

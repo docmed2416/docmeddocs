@@ -1,0 +1,21 @@
+{
+  "filePath": "app/api/repo-pairs/route.ts",
+  "title": "Repository Pair API Routes",
+  "content": "This file defines the API endpoints for managing repository pairs within the DocMed application.\n\nIt handles listing existing repository pairs and creating new ones, including checks against usage limits.\n\n**Key Exports/Functions:**\n\n*   **GET `/api/repo-pairs`**: Retrieves a list of all repository pairs associated with the authenticated user.\n*   **POST `/api/repo-pairs`**: Creates a new repository pair for the authenticated user.\n    *   Requires a `name` property in the request body for the new pair. If not provided, a default name is generated.\n    *   Performs a usage check to ensure the user has not exceeded their active pair limit.\n    *   Returns the `id` of the newly created repository pair upon success.\n\n**Dependencies:**\n\n*   `@clerk/nextjs/server`: For authentication and user identification.\n*   `@/lib/repo-pairs`: For creating and listing repository pairs.\n*   `@/lib/billing/usage`: For checking and managing user usage limits.\n*   `next/cache`: For cache invalidation after creating a new repository pair.\n\n**Usage Example (POST request):**\n\n```bash\ncurl -X POST \\\n  http://localhost:3000/api/repo-pairs \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n    \"name\": \"My Project Docs\"\n  }'\n```\n\nThis would create a new repository pair named \"My Project Docs\" for the authenticated user, provided they have not reached their pair limit.",
+  "dependencies": [
+    "lib/repo-pairs.ts",
+    "lib/billing/usage.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:23:29.990Z",
+      "title": "Repository Pair API Routes",
+      "content": "This file defines the API endpoints for managing repository pairs within the DocMed application.\n\nIt handles listing existing repository pairs and creating new ones, including checks against usage limits.\n\n**Key Exports/Functions:**\n\n*   **GET `/api/repo-pairs`**: Retrieves a list of all repository pairs associated with the authenticated user.\n*   **POST `/api/repo-pairs`**: Creates a new repository pair for the authenticated user.\n    *   Requires a `name` property in the request body for the new pair. If not provided, a default name is generated.\n    *   Performs a usage check to ensure the user has not exceeded their active pair limit.\n    *   Returns the `id` of the newly created repository pair upon success.\n\n**Dependencies:**\n\n*   `@clerk/nextjs/server`: For authentication and user identification.\n*   `@/lib/repo-pairs`: For creating and listing repository pairs.\n*   `@/lib/billing/usage`: For checking and managing user usage limits.\n*   `next/cache`: For cache invalidation after creating a new repository pair.\n\n**Usage Example (POST request):**\n\n```bash\ncurl -X POST \\\n  http://localhost:3000/api/repo-pairs \\\n  -H 'Content-Type: application/json' \\\n  -d '{\n    \"name\": \"My Project Docs\"\n  }'\n```\n\nThis would create a new repository pair named \"My Project Docs\" for the authenticated user, provided they have not reached their pair limit.",
+      "dependencies": [
+        "lib/repo-pairs.ts",
+        "lib/billing/usage.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}

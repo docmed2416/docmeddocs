@@ -1,0 +1,19 @@
+{
+  "filePath": "app/api/billing/contact/route.ts",
+  "title": "Contact API Route",
+  "content": "This file defines the API endpoint for handling contact form submissions.\n\n**Purpose:**\nHandles POST requests to `/api/billing/contact` to receive and store contact messages.\n\n**Key Logic:**\n- **Input Validation:** Uses Zod schema (`schema`) to validate incoming request body properties (`name`, `email`, `company`, `message`).\n- **Rate Limiting:** Implements a rate-limiting mechanism based on the sender's email address. It checks the `contactRequests` collection in Firestore to count requests within the last hour. If a user has made 3 or more requests in the last hour, a `429 Too Many Requests` error is returned.\n- **Data Storage:** Stores valid contact requests in the `contactRequests` Firestore collection, including client-provided data and server-side timestamps.\n\n**Exports:**\n- `POST`: An asynchronous function that handles POST requests to the `/api/billing/contact` route.\n\n**Dependencies:**\n- `NextRequest`, `NextResponse` from `next/server`\n- `z` from `zod`\n- `FieldValue` from `firebase-admin/firestore`\n- `getAdminDb` from `@/lib/firebase-admin`\n\n**Usage Example:**\n```http\nPOST /api/billing/contact\nContent-Type: application/json\n\n{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"company\": \"Example Corp\",\n  \"message\": \"Hello, I have a question about your billing services.\"\n}\n```",
+  "dependencies": [
+    "@/lib/firebase-admin"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:19:11.035Z",
+      "title": "Contact API Route",
+      "content": "This file defines the API endpoint for handling contact form submissions.\n\n**Purpose:**\nHandles POST requests to `/api/billing/contact` to receive and store contact messages.\n\n**Key Logic:**\n- **Input Validation:** Uses Zod schema (`schema`) to validate incoming request body properties (`name`, `email`, `company`, `message`).\n- **Rate Limiting:** Implements a rate-limiting mechanism based on the sender's email address. It checks the `contactRequests` collection in Firestore to count requests within the last hour. If a user has made 3 or more requests in the last hour, a `429 Too Many Requests` error is returned.\n- **Data Storage:** Stores valid contact requests in the `contactRequests` Firestore collection, including client-provided data and server-side timestamps.\n\n**Exports:**\n- `POST`: An asynchronous function that handles POST requests to the `/api/billing/contact` route.\n\n**Dependencies:**\n- `NextRequest`, `NextResponse` from `next/server`\n- `z` from `zod`\n- `FieldValue` from `firebase-admin/firestore`\n- `getAdminDb` from `@/lib/firebase-admin`\n\n**Usage Example:**\n```http\nPOST /api/billing/contact\nContent-Type: application/json\n\n{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"company\": \"Example Corp\",\n  \"message\": \"Hello, I have a question about your billing services.\"\n}\n```",
+      "dependencies": [
+        "@/lib/firebase-admin"
+      ],
+      "commitId": null
+    }
+  ]
+}

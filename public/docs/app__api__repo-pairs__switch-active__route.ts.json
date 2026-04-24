@@ -1,0 +1,25 @@
+{
+  "filePath": "app/api/repo-pairs/switch-active/route.ts",
+  "title": "Switch Active Repository Pairs API Route",
+  "content": "This API route (`POST /app/api/repo-pairs/switch-active`) allows users to update their active repository pairs, likely for webhook integrations.\n\n**Purpose:**\nTo enable users to select which of their connected repository pairs should have webhooks activated. This feature is subject to subscription tier limits and a cooldown period after the last activation.\n\n**Key Logic:**\n1.  **Authentication:** Verifies the user is authenticated using Clerk.\n2.  **Input Validation:** Ensures `activePairIds` is provided as an array of strings.\n3.  **Subscription and Pair Retrieval:** Fetches the user's subscription details and all their associated repository pairs.\n4.  **Tier Information:** Retrieves the limits and cooldown period associated with the user's current subscription tier.\n5.  **Cooldown Check:** Prevents immediate re-activation if the cooldown period since the last webhook switch has not elapsed.\n6.  **Limit Enforcement:** Checks if the number of requested active pairs exceeds the `activePairLimit` defined by the user's tier.\n7.  **Ownership Verification:** Confirms that all provided `activePairIds` belong to the authenticated user.\n8.  **Activation and Update:** If all checks pass, it updates the active webhooks for the user and records the `lastWebhookSwitchAt` timestamp in the subscription.\n\n**Usage Example:**\nA `POST` request to this endpoint with a JSON body like the following would set two repository pairs (`pair-abc` and `pair-xyz`) as active:\n\n```json\n{\n  \"activePairIds\": [\"pair-abc\", \"pair-xyz\"]\n}\n```\n\n**Response Codes:**\n*   `200 OK`: Successfully updated active pairs.\n*   `401 Unauthorized`: User is not authenticated.\n*   `400 Bad Request`: Invalid `activePairIds` format.\n*   `404 Not Found`: One or more provided `pairIds` do not belong to the user.\n*   `422 Unprocessable Entity`: Exceeds the maximum number of active pairs allowed by the subscription tier.\n*   `429 Too Many Requests`: Cooldown period is active.",
+  "dependencies": [
+    "@clerk/nextjs/server",
+    "lib/billing/subscription",
+    "lib/billing/tiers",
+    "lib/repo-pairs"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:23:36.426Z",
+      "title": "Switch Active Repository Pairs API Route",
+      "content": "This API route (`POST /app/api/repo-pairs/switch-active`) allows users to update their active repository pairs, likely for webhook integrations.\n\n**Purpose:**\nTo enable users to select which of their connected repository pairs should have webhooks activated. This feature is subject to subscription tier limits and a cooldown period after the last activation.\n\n**Key Logic:**\n1.  **Authentication:** Verifies the user is authenticated using Clerk.\n2.  **Input Validation:** Ensures `activePairIds` is provided as an array of strings.\n3.  **Subscription and Pair Retrieval:** Fetches the user's subscription details and all their associated repository pairs.\n4.  **Tier Information:** Retrieves the limits and cooldown period associated with the user's current subscription tier.\n5.  **Cooldown Check:** Prevents immediate re-activation if the cooldown period since the last webhook switch has not elapsed.\n6.  **Limit Enforcement:** Checks if the number of requested active pairs exceeds the `activePairLimit` defined by the user's tier.\n7.  **Ownership Verification:** Confirms that all provided `activePairIds` belong to the authenticated user.\n8.  **Activation and Update:** If all checks pass, it updates the active webhooks for the user and records the `lastWebhookSwitchAt` timestamp in the subscription.\n\n**Usage Example:**\nA `POST` request to this endpoint with a JSON body like the following would set two repository pairs (`pair-abc` and `pair-xyz`) as active:\n\n```json\n{\n  \"activePairIds\": [\"pair-abc\", \"pair-xyz\"]\n}\n```\n\n**Response Codes:**\n*   `200 OK`: Successfully updated active pairs.\n*   `401 Unauthorized`: User is not authenticated.\n*   `400 Bad Request`: Invalid `activePairIds` format.\n*   `404 Not Found`: One or more provided `pairIds` do not belong to the user.\n*   `422 Unprocessable Entity`: Exceeds the maximum number of active pairs allowed by the subscription tier.\n*   `429 Too Many Requests`: Cooldown period is active.",
+      "dependencies": [
+        "@clerk/nextjs/server",
+        "lib/billing/subscription",
+        "lib/billing/tiers",
+        "lib/repo-pairs"
+      ],
+      "commitId": null
+    }
+  ]
+}

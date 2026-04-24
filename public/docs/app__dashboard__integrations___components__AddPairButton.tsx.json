@@ -1,0 +1,21 @@
+{
+  "filePath": "app/dashboard/integrations/_components/AddPairButton.tsx",
+  "title": "AddPairButton Component",
+  "content": "The `AddPairButton` component is a UI element used in the DocMed dashboard to allow users to add new repository pairs. It handles the logic for checking if a user has reached their active pair limit and provides feedback through toasts.\n\n**Key Exports/Functions/Props:**\n\n*   **`AddPairButton` (React Component):**\n    *   **`canAddPair` (boolean):** A prop indicating whether the user is allowed to add a new pair (i.e., not exceeding their active pair limit).\n    *   **`activePairsUsed` (number):** The current number of active repository pairs the user has.\n    *   **`activePairsLimit` (number):** The maximum number of active repository pairs allowed for the user's current plan.\n    *   **`handleAdd` (async function):** Handles the click event. It checks `canAddPair`, displays a toast if the limit is reached, or initiates an API call to create a new pair. It also manages a loading state and refreshes the router on success.\n\n**Usage Example:**\n\n```typescript\n<AddPairButton \n  canAddPair={user.activePairsUsed < user.activePairsLimit} \n  activePairsUsed={user.activePairsUsed} \n  activePairsLimit={user.activePairsLimit} \n/>\n```",
+  "dependencies": [
+    "app/api/repo-pairs/route.ts",
+    "components/ui/toast"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:24:06.113Z",
+      "title": "AddPairButton Component",
+      "content": "The `AddPairButton` component is a UI element used in the DocMed dashboard to allow users to add new repository pairs. It handles the logic for checking if a user has reached their active pair limit and provides feedback through toasts.\n\n**Key Exports/Functions/Props:**\n\n*   **`AddPairButton` (React Component):**\n    *   **`canAddPair` (boolean):** A prop indicating whether the user is allowed to add a new pair (i.e., not exceeding their active pair limit).\n    *   **`activePairsUsed` (number):** The current number of active repository pairs the user has.\n    *   **`activePairsLimit` (number):** The maximum number of active repository pairs allowed for the user's current plan.\n    *   **`handleAdd` (async function):** Handles the click event. It checks `canAddPair`, displays a toast if the limit is reached, or initiates an API call to create a new pair. It also manages a loading state and refreshes the router on success.\n\n**Usage Example:**\n\n```typescript\n<AddPairButton \n  canAddPair={user.activePairsUsed < user.activePairsLimit} \n  activePairsUsed={user.activePairsUsed} \n  activePairsLimit={user.activePairsLimit} \n/>\n```",
+      "dependencies": [
+        "app/api/repo-pairs/route.ts",
+        "components/ui/toast"
+      ],
+      "commitId": null
+    }
+  ]
+}

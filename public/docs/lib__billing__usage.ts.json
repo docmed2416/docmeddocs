@@ -1,0 +1,25 @@
+{
+  "filePath": "lib/billing/usage.ts",
+  "title": "Usage Tracking and Limits",
+  "content": "This module handles the tracking and enforcement of user usage limits for various features within the DocMed application, such as active repository pairs and monthly repository initializations.\n\nIt provides functionalities to retrieve a snapshot of the current user's usage against their subscription tier limits and to assert whether certain actions are permissible based on these limits.\n\n**Key Exports:**\n\n*   **`UsageSnapshot` Interface:** Defines the structure for representing a user's current usage status, including limits, used counts, trial information, and cooldown periods.\n*   **`UsageLimitError` Class:** A custom error class thrown when a user exceeds a specific usage limit.\n*   **`getUsageSnapshot(userId: string): Promise<UsageSnapshot>`:**\n    *   Fetches the user's subscription details, active repository pairs, and rate limit status.\n    *   Calculates the current usage against tier limits.\n    *   Determines if the user is eligible to add more pairs or initialize more repos.\n    *   Returns a comprehensive `UsageSnapshot` object.\n*   **`assertCanAddPair(snapshot: UsageSnapshot): void`:**\n    *   Checks if the provided `UsageSnapshot` indicates that the user can add a new repository pair.\n    *   Throws a `UsageLimitError` of kind 'pair' if the limit is reached.\n*   **`assertCanInitRepo(snapshot: UsageSnapshot): void`:**\n    *   Checks if the provided `UsageSnapshot` indicates that the user can initialize a new repository.\n    *   Throws a `UsageLimitError` of kind 'init' if the limit is reached, including the reset date.\n\n**Usage Example:**\n\n```typescript\nimport { getUsageSnapshot, assertCanAddPair } from '@/lib/billing/usage';\n\nasync function addNewRepoPair(userId: string) {\n  const usageSnapshot = await getUsageSnapshot(userId);\n  assertCanAddPair(usageSnapshot);\n  // Proceed to add the new repository pair...\n}\n```",
+  "dependencies": [
+    "@/lib/repo-pairs",
+    "./subscription",
+    "./tiers",
+    "@/lib/rate-limit"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:28:15.255Z",
+      "title": "Usage Tracking and Limits",
+      "content": "This module handles the tracking and enforcement of user usage limits for various features within the DocMed application, such as active repository pairs and monthly repository initializations.\n\nIt provides functionalities to retrieve a snapshot of the current user's usage against their subscription tier limits and to assert whether certain actions are permissible based on these limits.\n\n**Key Exports:**\n\n*   **`UsageSnapshot` Interface:** Defines the structure for representing a user's current usage status, including limits, used counts, trial information, and cooldown periods.\n*   **`UsageLimitError` Class:** A custom error class thrown when a user exceeds a specific usage limit.\n*   **`getUsageSnapshot(userId: string): Promise<UsageSnapshot>`:**\n    *   Fetches the user's subscription details, active repository pairs, and rate limit status.\n    *   Calculates the current usage against tier limits.\n    *   Determines if the user is eligible to add more pairs or initialize more repos.\n    *   Returns a comprehensive `UsageSnapshot` object.\n*   **`assertCanAddPair(snapshot: UsageSnapshot): void`:**\n    *   Checks if the provided `UsageSnapshot` indicates that the user can add a new repository pair.\n    *   Throws a `UsageLimitError` of kind 'pair' if the limit is reached.\n*   **`assertCanInitRepo(snapshot: UsageSnapshot): void`:**\n    *   Checks if the provided `UsageSnapshot` indicates that the user can initialize a new repository.\n    *   Throws a `UsageLimitError` of kind 'init' if the limit is reached, including the reset date.\n\n**Usage Example:**\n\n```typescript\nimport { getUsageSnapshot, assertCanAddPair } from '@/lib/billing/usage';\n\nasync function addNewRepoPair(userId: string) {\n  const usageSnapshot = await getUsageSnapshot(userId);\n  assertCanAddPair(usageSnapshot);\n  // Proceed to add the new repository pair...\n}\n```",
+      "dependencies": [
+        "@/lib/repo-pairs",
+        "./subscription",
+        "./tiers",
+        "@/lib/rate-limit"
+      ],
+      "commitId": null
+    }
+  ]
+}

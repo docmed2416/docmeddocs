@@ -1,0 +1,281 @@
+{
+  "@/lib/firebase-admin": [
+    "app/api/billing/contact/route.ts"
+  ],
+  "lib/billing/stripe.ts": [
+    "app/api/billing/checkout/route.ts",
+    "app/api/billing/portal/route.ts",
+    "app/api/webhooks/stripe/route.ts",
+    "lib/user-deletion.ts"
+  ],
+  "lib/billing/tiers.ts": [
+    "app/api/billing/checkout/route.ts",
+    "app/api/webhooks/stripe/route.ts",
+    "lib/billing/subscription.ts",
+    "lib/billing/usage.ts"
+  ],
+  "lib/billing/subscription.ts": [
+    "app/api/billing/checkout/route.ts",
+    "app/api/billing/portal/route.ts",
+    "app/api/github/init-doc-repo/route.ts",
+    "app/api/webhooks/stripe/route.ts",
+    "lib/billing/usage.ts",
+    "lib/user-deletion.ts"
+  ],
+  "lib/billing/usage.ts": [
+    "app/api/billing/usage/route.ts",
+    "app/api/github/init-doc-repo/route.ts",
+    "app/api/repo-pairs/route.ts",
+    "app/dashboard/integrations/page.tsx"
+  ],
+  "lib/repo-pairs.ts": [
+    "app/api/github/callback/route.ts",
+    "app/api/github/init-doc-repo/route.ts",
+    "app/api/github/installations/route.ts",
+    "app/api/github/repos/route.ts",
+    "app/api/github/reprocess-commit/route.ts",
+    "app/api/github/uninstall-app/route.ts",
+    "app/api/github/select-repo/route.ts",
+    "app/api/repo-pairs/[pairId]/route.ts",
+    "app/api/repo-pairs/route.ts",
+    "app/api/webhooks/github/[userId]/[pairId]/route.ts",
+    "app/api/webhooks/stripe/route.ts",
+    "app/dashboard/integrations/page.tsx"
+  ],
+  "lib/github-app.ts": [
+    "app/api/github/callback/route.ts",
+    "app/api/github/uninstall-app/route.ts"
+  ],
+  "lib/github-installations.ts": [
+    "app/api/github/callback/route.ts",
+    "app/api/github/uninstall-app/route.ts"
+  ],
+  "@clerk/nextjs/server": [
+    "app/api/github/clear-slot/route.ts",
+    "app/api/repo-pairs/switch-active/route.ts",
+    "app/dashboard/page.tsx",
+    "proxy.ts"
+  ],
+  "lib/repo-pairs": [
+    "app/api/github/clear-slot/route.ts",
+    "app/api/github/process-one-file/route.ts",
+    "app/api/repo-pairs/switch-active/route.ts",
+    "app/dashboard/page.tsx"
+  ],
+  "lib/qstash.ts": [
+    "app/api/github/init-doc-repo/route.ts",
+    "app/api/github/reprocess-commit/route.ts",
+    "app/api/webhooks/github/[userId]/[pairId]/route.ts"
+  ],
+  "lib/gemini.ts": [
+    "app/api/github/init-doc-repo/route.ts"
+  ],
+  "app/api/github/init-doc-repo/route.ts": [
+    "app/api/github/init-doc-repo/route.ts"
+  ],
+  "@upstash/qstash": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "next/server": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "lib/gemini": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "lib/qstash": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "lib/stats": [
+    "app/api/github/process-one-file/route.ts",
+    "app/dashboard/page.tsx"
+  ],
+  "lib/commits.ts": [
+    "app/api/github/reprocess-commit/route.ts",
+    "app/api/webhooks/github/[userId]/[pairId]/route.ts"
+  ],
+  "lib/rate-limit.ts": [
+    "app/api/github/reprocess-commit/route.ts"
+  ],
+  "@/lib/repo-pairs": [
+    "app/api/github/use-installation/route.ts",
+    "app/dashboard/integrations/_components/RepoPairCard.tsx",
+    "lib/billing/usage.ts"
+  ],
+  "@/lib/github-installations": [
+    "app/api/github/use-installation/route.ts"
+  ],
+  "lib/billing/subscription": [
+    "app/api/repo-pairs/switch-active/route.ts"
+  ],
+  "lib/billing/tiers": [
+    "app/api/repo-pairs/switch-active/route.ts"
+  ],
+  "@/lib/user-deletion": [
+    "app/api/user/delete/route.ts"
+  ],
+  "lib/user-deletion": [
+    "app/api/webhooks/clerk/route.ts"
+  ],
+  "app/api/repo-pairs/route.ts": [
+    "app/dashboard/integrations/_components/AddPairButton.tsx"
+  ],
+  "components/ui/toast": [
+    "app/dashboard/integrations/_components/AddPairButton.tsx"
+  ],
+  "app/dashboard/integrations/page.tsx": [
+    "app/dashboard/integrations/_components/ExistingAccountPicker.tsx"
+  ],
+  "app/dashboard/integrations/_components/RepoPicker": [
+    "app/dashboard/integrations/_components/RepoPairCard.tsx"
+  ],
+  "app/dashboard/integrations/_components/ExistingAccountPicker.tsx": [
+    "app/dashboard/integrations/_components/RepoPairCard.tsx"
+  ],
+  "app/dashboard/integrations/_components/RepoPairCard.tsx": [
+    "app/dashboard/integrations/page.tsx"
+  ],
+  "app/dashboard/integrations/_components/AddPairButton.tsx": [
+    "app/dashboard/integrations/page.tsx"
+  ],
+  "@/components/ui/sidebar": [
+    "app/dashboard/layout.tsx"
+  ],
+  "@/components/ui/toast": [
+    "app/dashboard/layout.tsx"
+  ],
+  "lib/commits": [
+    "app/dashboard/page.tsx"
+  ],
+  "lucide-react": [
+    "app/dashboard/page.tsx",
+    "components/ui/modern-animated-sign-in.tsx"
+  ],
+  "@clerk/nextjs": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "components/ui/avatar": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/user/delete": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/repo-pairs": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/repo-pairs/switch-active": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/billing/usage": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/billing/portal": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/billing/checkout": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "@/components/ui/globe-hero": [
+    "app/page.tsx"
+  ],
+  "@/components/ui/pricing-section": [
+    "app/page.tsx"
+  ],
+  "components/ui/modern-animated-sign-in": [
+    "app/sign-in/[[...sign-in]]/page.tsx",
+    "app/sign-up/[[...sign-up]]/page.tsx"
+  ],
+  "app/sign-in/page": [
+    "app/sign-up/[[...sign-up]]/page.tsx"
+  ],
+  "lib/utils.ts": [
+    "components/ui/avatar.tsx",
+    "components/ui/button.tsx",
+    "components/ui/badge.tsx",
+    "components/ui/dropdown-menu.tsx",
+    "components/ui/globe-hero.tsx",
+    "components/ui/scroll-area.tsx",
+    "components/ui/separator.tsx",
+    "lib/utils.ts"
+  ],
+  "@radix-ui/react-dropdown-menu": [
+    "components/ui/dropdown-menu.tsx"
+  ],
+  "@/lib/utils.ts": [
+    "components/ui/modern-animated-sign-in.tsx"
+  ],
+  "motion/react": [
+    "components/ui/modern-animated-sign-in.tsx"
+  ],
+  "next/image": [
+    "components/ui/modern-animated-sign-in.tsx"
+  ],
+  "@/lib/utils": [
+    "components/ui/pricing-section.tsx"
+  ],
+  "@/lib/billing/tiers": [
+    "components/ui/pricing-section.tsx"
+  ],
+  "components/ui/avatar.tsx": [
+    "components/ui/sidebar.tsx"
+  ],
+  "components/ui/scroll-area.tsx": [
+    "components/ui/sidebar.tsx"
+  ],
+  "components/ui/separator.tsx": [
+    "components/ui/sidebar.tsx"
+  ],
+  "lib/utils": [
+    "components/ui/sidebar.tsx"
+  ],
+  "./lib/tree": [
+    "doc-repo-template/src/FileTree.tsx",
+    "doc-repo-template/src/App.tsx"
+  ],
+  "./types": [
+    "doc-repo-template/src/App.tsx",
+    "doc-repo-template/src/TabBar.tsx"
+  ],
+  "doc-repo-template/src/FileTree.tsx": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "./TabBar": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "./HomeView": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "./CommitsView": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "./DependencyMapView": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "./DocView": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "./FolderView": [
+    "doc-repo-template/src/App.tsx"
+  ],
+  "doc-repo-template/src/App.tsx": [
+    "doc-repo-template/src/main.tsx"
+  ],
+  "lib/firebase-admin.ts": [
+    "lib/billing/subscription.ts",
+    "lib/github-installations.ts",
+    "lib/rate-limit.ts",
+    "lib/user-deletion.ts",
+    "lib/stats.ts"
+  ],
+  "@/lib/rate-limit": [
+    "lib/billing/usage.ts"
+  ],
+  "./firebase-admin": [
+    "lib/commits.ts"
+  ],
+  "./gemini": [
+    "lib/qstash.ts"
+  ],
+  "./repo-pairs": [
+    "lib/user-deletion.ts"
+  ]
+}

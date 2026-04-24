@@ -1,0 +1,27 @@
+{
+  "filePath": "app/dashboard/page.tsx",
+  "title": "Dashboard Page",
+  "content": "This file defines the main dashboard page for the DocMed application. It fetches and displays key statistics about connected repositories, handled commits, and documented files, as well as a log of recent commit activity.\n\n**Purpose:**\nTo provide users with an immediate overview of their project's documentation status and recent activity within the DocMed platform.\n\n**Key Components:**\n\n*   **DashboardPage Component:** An `async` React component that fetches user data and various statistics using server-side operations.\n    *   It uses `auth` from `@clerk/nextjs/server` to get the authenticated `userId`.\n    *   It fetches data concurrently using `Promise.all` for:\n        *   `listRepoPairs`: Lists connected repository pairs.\n        *   `listCommitLog`: Retrieves a log of recent commits.\n        *   `getCommitCount`: Gets the total number of handled commits.\n        *   `getFilesDocumentedCount`: Gets the count of documented files.\n    *   It calculates `reposConnected` based on pairs where both target and documentation repositories have a `repoFullName`.\n    *   It renders a statistics section with `StatCard` components for connected repos, commits handled, and files documented.\n    *   It displays a \"Recent Activity\" section showing the commit log.\n*   **StatCard Component:** A reusable presentational component for displaying statistics. It takes an `icon`, `label`, and `value` as props.\n\n**Usage Example:**\nNavigating to the `/app/dashboard` route will render this page, displaying the user's personalized dashboard information. If the user is not authenticated, no data will be fetched and default empty states will be shown.\n\n```typescript\n// Example of how the DashboardPage component might be rendered in Next.js\n// This is typically handled by the Next.js routing system for the '/dashboard' path.\n\nimport DashboardPage from '@/app/dashboard/page';\n\n// ... other Next.js page component setup if needed\n\nexport default DashboardPage;\n```",
+  "dependencies": [
+    "@clerk/nextjs/server",
+    "lib/repo-pairs",
+    "lib/commits",
+    "lib/stats",
+    "lucide-react"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:24:59.080Z",
+      "title": "Dashboard Page",
+      "content": "This file defines the main dashboard page for the DocMed application. It fetches and displays key statistics about connected repositories, handled commits, and documented files, as well as a log of recent commit activity.\n\n**Purpose:**\nTo provide users with an immediate overview of their project's documentation status and recent activity within the DocMed platform.\n\n**Key Components:**\n\n*   **DashboardPage Component:** An `async` React component that fetches user data and various statistics using server-side operations.\n    *   It uses `auth` from `@clerk/nextjs/server` to get the authenticated `userId`.\n    *   It fetches data concurrently using `Promise.all` for:\n        *   `listRepoPairs`: Lists connected repository pairs.\n        *   `listCommitLog`: Retrieves a log of recent commits.\n        *   `getCommitCount`: Gets the total number of handled commits.\n        *   `getFilesDocumentedCount`: Gets the count of documented files.\n    *   It calculates `reposConnected` based on pairs where both target and documentation repositories have a `repoFullName`.\n    *   It renders a statistics section with `StatCard` components for connected repos, commits handled, and files documented.\n    *   It displays a \"Recent Activity\" section showing the commit log.\n*   **StatCard Component:** A reusable presentational component for displaying statistics. It takes an `icon`, `label`, and `value` as props.\n\n**Usage Example:**\nNavigating to the `/app/dashboard` route will render this page, displaying the user's personalized dashboard information. If the user is not authenticated, no data will be fetched and default empty states will be shown.\n\n```typescript\n// Example of how the DashboardPage component might be rendered in Next.js\n// This is typically handled by the Next.js routing system for the '/dashboard' path.\n\nimport DashboardPage from '@/app/dashboard/page';\n\n// ... other Next.js page component setup if needed\n\nexport default DashboardPage;\n```",
+      "dependencies": [
+        "@clerk/nextjs/server",
+        "lib/repo-pairs",
+        "lib/commits",
+        "lib/stats",
+        "lucide-react"
+      ],
+      "commitId": null
+    }
+  ]
+}

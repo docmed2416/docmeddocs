@@ -1,0 +1,19 @@
+{
+  "filePath": "lib/utils.ts",
+  "title": "Class Name Utility (`cn`)",
+  "content": "The `cn` utility function is a lightweight helper for conditionally joining class names together. It leverages `clsx` for efficient class name generation and `tailwind-merge` to automatically merge duplicate class names and resolve conflicts, especially useful when working with Tailwind CSS.\n\n### Key Exports\n\n*   `cn(...inputs: ClassValue[]): string`\n    *   Takes a variable number of arguments (`ClassValue`), which can be strings, objects, arrays, or null/undefined values.\n    *   Returns a single string representing the merged and deduplicated class names.\n\n### Usage\n\n```typescript\nimport { cn } from '@/lib/utils';\n\nconst isActive = true;\nconst disabled = false;\n\n// Basic usage\nconst className1 = cn('p-4', 'text-blue-500'); // Output: 'p-4 text-blue-500'\n\n// Conditional classes\nconst className2 = cn('p-4', isActive && 'bg-green-500', disabled && 'cursor-not-allowed'); // Output: 'p-4 bg-green-500'\n\n// Merging conflicting classes (tailwind-merge handles this)\nconst className3 = cn('text-red-500', 'text-blue-500'); // Output: 'text-blue-500'\n```",
+  "dependencies": [
+    "lib/utils.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:29:15.458Z",
+      "title": "Class Name Utility (`cn`)",
+      "content": "The `cn` utility function is a lightweight helper for conditionally joining class names together. It leverages `clsx` for efficient class name generation and `tailwind-merge` to automatically merge duplicate class names and resolve conflicts, especially useful when working with Tailwind CSS.\n\n### Key Exports\n\n*   `cn(...inputs: ClassValue[]): string`\n    *   Takes a variable number of arguments (`ClassValue`), which can be strings, objects, arrays, or null/undefined values.\n    *   Returns a single string representing the merged and deduplicated class names.\n\n### Usage\n\n```typescript\nimport { cn } from '@/lib/utils';\n\nconst isActive = true;\nconst disabled = false;\n\n// Basic usage\nconst className1 = cn('p-4', 'text-blue-500'); // Output: 'p-4 text-blue-500'\n\n// Conditional classes\nconst className2 = cn('p-4', isActive && 'bg-green-500', disabled && 'cursor-not-allowed'); // Output: 'p-4 bg-green-500'\n\n// Merging conflicting classes (tailwind-merge handles this)\nconst className3 = cn('text-red-500', 'text-blue-500'); // Output: 'text-blue-500'\n```",
+      "dependencies": [
+        "lib/utils.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}

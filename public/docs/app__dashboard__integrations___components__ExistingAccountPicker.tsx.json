@@ -1,0 +1,19 @@
+{
+  "filePath": "app/dashboard/integrations/_components/ExistingAccountPicker.tsx",
+  "title": "ExistingAccountPicker Component",
+  "content": "The `ExistingAccountPicker` component allows users to select an existing GitHub installation to connect to a pair. It fetches available installations, displays the currently connected account, and provides options to connect a new account or uninstall existing ones.\n\n## Key Exports\n\n- `ExistingAccountPicker`: The main React component.\n\n## Props\n\n- `pairId`: The unique identifier for the integration pair.\n- `type`: The type of integration ('target' or 'doc').\n- `connected`: A boolean indicating if an account is currently connected.\n- `connectedLogin`: The GitHub login of the connected account, if any.\n- `disabled`: A boolean to disable the component.\n- `disabledReason`: A string explaining why the component is disabled.\n\n## Usage Example\n\n```tsx\n<ExistingAccountPicker\n  pairId=\"some-pair-id\"\n  type=\"target\"\n  connected={true}\n  connectedLogin=\"octocat\"\n/>\n```\n\n## Internal Components and Logic\n\n- **`loginLabel(login: string | undefined | null)`**: A helper function to format the GitHub login string.\n- **`AccountRow`**: A sub-component used to render individual account rows within the dropdown, displaying the login, slot count, and options to select or uninstall.\n\n## Internal API Endpoints Used\n\n- `/api/github/installations`: Fetches a list of available GitHub installations.\n- `/api/github/use-installation`: Connects a selected GitHub installation to the pair.\n- `/api/github/connect`: Initiates the GitHub OAuth connection flow for a new account.\n- `/api/github/uninstall-app`: Uninstalls the GitHub App for a specific installation.",
+  "dependencies": [
+    "app/dashboard/integrations/page.tsx"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:24:12.716Z",
+      "title": "ExistingAccountPicker Component",
+      "content": "The `ExistingAccountPicker` component allows users to select an existing GitHub installation to connect to a pair. It fetches available installations, displays the currently connected account, and provides options to connect a new account or uninstall existing ones.\n\n## Key Exports\n\n- `ExistingAccountPicker`: The main React component.\n\n## Props\n\n- `pairId`: The unique identifier for the integration pair.\n- `type`: The type of integration ('target' or 'doc').\n- `connected`: A boolean indicating if an account is currently connected.\n- `connectedLogin`: The GitHub login of the connected account, if any.\n- `disabled`: A boolean to disable the component.\n- `disabledReason`: A string explaining why the component is disabled.\n\n## Usage Example\n\n```tsx\n<ExistingAccountPicker\n  pairId=\"some-pair-id\"\n  type=\"target\"\n  connected={true}\n  connectedLogin=\"octocat\"\n/>\n```\n\n## Internal Components and Logic\n\n- **`loginLabel(login: string | undefined | null)`**: A helper function to format the GitHub login string.\n- **`AccountRow`**: A sub-component used to render individual account rows within the dropdown, displaying the login, slot count, and options to select or uninstall.\n\n## Internal API Endpoints Used\n\n- `/api/github/installations`: Fetches a list of available GitHub installations.\n- `/api/github/use-installation`: Connects a selected GitHub installation to the pair.\n- `/api/github/connect`: Initiates the GitHub OAuth connection flow for a new account.\n- `/api/github/uninstall-app`: Uninstalls the GitHub App for a specific installation.",
+      "dependencies": [
+        "app/dashboard/integrations/page.tsx"
+      ],
+      "commitId": null
+    }
+  ]
+}

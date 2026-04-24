@@ -1,0 +1,21 @@
+{
+  "filePath": "app/page.tsx",
+  "title": "DocMed Homepage",
+  "content": "This file defines the main landing page for the DocMed application.\n\nIt integrates various UI components to showcase the product's features, benefits, and calls to action.\n\n## Key Sections and Components:\n\n-   **Navbar:** A sticky navigation bar with branding, navigation links, and a sign-up button. It includes a responsive mobile menu.\n-   **Hero Section:** Features a prominent headline, subtext, and call-to-action buttons, visually enhanced with a dynamic globe animation.\n-   **Trust Bar:** Displays key attributes and technologies that DocMed is built upon.\n-   **Features Section:** Details the core functionalities of DocMed, such as the Auto-Sync Engine, AI Doc Generation, PR-Based Updates, and GitHub App Integration.\n-   **How It Works Section:** Illustrates the three-step process of setting up and using DocMed.\n-   **Stats Section:** Presents key metrics and achievements related to DocMed's impact.\n-   **Pricing Section:** (Assumed to be imported from `@/components/ui/pricing-section`) Displays pricing information.\n-   **CTA Section:** A call-to-action section encouraging users to sign up, with an email input and submission form.\n-   **Footer:** Contains the DocMed logo and copyright information.\n\n## Animations:\n\nThe page utilizes `framer-motion` for various animations, including fading and staggering effects on text and elements, enhancing the user experience.\n\n## Usage Example:\n\n```tsx\n// app/page.tsx\n\nimport HomePage from './page'; // Assuming this file is imported elsewhere\n\n// In another component or layout:\n<HomePage />\n```",
+  "dependencies": [
+    "@/components/ui/globe-hero",
+    "@/components/ui/pricing-section"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:25:40.411Z",
+      "title": "DocMed Homepage",
+      "content": "This file defines the main landing page for the DocMed application.\n\nIt integrates various UI components to showcase the product's features, benefits, and calls to action.\n\n## Key Sections and Components:\n\n-   **Navbar:** A sticky navigation bar with branding, navigation links, and a sign-up button. It includes a responsive mobile menu.\n-   **Hero Section:** Features a prominent headline, subtext, and call-to-action buttons, visually enhanced with a dynamic globe animation.\n-   **Trust Bar:** Displays key attributes and technologies that DocMed is built upon.\n-   **Features Section:** Details the core functionalities of DocMed, such as the Auto-Sync Engine, AI Doc Generation, PR-Based Updates, and GitHub App Integration.\n-   **How It Works Section:** Illustrates the three-step process of setting up and using DocMed.\n-   **Stats Section:** Presents key metrics and achievements related to DocMed's impact.\n-   **Pricing Section:** (Assumed to be imported from `@/components/ui/pricing-section`) Displays pricing information.\n-   **CTA Section:** A call-to-action section encouraging users to sign up, with an email input and submission form.\n-   **Footer:** Contains the DocMed logo and copyright information.\n\n## Animations:\n\nThe page utilizes `framer-motion` for various animations, including fading and staggering effects on text and elements, enhancing the user experience.\n\n## Usage Example:\n\n```tsx\n// app/page.tsx\n\nimport HomePage from './page'; // Assuming this file is imported elsewhere\n\n// In another component or layout:\n<HomePage />\n```",
+      "dependencies": [
+        "@/components/ui/globe-hero",
+        "@/components/ui/pricing-section"
+      ],
+      "commitId": null
+    }
+  ]
+}

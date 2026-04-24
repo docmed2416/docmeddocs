@@ -1,0 +1,25 @@
+{
+  "filePath": "components/ui/modern-animated-sign-in.tsx",
+  "title": "Modern Animated Sign-In UI Components",
+  "content": "This file provides a set of reusable React components designed to create modern, animated user interface elements, particularly for sign-in forms.\n\nIt includes components for:\n\n*   **Input**: A stylized input field with a radial gradient hover effect.\n*   **Label**: A standard label component.\n*   **BoxReveal**: An animated reveal effect for content.\n*   **Ripple**: A circular ripple animation.\n*   **OrbitingCircles**: Circles that orbit a central point, with optional path visualization.\n*   **TechOrbitDisplay**: A component that displays a logo or text with orbiting technology icons.\n*   **BottomGradient**: A decorative gradient for buttons.\n*   **AnimatedForm**: A comprehensive form component that supports various fields, validation, and social logins, incorporating the other animated components for a dynamic look and feel.\n\n**Key Exports:**\n\n*   `Input`\n*   `Label`\n*   `BoxReveal`\n*   `Ripple`\n*   `OrbitingCircles`\n*   `TechOrbitDisplay`\n*   `AnimatedForm`\n*   `BottomGradient`\n\n**Usage Example (AnimatedForm):**\n\n```typescript\nimport { AnimatedForm } from '@/components/ui/modern-animated-sign-in';\n\nconst SignInForm = () => {\n  const fields = [\n    {\n      label: 'Email',\n      type: 'email',\n      placeholder: 'your@email.com',\n      required: true,\n      onChange: (e) => console.log(e.target.value),\n    },\n    {\n      label: 'Password',\n      type: 'password',\n      placeholder: '••••••••',\n      required: true,\n      onChange: (e) => console.log(e.target.value),\n    },\n  ];\n\n  const handleSubmit = (event) => {\n    console.log('Form submitted:', event);\n    // Handle login logic\n  };\n\n  return (\n    <AnimatedForm\n      header=\"Sign In\"\n      subHeader=\"Access your DocMed account.\"\n      fields={fields}\n      submitButton=\"Sign In\"\n      onSubmit={handleSubmit}\n      googleLogin=\"Sign in with Google\"\n      onGoogleLogin={() => console.log('Google login clicked')}\n      goTo={() => console.log('Navigate to sign up')}\n      textVariantButton=\"Don't have an account? Sign Up\"\n    />\n  );\n};\n\nexport default SignInForm;\n```",
+  "dependencies": [
+    "@/lib/utils.ts",
+    "motion/react",
+    "lucide-react",
+    "next/image"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:26:24.528Z",
+      "title": "Modern Animated Sign-In UI Components",
+      "content": "This file provides a set of reusable React components designed to create modern, animated user interface elements, particularly for sign-in forms.\n\nIt includes components for:\n\n*   **Input**: A stylized input field with a radial gradient hover effect.\n*   **Label**: A standard label component.\n*   **BoxReveal**: An animated reveal effect for content.\n*   **Ripple**: A circular ripple animation.\n*   **OrbitingCircles**: Circles that orbit a central point, with optional path visualization.\n*   **TechOrbitDisplay**: A component that displays a logo or text with orbiting technology icons.\n*   **BottomGradient**: A decorative gradient for buttons.\n*   **AnimatedForm**: A comprehensive form component that supports various fields, validation, and social logins, incorporating the other animated components for a dynamic look and feel.\n\n**Key Exports:**\n\n*   `Input`\n*   `Label`\n*   `BoxReveal`\n*   `Ripple`\n*   `OrbitingCircles`\n*   `TechOrbitDisplay`\n*   `AnimatedForm`\n*   `BottomGradient`\n\n**Usage Example (AnimatedForm):**\n\n```typescript\nimport { AnimatedForm } from '@/components/ui/modern-animated-sign-in';\n\nconst SignInForm = () => {\n  const fields = [\n    {\n      label: 'Email',\n      type: 'email',\n      placeholder: 'your@email.com',\n      required: true,\n      onChange: (e) => console.log(e.target.value),\n    },\n    {\n      label: 'Password',\n      type: 'password',\n      placeholder: '••••••••',\n      required: true,\n      onChange: (e) => console.log(e.target.value),\n    },\n  ];\n\n  const handleSubmit = (event) => {\n    console.log('Form submitted:', event);\n    // Handle login logic\n  };\n\n  return (\n    <AnimatedForm\n      header=\"Sign In\"\n      subHeader=\"Access your DocMed account.\"\n      fields={fields}\n      submitButton=\"Sign In\"\n      onSubmit={handleSubmit}\n      googleLogin=\"Sign in with Google\"\n      onGoogleLogin={() => console.log('Google login clicked')}\n      goTo={() => console.log('Navigate to sign up')}\n      textVariantButton=\"Don't have an account? Sign Up\"\n    />\n  );\n};\n\nexport default SignInForm;\n```",
+      "dependencies": [
+        "@/lib/utils.ts",
+        "motion/react",
+        "lucide-react",
+        "next/image"
+      ],
+      "commitId": null
+    }
+  ]
+}
