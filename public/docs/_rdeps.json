@@ -10,5 +10,8 @@
   ],
   "lib/billing/subscription.ts": [
     "app/api/billing/checkout/route.ts"
+  ],
+  "lib/billing/usage.ts": [
+    "app/api/billing/usage/route.ts"
   ]
 }
