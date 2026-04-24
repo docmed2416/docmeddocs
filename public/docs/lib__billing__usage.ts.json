@@ -1,0 +1,25 @@
+{
+  "filePath": "lib/billing/usage.ts",
+  "title": "Usage Tracking and Limits",
+  "content": "This module provides functionality for tracking and managing user billing and usage limits within the DocMed repository. It defines the structure for usage snapshots, handles subscription status, and enforces limits on repository pairs and initialization requests.\n\nKey Exports:\n\n*   `UsageSnapshot`: An interface defining the structure of user usage data, including tier information, limits, current usage, trial status, and cooldown periods.\n*   `UsageLimitError`: A custom error class thrown when a user exceeds a usage limit. It specifies the `kind` of limit exceeded (pair or init) and an optional `resetAt` timestamp.\n*   `getUsageSnapshot(userId: string)`: An asynchronous function that retrieves the current usage snapshot for a given user. It integrates with subscription and rate-limiting services to provide a comprehensive view of the user's status.\n*   `assertCanAddPair(snapshot: UsageSnapshot)`: A function that checks if a user can add a new repository pair based on their current usage snapshot. Throws a `UsageLimitError` if the limit is reached.\n*   `assertCanInitRepo(snapshot: UsageSnapshot)`: A function that checks if a user can initialize a new repository based on their current monthly initialization limit. Throws a `UsageLimitError` if the limit is reached.\n\nUsage Example:\n\n```typescript\nimport { getUsageSnapshot, assertCanAddPair } from '@/lib/billing/usage';\n\nasync function handleNewRepoPair(userId: string) {\n  const snapshot = await getUsageSnapshot(userId);\n  assertCanAddPair(snapshot);\n  // Proceed with adding the new repo pair...\n}\n```",
+  "dependencies": [
+    "lib/repo-pairs.ts",
+    "lib/billing/subscription.ts",
+    "lib/billing/tiers.ts",
+    "lib/rate-limit.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T16:41:02.878Z",
+      "title": "Usage Tracking and Limits",
+      "content": "This module provides functionality for tracking and managing user billing and usage limits within the DocMed repository. It defines the structure for usage snapshots, handles subscription status, and enforces limits on repository pairs and initialization requests.\n\nKey Exports:\n\n*   `UsageSnapshot`: An interface defining the structure of user usage data, including tier information, limits, current usage, trial status, and cooldown periods.\n*   `UsageLimitError`: A custom error class thrown when a user exceeds a usage limit. It specifies the `kind` of limit exceeded (pair or init) and an optional `resetAt` timestamp.\n*   `getUsageSnapshot(userId: string)`: An asynchronous function that retrieves the current usage snapshot for a given user. It integrates with subscription and rate-limiting services to provide a comprehensive view of the user's status.\n*   `assertCanAddPair(snapshot: UsageSnapshot)`: A function that checks if a user can add a new repository pair based on their current usage snapshot. Throws a `UsageLimitError` if the limit is reached.\n*   `assertCanInitRepo(snapshot: UsageSnapshot)`: A function that checks if a user can initialize a new repository based on their current monthly initialization limit. Throws a `UsageLimitError` if the limit is reached.\n\nUsage Example:\n\n```typescript\nimport { getUsageSnapshot, assertCanAddPair } from '@/lib/billing/usage';\n\nasync function handleNewRepoPair(userId: string) {\n  const snapshot = await getUsageSnapshot(userId);\n  assertCanAddPair(snapshot);\n  // Proceed with adding the new repo pair...\n}\n```",
+      "dependencies": [
+        "lib/repo-pairs.ts",
+        "lib/billing/subscription.ts",
+        "lib/billing/tiers.ts",
+        "lib/rate-limit.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
