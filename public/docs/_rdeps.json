@@ -181,6 +181,7 @@
   ],
   "lib/utils.ts": [
     "components/ui/avatar.tsx",
-    "components/ui/button.tsx"
+    "components/ui/button.tsx",
+    "components/ui/badge.tsx"
   ]
 }
