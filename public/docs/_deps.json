@@ -190,15 +190,10 @@
     "./lib/tree"
   ],
   "doc-repo-template/src/App.tsx": [
-    "./types",
-    "./lib/tree",
-    "./FileTree",
-    "./TabBar",
-    "./HomeView",
-    "./CommitsView",
-    "./DependencyMapView",
-    "./DocView",
-    "./FolderView"
+    "src/types.ts",
+    "src/lib/tree.ts",
+    "src/FileTree.tsx",
+    "src/TabBar.tsx"
   ],
   "doc-repo-template/src/TabBar.tsx": [
     "./types"
