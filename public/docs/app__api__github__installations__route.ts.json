@@ -1,0 +1,19 @@
+{
+  "filePath": "app/api/github/installations/route.ts",
+  "title": "GitHub Installations API Route",
+  "content": "This API route handles requests to list connected GitHub installations for the authenticated user.\n\n**Purpose:**\nTo provide a list of GitHub applications that the current user has authorized and installed within their GitHub organization(s).\n\n**Key Exports/Functions:**\n- `GET`: An asynchronous function that handles GET requests to this endpoint. It authenticates the user using Clerk, retrieves the list of connected installations using `listConnectedInstallations` from `@/lib/repo-pairs`, and returns the installations as a JSON response.\n\n**Usage Example:**\nA client application would make a `GET` request to `/api/github/installations` to retrieve the list of GitHub installations. The response would be a JSON array of installation objects, for example:\n\n```json\n[\n  {\n    \"id\": 12345,\n    \"account\": {\n      \"login\": \"my-org\",\n      \"avatar_url\": \"https://avatars.githubusercontent.com/...\"\n    },\n    \"repository_selection\": \"all\",\n    \"permissions\": {\n      \"checks\": \"read\",\n      \"contents\": \"read\"\n    },\n    \"events\": [\"push\", \"pull_request\"]\n  }\n]\n```",
+  "dependencies": [
+    "lib/repo-pairs.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:22:39.330Z",
+      "title": "GitHub Installations API Route",
+      "content": "This API route handles requests to list connected GitHub installations for the authenticated user.\n\n**Purpose:**\nTo provide a list of GitHub applications that the current user has authorized and installed within their GitHub organization(s).\n\n**Key Exports/Functions:**\n- `GET`: An asynchronous function that handles GET requests to this endpoint. It authenticates the user using Clerk, retrieves the list of connected installations using `listConnectedInstallations` from `@/lib/repo-pairs`, and returns the installations as a JSON response.\n\n**Usage Example:**\nA client application would make a `GET` request to `/api/github/installations` to retrieve the list of GitHub installations. The response would be a JSON array of installation objects, for example:\n\n```json\n[\n  {\n    \"id\": 12345,\n    \"account\": {\n      \"login\": \"my-org\",\n      \"avatar_url\": \"https://avatars.githubusercontent.com/...\"\n    },\n    \"repository_selection\": \"all\",\n    \"permissions\": {\n      \"checks\": \"read\",\n      \"contents\": \"read\"\n    },\n    \"events\": [\"push\", \"pull_request\"]\n  }\n]\n```",
+      "dependencies": [
+        "lib/repo-pairs.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
