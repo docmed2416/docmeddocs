@@ -257,7 +257,8 @@
   ],
   "lib/firebase-admin.ts": [
     "lib/billing/subscription.ts",
-    "lib/github-installations.ts"
+    "lib/github-installations.ts",
+    "lib/rate-limit.ts"
   ],
   "@/lib/rate-limit": [
     "lib/billing/usage.ts"
