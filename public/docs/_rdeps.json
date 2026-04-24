@@ -47,12 +47,14 @@
   ],
   "@clerk/nextjs/server": [
     "app/api/github/clear-slot/route.ts",
-    "app/api/repo-pairs/switch-active/route.ts"
+    "app/api/repo-pairs/switch-active/route.ts",
+    "app/dashboard/page.tsx"
   ],
   "lib/repo-pairs": [
     "app/api/github/clear-slot/route.ts",
     "app/api/github/process-one-file/route.ts",
-    "app/api/repo-pairs/switch-active/route.ts"
+    "app/api/repo-pairs/switch-active/route.ts",
+    "app/dashboard/page.tsx"
   ],
   "lib/qstash.ts": [
     "app/api/github/init-doc-repo/route.ts",
@@ -78,7 +80,8 @@
     "app/api/github/process-one-file/route.ts"
   ],
   "lib/stats": [
-    "app/api/github/process-one-file/route.ts"
+    "app/api/github/process-one-file/route.ts",
+    "app/dashboard/page.tsx"
   ],
   "lib/commits.ts": [
     "app/api/github/reprocess-commit/route.ts",
@@ -132,5 +135,11 @@
   ],
   "@/components/ui/toast": [
     "app/dashboard/layout.tsx"
+  ],
+  "lib/commits": [
+    "app/dashboard/page.tsx"
+  ],
+  "lucide-react": [
+    "app/dashboard/page.tsx"
   ]
 }
