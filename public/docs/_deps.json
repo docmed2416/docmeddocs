@@ -72,5 +72,11 @@
   "app/api/repo-pairs/route.ts": [
     "lib/repo-pairs.ts",
     "lib/billing/usage.ts"
+  ],
+  "app/api/repo-pairs/switch-active/route.ts": [
+    "@clerk/nextjs/server",
+    "lib/billing/subscription",
+    "lib/billing/tiers",
+    "lib/repo-pairs"
   ]
 }
