@@ -92,5 +92,8 @@
   ],
   "@/lib/user-deletion": [
     "app/api/user/delete/route.ts"
+  ],
+  "lib/user-deletion": [
+    "app/api/webhooks/clerk/route.ts"
   ]
 }
