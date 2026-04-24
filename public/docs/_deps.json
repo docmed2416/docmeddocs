@@ -186,5 +186,6 @@
     "components/ui/scroll-area",
     "components/ui/separator",
     "lib/utils"
-  ]
+  ],
+  "components/ui/toast.tsx": []
 }
