@@ -3,5 +3,11 @@
     "lib/repo-pairs.ts",
     "lib/qstash.ts",
     "lib/commits.ts"
+  ],
+  "app/dashboard/settings/page.tsx": [
+    "@clerk/nextjs",
+    "next/navigation",
+    "react",
+    "@/components/ui/avatar"
   ]
 }
