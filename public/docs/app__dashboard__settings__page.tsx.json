@@ -1,0 +1,33 @@
+{
+  "filePath": "app/dashboard/settings/page.tsx",
+  "title": "Settings Page",
+  "content": "This page provides the user settings interface, allowing users to manage their profile information, password, and subscription details. It utilizes Clerk for authentication and Next.js features for routing and state management.\n\n## Sections\n\n- **Avatar Section:** Allows users to upload and update their profile picture.\n- **Name Section:** Enables users to edit their first and last names.\n- **Email Section:** Displays the verified primary email address, which cannot be changed directly on this page.\n- **Password Section:** Provides functionality to change the user's password if their account uses password authentication.\n- **Danger Zone:** Contains options to sign out and delete the user's account.\n- **Billing Panel:** Manages subscription plans, displays usage limits, and provides links to billing management portals.\n\n## Key Components\n\n- `Section`: A reusable component for grouping settings.\n- `Field`: A layout component for form fields.\n- `Input`: A basic text input component.\n- `StatusMessage`: Displays success or error messages.\n- `SaveButton`: A button for saving changes, with loading state.\n- `AvatarSection`, `NameSection`, `EmailSection`, `PasswordSection`: Components for specific profile settings.\n- `DangerSection`: Contains sign-out and account deletion options.\n- `TabButton`: A component for navigation tabs (e.g., Profile, Billing).\n- `BillingPanel`: Manages subscription and usage information.\n- `UsageBar`: Visualizes usage against limits.\n- `SwitchActiveDialog`: A modal for selecting active repositories for webhook processing.\n\n## Usage Example\n\nNavigating to `/app/dashboard/settings` will render this page, allowing authenticated users to modify their settings.",
+  "dependencies": [
+    "@clerk/nextjs",
+    "components/ui/avatar",
+    "app/api/user/delete",
+    "app/api/repo-pairs",
+    "app/api/repo-pairs/switch-active",
+    "app/api/billing/usage",
+    "app/api/billing/portal",
+    "app/api/billing/checkout"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:25:06.130Z",
+      "title": "Settings Page",
+      "content": "This page provides the user settings interface, allowing users to manage their profile information, password, and subscription details. It utilizes Clerk for authentication and Next.js features for routing and state management.\n\n## Sections\n\n- **Avatar Section:** Allows users to upload and update their profile picture.\n- **Name Section:** Enables users to edit their first and last names.\n- **Email Section:** Displays the verified primary email address, which cannot be changed directly on this page.\n- **Password Section:** Provides functionality to change the user's password if their account uses password authentication.\n- **Danger Zone:** Contains options to sign out and delete the user's account.\n- **Billing Panel:** Manages subscription plans, displays usage limits, and provides links to billing management portals.\n\n## Key Components\n\n- `Section`: A reusable component for grouping settings.\n- `Field`: A layout component for form fields.\n- `Input`: A basic text input component.\n- `StatusMessage`: Displays success or error messages.\n- `SaveButton`: A button for saving changes, with loading state.\n- `AvatarSection`, `NameSection`, `EmailSection`, `PasswordSection`: Components for specific profile settings.\n- `DangerSection`: Contains sign-out and account deletion options.\n- `TabButton`: A component for navigation tabs (e.g., Profile, Billing).\n- `BillingPanel`: Manages subscription and usage information.\n- `UsageBar`: Visualizes usage against limits.\n- `SwitchActiveDialog`: A modal for selecting active repositories for webhook processing.\n\n## Usage Example\n\nNavigating to `/app/dashboard/settings` will render this page, allowing authenticated users to modify their settings.",
+      "dependencies": [
+        "@clerk/nextjs",
+        "components/ui/avatar",
+        "app/api/user/delete",
+        "app/api/repo-pairs",
+        "app/api/repo-pairs/switch-active",
+        "app/api/billing/usage",
+        "app/api/billing/portal",
+        "app/api/billing/checkout"
+      ],
+      "commitId": null
+    }
+  ]
+}
