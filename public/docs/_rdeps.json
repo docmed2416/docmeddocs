@@ -261,7 +261,8 @@
     "lib/billing/subscription.ts",
     "lib/github-installations.ts",
     "lib/rate-limit.ts",
-    "lib/user-deletion.ts"
+    "lib/user-deletion.ts",
+    "lib/stats.ts"
   ],
   "@/lib/rate-limit": [
     "lib/billing/usage.ts"
