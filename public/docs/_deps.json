@@ -99,5 +99,8 @@
   "app/dashboard/integrations/_components/AddPairButton.tsx": [
     "app/api/repo-pairs/route.ts",
     "components/ui/toast"
+  ],
+  "app/dashboard/integrations/_components/ExistingAccountPicker.tsx": [
+    "app/dashboard/integrations/page.tsx"
   ]
 }
