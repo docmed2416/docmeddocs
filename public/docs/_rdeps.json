@@ -165,5 +165,11 @@
   ],
   "app/api/billing/checkout": [
     "app/dashboard/settings/page.tsx"
+  ],
+  "@/components/ui/globe-hero": [
+    "app/page.tsx"
+  ],
+  "@/components/ui/pricing-section": [
+    "app/page.tsx"
   ]
 }
