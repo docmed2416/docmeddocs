@@ -173,6 +173,10 @@
     "app/page.tsx"
   ],
   "components/ui/modern-animated-sign-in": [
-    "app/sign-in/[[...sign-in]]/page.tsx"
+    "app/sign-in/[[...sign-in]]/page.tsx",
+    "app/sign-up/[[...sign-up]]/page.tsx"
+  ],
+  "app/sign-in/page": [
+    "app/sign-up/[[...sign-up]]/page.tsx"
   ]
 }
