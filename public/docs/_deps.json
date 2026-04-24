@@ -32,5 +32,10 @@
     "lib/billing/subscription.ts",
     "lib/billing/tiers.ts",
     "lib/rate-limit.ts"
+  ],
+  "lib/repo-pairs.ts": [
+    "./firebase-admin",
+    "./github-app",
+    "./github-installations"
   ]
 }
