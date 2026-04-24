@@ -1,0 +1,25 @@
+{
+  "filePath": "app/api/webhooks/stripe/route.ts",
+  "title": "Stripe Webhook Handler",
+  "content": "This file handles incoming webhook events from Stripe, managing subscription updates and checkout completions for the DocMed application.\n\n**Purpose:**\nTo process Stripe webhook events in real-time, ensuring that user subscription states, tier limits, and associated data are kept in sync within the application.\n\n**Key Exports/Functions:**\n- `POST(request)`: The main API route handler that receives and processes Stripe webhook events.\n- `extractUserId(event)`: A helper function to extract the `userId` from different types of Stripe events.\n- `handleEvent(event, userId)`: A switch statement that dispatches to specific logic for handling different Stripe event types (`checkout.session.completed`, `customer.subscription.updated`, `customer.subscription.deleted`).\n\n**Dependencies:**\n- `@stripe/stripe-js` (likely, implicitly used via `getStripe()`)\n\n**Usage Example:**\nWhen Stripe sends a `checkout.session.completed` event, this handler will:\n1. Verify the webhook signature.\n2. Extract the `userId`, `tierId`, and `subscriptionId` from the event data.\n3. Retrieve the subscription details from Stripe if a `subscriptionId` is present.\n4. Update or create the user's subscription record in the database using `upsertSubscription`.\n5. Adjust the user's active webhook limits based on their new tier using `adjustActiveWebhooks`.\n6. Mark the event as processed to prevent duplicate handling.",
+  "dependencies": [
+    "lib/billing/stripe.ts",
+    "lib/billing/subscription.ts",
+    "lib/billing/tiers.ts",
+    "lib/repo-pairs.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:24:00.105Z",
+      "title": "Stripe Webhook Handler",
+      "content": "This file handles incoming webhook events from Stripe, managing subscription updates and checkout completions for the DocMed application.\n\n**Purpose:**\nTo process Stripe webhook events in real-time, ensuring that user subscription states, tier limits, and associated data are kept in sync within the application.\n\n**Key Exports/Functions:**\n- `POST(request)`: The main API route handler that receives and processes Stripe webhook events.\n- `extractUserId(event)`: A helper function to extract the `userId` from different types of Stripe events.\n- `handleEvent(event, userId)`: A switch statement that dispatches to specific logic for handling different Stripe event types (`checkout.session.completed`, `customer.subscription.updated`, `customer.subscription.deleted`).\n\n**Dependencies:**\n- `@stripe/stripe-js` (likely, implicitly used via `getStripe()`)\n\n**Usage Example:**\nWhen Stripe sends a `checkout.session.completed` event, this handler will:\n1. Verify the webhook signature.\n2. Extract the `userId`, `tierId`, and `subscriptionId` from the event data.\n3. Retrieve the subscription details from Stripe if a `subscriptionId` is present.\n4. Update or create the user's subscription record in the database using `upsertSubscription`.\n5. Adjust the user's active webhook limits based on their new tier using `adjustActiveWebhooks`.\n6. Mark the event as processed to prevent duplicate handling.",
+      "dependencies": [
+        "lib/billing/stripe.ts",
+        "lib/billing/subscription.ts",
+        "lib/billing/tiers.ts",
+        "lib/repo-pairs.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
