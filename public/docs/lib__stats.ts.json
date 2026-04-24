@@ -1,0 +1,19 @@
+{
+  "filePath": "lib/stats.ts",
+  "title": "Statistics Utility Module",
+  "content": "This module provides utility functions for managing and retrieving user statistics, specifically focusing on the number of files documented.\n\n## Key Exports\n\n*   **`incrementFilesDocumented(userId: string): Promise<void>`**\n    Increments the `filesDocumented` counter for a given user.\n\n*   **`getFilesDocumentedCount(userId: string): Promise<number>`**\n    Retrieves the current `filesDocumented` count for a given user. Returns 0 if the user's statistics document does not exist.\n\n## Usage Example\n\n```typescript\nimport { incrementFilesDocumented, getFilesDocumentedCount } from './lib/stats';\n\nasync function processDocumentedFile(userId: string) {\n  await incrementFilesDocumented(userId);\n  const currentCount = await getFilesDocumentedCount(userId);\n  console.log(`User ${userId} has documented ${currentCount} files.`);\n}\n```",
+  "dependencies": [
+    "./firebase-admin"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:29:09.215Z",
+      "title": "Statistics Utility Module",
+      "content": "This module provides utility functions for managing and retrieving user statistics, specifically focusing on the number of files documented.\n\n## Key Exports\n\n*   **`incrementFilesDocumented(userId: string): Promise<void>`**\n    Increments the `filesDocumented` counter for a given user.\n\n*   **`getFilesDocumentedCount(userId: string): Promise<number>`**\n    Retrieves the current `filesDocumented` count for a given user. Returns 0 if the user's statistics document does not exist.\n\n## Usage Example\n\n```typescript\nimport { incrementFilesDocumented, getFilesDocumentedCount } from './lib/stats';\n\nasync function processDocumentedFile(userId: string) {\n  await incrementFilesDocumented(userId);\n  const currentCount = await getFilesDocumentedCount(userId);\n  console.log(`User ${userId} has documented ${currentCount} files.`);\n}\n```",
+      "dependencies": [
+        "./firebase-admin"
+      ],
+      "commitId": null
+    }
+  ]
+}
