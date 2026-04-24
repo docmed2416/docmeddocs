@@ -58,29 +58,20 @@
   ],
   "lib/repo-pairs": [
     "app/api/github/clear-slot/route.ts",
-    "app/api/github/process-one-file/route.ts",
     "app/api/repo-pairs/switch-active/route.ts",
     "app/dashboard/page.tsx"
   ],
   "lib/qstash.ts": [
     "app/api/github/init-doc-repo/route.ts",
     "app/api/github/reprocess-commit/route.ts",
-    "app/api/webhooks/github/[userId]/[pairId]/route.ts"
+    "app/api/webhooks/github/[userId]/[pairId]/route.ts",
+    "app/api/github/process-one-file/route.ts"
   ],
   "lib/gemini.ts": [
     "app/api/github/init-doc-repo/route.ts"
   ],
   "app/api/github/init-doc-repo/route.ts": [
     "app/api/github/init-doc-repo/route.ts"
-  ],
-  "@upstash/qstash": [
-    "app/api/github/process-one-file/route.ts"
-  ],
-  "next/server": [
-    "app/api/github/process-one-file/route.ts"
-  ],
-  "lib/gemini": [
-    "app/api/github/process-one-file/route.ts"
   ],
   "lib/qstash": [
     "app/api/github/process-one-file/route.ts"
@@ -277,5 +268,20 @@
   ],
   "./repo-pairs": [
     "lib/user-deletion.ts"
+  ],
+  "@upstash/qstash": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "@upstash/qstash/receiver": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "../lib/gemini": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "../lib/repo-pairs": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "lib/stats.ts": [
+    "app/api/github/process-one-file/route.ts"
   ]
 }
