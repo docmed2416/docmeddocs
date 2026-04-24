@@ -95,5 +95,9 @@
     "lib/billing/subscription.ts",
     "lib/billing/tiers.ts",
     "lib/repo-pairs.ts"
+  ],
+  "app/dashboard/integrations/_components/AddPairButton.tsx": [
+    "app/api/repo-pairs/route.ts",
+    "components/ui/toast"
   ]
 }
