@@ -171,5 +171,8 @@
   ],
   "@/components/ui/pricing-section": [
     "app/page.tsx"
+  ],
+  "components/ui/modern-animated-sign-in": [
+    "app/sign-in/[[...sign-in]]/page.tsx"
   ]
 }
