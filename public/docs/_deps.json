@@ -240,5 +240,8 @@
     "./repo-pairs",
     "./billing/subscription",
     "./billing/stripe"
+  ],
+  "lib/stats.ts": [
+    "./firebase-admin"
   ]
 }
