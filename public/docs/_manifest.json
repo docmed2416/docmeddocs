@@ -10,6 +10,11 @@
     "docKey": "app__api__billing__contact__route.ts"
   },
   {
+    "filePath": "app/api/billing/portal/route.ts",
+    "title": "Billing Portal API Route",
+    "docKey": "app__api__billing__portal__route.ts"
+  },
+  {
     "filePath": "app/api/billing/usage/route.ts",
     "title": "Billing Usage API Route",
     "docKey": "app__api__billing__usage__route.ts"
