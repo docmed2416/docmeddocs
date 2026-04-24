@@ -37,13 +37,11 @@
   ],
   "app/api/github/process-one-file/route.ts": [
     "@upstash/qstash",
-    "@upstash/qstash",
-    "next/server",
-    "next/server",
-    "lib/gemini",
-    "lib/repo-pairs",
-    "lib/qstash",
-    "lib/stats"
+    "@upstash/qstash/receiver",
+    "../lib/gemini",
+    "../lib/repo-pairs",
+    "../lib/qstash",
+    "../lib/stats"
   ],
   "app/api/github/repos/route.ts": [
     "lib/repo-pairs.ts"
