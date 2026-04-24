@@ -93,5 +93,10 @@
     "filePath": "app/api/user/delete/route.ts",
     "title": "Delete User API Route",
     "docKey": "app__api__user__delete__route.ts"
+  },
+  {
+    "filePath": "app/api/webhooks/clerk/route.ts",
+    "title": "Clerk Webhook Handler",
+    "docKey": "app__api__webhooks__clerk__route.ts"
   }
 ]
