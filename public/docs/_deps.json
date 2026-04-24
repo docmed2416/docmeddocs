@@ -157,5 +157,9 @@
   ],
   "components/ui/badge.tsx": [
     "lib/utils.ts"
+  ],
+  "components/ui/dropdown-menu.tsx": [
+    "@radix-ui/react-dropdown-menu",
+    "lib/utils.ts"
   ]
 }
