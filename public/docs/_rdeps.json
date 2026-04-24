@@ -206,5 +206,17 @@
   ],
   "@/lib/billing/tiers": [
     "components/ui/pricing-section.tsx"
+  ],
+  "components/ui/avatar.tsx": [
+    "components/ui/sidebar.tsx"
+  ],
+  "components/ui/scroll-area.tsx": [
+    "components/ui/sidebar.tsx"
+  ],
+  "components/ui/separator.tsx": [
+    "components/ui/sidebar.tsx"
+  ],
+  "lib/utils": [
+    "components/ui/sidebar.tsx"
   ]
 }
