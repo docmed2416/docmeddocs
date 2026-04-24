@@ -53,5 +53,10 @@
     "filePath": "app/api/github/repos/route.ts",
     "title": "GitHub Repositories API Route",
     "docKey": "app__api__github__repos__route.ts"
+  },
+  {
+    "filePath": "app/api/github/reprocess-commit/route.ts",
+    "title": "Reprocess Commit API Route",
+    "docKey": "app__api__github__reprocess-commit__route.ts"
   }
 ]
