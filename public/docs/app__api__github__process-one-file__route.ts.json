@@ -1,0 +1,33 @@
+{
+  "filePath": "app/api/github/process-one-file/route.ts",
+  "title": "GitHub File Processing API Route",
+  "content": "This API route (`app/api/github/process-one-file/route.ts`) handles the processing of individual files from a GitHub repository, typically triggered by a QStash webhook. It's responsible for fetching file content, generating documentation using an AI model, and updating the documentation repository accordingly.\n\n**Purpose:**\nTo automate the documentation of code files by integrating with AI models and managing the documentation repository on GitHub.\n\n**Key Exports/Functions:**\n*   `POST /api/github/process-one-file`: The main handler for POST requests, which verifies the QStash signature, processes the file job payload, and orchestrates the documentation generation and update process.\n*   `getReceiver()`: Initializes and returns a QStash `Receiver` instance for signature verification.\n*   `fetchFileContent(token, repo, filePath)`: Fetches the content of a file from a GitHub repository.\n*   `readJsonFromRepo(token, repo, filePath, branch)`: Reads and parses JSON content from a file in a GitHub repository.\n*   `writeJsonToRepo(token, repo, filePath, data, sha, message, branch)`: Writes JSON data to a file in a GitHub repository, creating or updating it.\n*   `createPR(token, docRepoFullName, branchName, prInfo)`: Creates a Pull Request in the documentation repository.\n*   `resolveDepToFilePath(dep, entries)`: Resolves a dependency string to a file path within the documentation manifest.\n\n**Core Logic:**\n1.  **Webhook Verification:** Verifies incoming requests using the `upstash-signature` header.\n2.  **Job Processing:** Parses the `FileJobPayload` which includes details about the file to process, the target repository, the documentation repository, and PR information.\n3.  **Repository and Token Resolution:** Fetches necessary repository details and authentication tokens for both the target and documentation repositories.\n4.  **File Handling:**\n    *   **Delete Action:** If the action is 'delete', it removes the corresponding documentation file and updates the manifest and dependency graphs.\n    *   **Other Actions (Create/Update):** Fetches the file content, generates documentation using `generateDoc`, and writes the updated documentation to the documentation repository. This includes managing version history, updating the manifest (`_manifest.json`), the dependency graph (`_deps.json`), and the reverse dependency graph (`_rdeps.json`).\n5.  **PR Creation:** If it's the last file in a batch (`isLastFile` is true), it creates a Pull Request in the documentation repository to merge the changes.",
+  "dependencies": [
+    "@upstash/qstash",
+    "@upstash/qstash",
+    "next/server",
+    "next/server",
+    "lib/gemini",
+    "lib/repo-pairs",
+    "lib/qstash",
+    "lib/stats"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:22:45.910Z",
+      "title": "GitHub File Processing API Route",
+      "content": "This API route (`app/api/github/process-one-file/route.ts`) handles the processing of individual files from a GitHub repository, typically triggered by a QStash webhook. It's responsible for fetching file content, generating documentation using an AI model, and updating the documentation repository accordingly.\n\n**Purpose:**\nTo automate the documentation of code files by integrating with AI models and managing the documentation repository on GitHub.\n\n**Key Exports/Functions:**\n*   `POST /api/github/process-one-file`: The main handler for POST requests, which verifies the QStash signature, processes the file job payload, and orchestrates the documentation generation and update process.\n*   `getReceiver()`: Initializes and returns a QStash `Receiver` instance for signature verification.\n*   `fetchFileContent(token, repo, filePath)`: Fetches the content of a file from a GitHub repository.\n*   `readJsonFromRepo(token, repo, filePath, branch)`: Reads and parses JSON content from a file in a GitHub repository.\n*   `writeJsonToRepo(token, repo, filePath, data, sha, message, branch)`: Writes JSON data to a file in a GitHub repository, creating or updating it.\n*   `createPR(token, docRepoFullName, branchName, prInfo)`: Creates a Pull Request in the documentation repository.\n*   `resolveDepToFilePath(dep, entries)`: Resolves a dependency string to a file path within the documentation manifest.\n\n**Core Logic:**\n1.  **Webhook Verification:** Verifies incoming requests using the `upstash-signature` header.\n2.  **Job Processing:** Parses the `FileJobPayload` which includes details about the file to process, the target repository, the documentation repository, and PR information.\n3.  **Repository and Token Resolution:** Fetches necessary repository details and authentication tokens for both the target and documentation repositories.\n4.  **File Handling:**\n    *   **Delete Action:** If the action is 'delete', it removes the corresponding documentation file and updates the manifest and dependency graphs.\n    *   **Other Actions (Create/Update):** Fetches the file content, generates documentation using `generateDoc`, and writes the updated documentation to the documentation repository. This includes managing version history, updating the manifest (`_manifest.json`), the dependency graph (`_deps.json`), and the reverse dependency graph (`_rdeps.json`).\n5.  **PR Creation:** If it's the last file in a batch (`isLastFile` is true), it creates a Pull Request in the documentation repository to merge the changes.",
+      "dependencies": [
+        "@upstash/qstash",
+        "@upstash/qstash",
+        "next/server",
+        "next/server",
+        "lib/gemini",
+        "lib/repo-pairs",
+        "lib/qstash",
+        "lib/stats"
+      ],
+      "commitId": null
+    }
+  ]
+}
