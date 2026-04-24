@@ -161,5 +161,11 @@
   "components/ui/dropdown-menu.tsx": [
     "@radix-ui/react-dropdown-menu",
     "lib/utils.ts"
+  ],
+  "components/ui/modern-animated-sign-in.tsx": [
+    "@/lib/utils.ts",
+    "motion/react",
+    "lucide-react",
+    "next/image"
   ]
 }
