@@ -224,5 +224,6 @@
   "lib/commits.ts": [
     "./firebase-admin"
   ],
-  "lib/firebase-admin.ts": []
+  "lib/firebase-admin.ts": [],
+  "lib/github-app.ts": []
 }
