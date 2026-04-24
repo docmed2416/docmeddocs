@@ -167,5 +167,9 @@
     "motion/react",
     "lucide-react",
     "next/image"
+  ],
+  "components/ui/pricing-section.tsx": [
+    "@/lib/utils",
+    "@/lib/billing/tiers"
   ]
 }
