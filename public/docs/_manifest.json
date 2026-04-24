@@ -253,5 +253,10 @@
     "filePath": "doc-repo-template/src/types.ts",
     "title": "DocMed Types",
     "docKey": "doc-repo-template__src__types.ts"
+  },
+  {
+    "filePath": "lib/billing/stripe.ts",
+    "title": "Stripe Billing Module",
+    "docKey": "lib__billing__stripe.ts"
   }
 ]
