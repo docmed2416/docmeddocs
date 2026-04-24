@@ -1,5 +1,10 @@
 {
   "app/api/billing/contact/route.ts": [
     "@/lib/firebase-admin"
+  ],
+  "app/api/billing/checkout/route.ts": [
+    "lib/billing/stripe.ts",
+    "lib/billing/tiers.ts",
+    "lib/billing/subscription.ts"
   ]
 }
