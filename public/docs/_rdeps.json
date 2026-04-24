@@ -108,5 +108,8 @@
   ],
   "components/ui/toast": [
     "app/dashboard/integrations/_components/AddPairButton.tsx"
+  ],
+  "app/dashboard/integrations/page.tsx": [
+    "app/dashboard/integrations/_components/ExistingAccountPicker.tsx"
   ]
 }
