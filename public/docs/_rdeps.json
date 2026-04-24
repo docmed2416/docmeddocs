@@ -86,7 +86,8 @@
     "app/api/github/reprocess-commit/route.ts"
   ],
   "@/lib/repo-pairs": [
-    "app/api/github/use-installation/route.ts"
+    "app/api/github/use-installation/route.ts",
+    "app/dashboard/integrations/_components/RepoPairCard.tsx"
   ],
   "@/lib/github-installations": [
     "app/api/github/use-installation/route.ts"
@@ -111,5 +112,11 @@
   ],
   "app/dashboard/integrations/page.tsx": [
     "app/dashboard/integrations/_components/ExistingAccountPicker.tsx"
+  ],
+  "app/dashboard/integrations/_components/RepoPicker": [
+    "app/dashboard/integrations/_components/RepoPairCard.tsx"
+  ],
+  "app/dashboard/integrations/_components/ExistingAccountPicker.tsx": [
+    "app/dashboard/integrations/_components/RepoPairCard.tsx"
   ]
 }
