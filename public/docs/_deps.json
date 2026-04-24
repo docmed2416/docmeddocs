@@ -13,5 +13,10 @@
   "app/api/billing/portal/route.ts": [
     "lib/billing/stripe.ts",
     "lib/billing/subscription.ts"
+  ],
+  "app/api/github/callback/route.ts": [
+    "lib/repo-pairs.ts",
+    "lib/github-app.ts",
+    "lib/github-installations.ts"
   ]
 }
