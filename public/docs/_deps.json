@@ -114,5 +114,9 @@
     "lib/billing/usage.ts",
     "app/dashboard/integrations/_components/RepoPairCard.tsx",
     "app/dashboard/integrations/_components/AddPairButton.tsx"
+  ],
+  "app/dashboard/layout.tsx": [
+    "@/components/ui/sidebar",
+    "@/components/ui/toast"
   ]
 }
