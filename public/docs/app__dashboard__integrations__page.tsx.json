@@ -1,0 +1,25 @@
+{
+  "filePath": "app/dashboard/integrations/page.tsx",
+  "title": "Integrations Page",
+  "content": "The `IntegrationsPage` component displays and manages repository integrations for DocMed. It fetches user authentication, lists connected repository pairs, and retrieves usage statistics related to active pairs and repository initializations.\n\n**Purpose:**\n- Display a list of connected repository pairs.\n- Provide a mechanism to add new repository pairs.\n- Show usage limits and current consumption for active pairs and initializations.\n- Handle potential errors during data fetching (e.g., Firebase configuration issues).\n\n**Key Features:**\n- **User Authentication:** Uses `@clerk/nextjs/server` to get the `userId`.\n- **Data Fetching:** Asynchronously fetches `repoPairs` and `usageSnapshot` using `Promise.all`.\n- **Error Handling:** Catches and displays errors related to data fetching.\n- **Conditional Rendering:**\n    - Shows an \"Add Pair\" button with usage indicators.\n    - Displays a Firebase error message if `configError` is present.\n    - Renders a \"No repository pairs yet\" message when no integrations are found.\n    - Lists `RepoPairCard` components for each connected pair.\n\n**Components Used:**\n- `RepoPairCard`: Displays individual repository pair details and controls.\n- `AddPairButton`: A button to initiate the process of adding a new repository pair.\n\n**Usage Example:**\nThis component is rendered as a page within the `app/dashboard/integrations` route. It dynamically displays the user's repository integrations and their associated usage metrics.",
+  "dependencies": [
+    "lib/repo-pairs.ts",
+    "lib/billing/usage.ts",
+    "app/dashboard/integrations/_components/RepoPairCard.tsx",
+    "app/dashboard/integrations/_components/AddPairButton.tsx"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:24:46.306Z",
+      "title": "Integrations Page",
+      "content": "The `IntegrationsPage` component displays and manages repository integrations for DocMed. It fetches user authentication, lists connected repository pairs, and retrieves usage statistics related to active pairs and repository initializations.\n\n**Purpose:**\n- Display a list of connected repository pairs.\n- Provide a mechanism to add new repository pairs.\n- Show usage limits and current consumption for active pairs and initializations.\n- Handle potential errors during data fetching (e.g., Firebase configuration issues).\n\n**Key Features:**\n- **User Authentication:** Uses `@clerk/nextjs/server` to get the `userId`.\n- **Data Fetching:** Asynchronously fetches `repoPairs` and `usageSnapshot` using `Promise.all`.\n- **Error Handling:** Catches and displays errors related to data fetching.\n- **Conditional Rendering:**\n    - Shows an \"Add Pair\" button with usage indicators.\n    - Displays a Firebase error message if `configError` is present.\n    - Renders a \"No repository pairs yet\" message when no integrations are found.\n    - Lists `RepoPairCard` components for each connected pair.\n\n**Components Used:**\n- `RepoPairCard`: Displays individual repository pair details and controls.\n- `AddPairButton`: A button to initiate the process of adding a new repository pair.\n\n**Usage Example:**\nThis component is rendered as a page within the `app/dashboard/integrations` route. It dynamically displays the user's repository integrations and their associated usage metrics.",
+      "dependencies": [
+        "lib/repo-pairs.ts",
+        "lib/billing/usage.ts",
+        "app/dashboard/integrations/_components/RepoPairCard.tsx",
+        "app/dashboard/integrations/_components/AddPairButton.tsx"
+      ],
+      "commitId": null
+    }
+  ]
+}
