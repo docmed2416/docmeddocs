@@ -58,5 +58,10 @@
     "filePath": "app/api/github/reprocess-commit/route.ts",
     "title": "Reprocess Commit API Route",
     "docKey": "app__api__github__reprocess-commit__route.ts"
+  },
+  {
+    "filePath": "app/api/github/uninstall-app/route.ts",
+    "title": "Uninstall GitHub App Installation API Route",
+    "docKey": "app__api__github__uninstall-app__route.ts"
   }
 ]
