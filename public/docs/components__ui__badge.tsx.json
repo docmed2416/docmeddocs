@@ -1,0 +1,19 @@
+{
+  "filePath": "components/ui/badge.tsx",
+  "title": "Badge Component",
+  "content": "The `Badge` component is a UI element used to display status, categories, or tags. It's built using `class-variance-authority` for flexible styling and `cn` for class name merging.\n\n## Key Exports\n\n*   **`Badge`**: The main React component for rendering a badge.\n*   **`badgeVariants`**: A `cva` function that generates CSS class names based on variants.\n\n## Props\n\n*   **`variant`**: Controls the appearance of the badge. Accepts:\n    *   `default`: Primary color scheme.\n    *   `secondary`: Secondary color scheme.\n    *   `destructive`: Destructive color scheme (e.g., for errors).\n    *   `outline`: An outlined style.\n*   **`className`**: Allows for additional custom CSS classes to be applied.\n*   **`...props`**: Standard HTML attributes for a `div` element.\n\n## Usage Example\n\n```tsx\nimport { Badge } from \"@/components/ui/badge\";\n\nfunction MyComponent() {\n  return (\n    <div>\n      <Badge>Default</Badge>\n      <Badge variant=\"secondary\">Secondary</Badge>\n      <Badge variant=\"destructive\">Destructive</Badge>\n      <Badge variant=\"outline\">Outline</Badge>\n    </div>\n  );\n}\n```",
+  "dependencies": [
+    "lib/utils.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:26:10.569Z",
+      "title": "Badge Component",
+      "content": "The `Badge` component is a UI element used to display status, categories, or tags. It's built using `class-variance-authority` for flexible styling and `cn` for class name merging.\n\n## Key Exports\n\n*   **`Badge`**: The main React component for rendering a badge.\n*   **`badgeVariants`**: A `cva` function that generates CSS class names based on variants.\n\n## Props\n\n*   **`variant`**: Controls the appearance of the badge. Accepts:\n    *   `default`: Primary color scheme.\n    *   `secondary`: Secondary color scheme.\n    *   `destructive`: Destructive color scheme (e.g., for errors).\n    *   `outline`: An outlined style.\n*   **`className`**: Allows for additional custom CSS classes to be applied.\n*   **`...props`**: Standard HTML attributes for a `div` element.\n\n## Usage Example\n\n```tsx\nimport { Badge } from \"@/components/ui/badge\";\n\nfunction MyComponent() {\n  return (\n    <div>\n      <Badge>Default</Badge>\n      <Badge variant=\"secondary\">Secondary</Badge>\n      <Badge variant=\"destructive\">Destructive</Badge>\n      <Badge variant=\"outline\">Outline</Badge>\n    </div>\n  );\n}\n```",
+      "dependencies": [
+        "lib/utils.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
