@@ -1,0 +1,25 @@
+{
+  "filePath": "app/api/repo-pairs/switch-active/route.ts",
+  "title": "Switch Active Repo Pairs API Route",
+  "content": "This API route (`POST /app/api/repo-pairs/switch-active`) allows authenticated users to manage which of their repository pairs have webhooks activated.\n\nIt enforces subscription tier limits, checks for cooldown periods after the last webhook switch, and ensures that only owned repository pairs are selected.\n\n**Purpose:**\n\n*   To update the set of repository pairs for which webhooks are actively enabled for a given user.\n*   To enforce billing/subscription tier limits on the number of active webhook pairs.\n*   To implement a cooldown period between webhook switching actions to prevent abuse.\n\n**Key Logic:**\n\n1.  **Authentication:** Ensures the user is authenticated using Clerk.\n2.  **Input Validation:** Validates that `activePairIds` is an array of strings.\n3.  **Data Fetching:** Retrieves the user's subscription details and their list of owned repository pairs.\n4.  **Tier and Cooldown Check:** Determines the user's subscription tier and checks if the webhook switching cooldown period is active. If active, it returns a `429 Too Many Requests` status with a `retryAfter` timestamp.\n5.  **Limit Enforcement:** Checks if the requested number of active pairs exceeds the limit defined by the user's subscription tier.\n6.  **Ownership Verification:** Confirms that all provided `activePairIds` belong to the authenticated user.\n7.  **Webhook Activation:** Calls `setActiveWebhooks` to update the active webhook status for the specified pairs.\n8.  **Subscription Update:** Updates the `lastWebhookSwitchAt` timestamp in the user's subscription to enforce the cooldown.\n\n**Usage Example:**\n\n```http\nPOST /app/api/repo-pairs/switch-active\nContent-Type: application/json\n\n{\n  \"activePairIds\": [\"repo-pair-123\", \"repo-pair-456\"]\n}\n```\n\n**Success Response:**\n\n```json\n{\n  \"ok\": true\n}\n```\n\n**Error Responses:**\n\n*   `401 Unauthorized`: If the user is not authenticated.\n*   `400 Bad Request`: If `activePairIds` is not a valid array of strings.\n*   `404 Not Found`: If one or more of the provided `activePairIds` do not belong to the user.\n*   `422 Unprocessable Entity`: If the number of active pairs exceeds the subscription tier limit.\n*   `429 Too Many Requests`: If the webhook switching cooldown is active.\n",
+  "dependencies": [
+    "@clerk/nextjs/server",
+    "@/lib/billing/subscription",
+    "@/lib/billing/tiers",
+    "@/lib/repo-pairs"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T16:40:40.610Z",
+      "title": "Switch Active Repo Pairs API Route",
+      "content": "This API route (`POST /app/api/repo-pairs/switch-active`) allows authenticated users to manage which of their repository pairs have webhooks activated.\n\nIt enforces subscription tier limits, checks for cooldown periods after the last webhook switch, and ensures that only owned repository pairs are selected.\n\n**Purpose:**\n\n*   To update the set of repository pairs for which webhooks are actively enabled for a given user.\n*   To enforce billing/subscription tier limits on the number of active webhook pairs.\n*   To implement a cooldown period between webhook switching actions to prevent abuse.\n\n**Key Logic:**\n\n1.  **Authentication:** Ensures the user is authenticated using Clerk.\n2.  **Input Validation:** Validates that `activePairIds` is an array of strings.\n3.  **Data Fetching:** Retrieves the user's subscription details and their list of owned repository pairs.\n4.  **Tier and Cooldown Check:** Determines the user's subscription tier and checks if the webhook switching cooldown period is active. If active, it returns a `429 Too Many Requests` status with a `retryAfter` timestamp.\n5.  **Limit Enforcement:** Checks if the requested number of active pairs exceeds the limit defined by the user's subscription tier.\n6.  **Ownership Verification:** Confirms that all provided `activePairIds` belong to the authenticated user.\n7.  **Webhook Activation:** Calls `setActiveWebhooks` to update the active webhook status for the specified pairs.\n8.  **Subscription Update:** Updates the `lastWebhookSwitchAt` timestamp in the user's subscription to enforce the cooldown.\n\n**Usage Example:**\n\n```http\nPOST /app/api/repo-pairs/switch-active\nContent-Type: application/json\n\n{\n  \"activePairIds\": [\"repo-pair-123\", \"repo-pair-456\"]\n}\n```\n\n**Success Response:**\n\n```json\n{\n  \"ok\": true\n}\n```\n\n**Error Responses:**\n\n*   `401 Unauthorized`: If the user is not authenticated.\n*   `400 Bad Request`: If `activePairIds` is not a valid array of strings.\n*   `404 Not Found`: If one or more of the provided `activePairIds` do not belong to the user.\n*   `422 Unprocessable Entity`: If the number of active pairs exceeds the subscription tier limit.\n*   `429 Too Many Requests`: If the webhook switching cooldown is active.\n",
+      "dependencies": [
+        "@clerk/nextjs/server",
+        "@/lib/billing/subscription",
+        "@/lib/billing/tiers",
+        "@/lib/repo-pairs"
+      ],
+      "commitId": null
+    }
+  ]
+}
