@@ -180,5 +180,11 @@
   ],
   "components/ui/separator.tsx": [
     "lib/utils.ts"
+  ],
+  "components/ui/sidebar.tsx": [
+    "components/ui/avatar",
+    "components/ui/scroll-area",
+    "components/ui/separator",
+    "lib/utils"
   ]
 }
