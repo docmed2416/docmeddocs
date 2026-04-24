@@ -20,7 +20,8 @@
   "lib/billing/usage.ts": [
     "app/api/billing/usage/route.ts",
     "app/api/github/init-doc-repo/route.ts",
-    "app/api/repo-pairs/route.ts"
+    "app/api/repo-pairs/route.ts",
+    "app/dashboard/integrations/page.tsx"
   ],
   "lib/repo-pairs.ts": [
     "app/api/github/callback/route.ts",
@@ -33,7 +34,8 @@
     "app/api/repo-pairs/[pairId]/route.ts",
     "app/api/repo-pairs/route.ts",
     "app/api/webhooks/github/[userId]/[pairId]/route.ts",
-    "app/api/webhooks/stripe/route.ts"
+    "app/api/webhooks/stripe/route.ts",
+    "app/dashboard/integrations/page.tsx"
   ],
   "lib/github-app.ts": [
     "app/api/github/callback/route.ts",
@@ -118,5 +120,11 @@
   ],
   "app/dashboard/integrations/_components/ExistingAccountPicker.tsx": [
     "app/dashboard/integrations/_components/RepoPairCard.tsx"
+  ],
+  "app/dashboard/integrations/_components/RepoPairCard.tsx": [
+    "app/dashboard/integrations/page.tsx"
+  ],
+  "app/dashboard/integrations/_components/AddPairButton.tsx": [
+    "app/dashboard/integrations/page.tsx"
   ]
 }
