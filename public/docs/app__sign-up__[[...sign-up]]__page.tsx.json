@@ -1,0 +1,21 @@
+{
+  "filePath": "app/sign-up/[[...sign-up]]/page.tsx",
+  "title": "Sign Up Page",
+  "content": "This page handles the user sign-up flow for the DocMed application.\n\nIt integrates with Clerk for authentication, providing email/password sign-up and Google OAuth.\n\n**Key Features:**\n*   **Email/Password Sign-up:** Allows users to create accounts using their email and a password.\n*   **Email Verification:** Implements a two-step process where users receive a code via email to verify their account.\n*   **Google OAuth:** Enables sign-up and sign-in via Google.\n*   **Animated UI:** Utilizes custom UI components (`AnimatedForm`, `Ripple`, `TechOrbitDisplay`, `BoxReveal`, `Input`, `Label`) for a modern and engaging user experience.\n*   **Captcha Integration:** Includes a placeholder for a captcha verification step (`CaptchaSlot`).\n\n**Key Components/Functions:**\n*   `SignUpPage`: The main React component for the sign-up page.\n*   `CaptchaSlot`: A component that manages the loading and rendering of a captcha element.\n*   `OrbitIcon`: A helper component for creating styled icons used in the orbit display.\n*   `handleSubmit`: Handles the initial sign-up request (email/password).\n*   `handleVerify`: Handles the email verification code submission.\n*   `handleGoogleSignUp`: Initiates the Google OAuth sign-up process.\n\n**Usage Example (Conceptual):**\n\nWhen a user visits the `/sign-up` route, they are presented with a form to enter their email and password. Upon submission, if successful, an email verification code is sent. The UI then updates to prompt the user to enter the received code. After successful verification, the user is redirected to their dashboard.",
+  "dependencies": [
+    "components/ui/modern-animated-sign-in",
+    "app/sign-in/page"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:25:52.113Z",
+      "title": "Sign Up Page",
+      "content": "This page handles the user sign-up flow for the DocMed application.\n\nIt integrates with Clerk for authentication, providing email/password sign-up and Google OAuth.\n\n**Key Features:**\n*   **Email/Password Sign-up:** Allows users to create accounts using their email and a password.\n*   **Email Verification:** Implements a two-step process where users receive a code via email to verify their account.\n*   **Google OAuth:** Enables sign-up and sign-in via Google.\n*   **Animated UI:** Utilizes custom UI components (`AnimatedForm`, `Ripple`, `TechOrbitDisplay`, `BoxReveal`, `Input`, `Label`) for a modern and engaging user experience.\n*   **Captcha Integration:** Includes a placeholder for a captcha verification step (`CaptchaSlot`).\n\n**Key Components/Functions:**\n*   `SignUpPage`: The main React component for the sign-up page.\n*   `CaptchaSlot`: A component that manages the loading and rendering of a captcha element.\n*   `OrbitIcon`: A helper component for creating styled icons used in the orbit display.\n*   `handleSubmit`: Handles the initial sign-up request (email/password).\n*   `handleVerify`: Handles the email verification code submission.\n*   `handleGoogleSignUp`: Initiates the Google OAuth sign-up process.\n\n**Usage Example (Conceptual):**\n\nWhen a user visits the `/sign-up` route, they are presented with a form to enter their email and password. Upon submission, if successful, an email verification code is sent. The UI then updates to prompt the user to enter the received code. After successful verification, the user is redirected to their dashboard.",
+      "dependencies": [
+        "components/ui/modern-animated-sign-in",
+        "app/sign-in/page"
+      ],
+      "commitId": null
+    }
+  ]
+}
