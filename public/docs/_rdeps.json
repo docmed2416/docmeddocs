@@ -22,7 +22,8 @@
     "app/api/github/callback/route.ts",
     "app/api/github/init-doc-repo/route.ts",
     "app/api/github/installations/route.ts",
-    "app/api/github/repos/route.ts"
+    "app/api/github/repos/route.ts",
+    "app/api/github/reprocess-commit/route.ts"
   ],
   "lib/github-app.ts": [
     "app/api/github/callback/route.ts"
@@ -38,7 +39,8 @@
     "app/api/github/process-one-file/route.ts"
   ],
   "lib/qstash.ts": [
-    "app/api/github/init-doc-repo/route.ts"
+    "app/api/github/init-doc-repo/route.ts",
+    "app/api/github/reprocess-commit/route.ts"
   ],
   "lib/gemini.ts": [
     "app/api/github/init-doc-repo/route.ts"
@@ -60,5 +62,11 @@
   ],
   "lib/stats": [
     "app/api/github/process-one-file/route.ts"
+  ],
+  "lib/commits.ts": [
+    "app/api/github/reprocess-commit/route.ts"
+  ],
+  "lib/rate-limit.ts": [
+    "app/api/github/reprocess-commit/route.ts"
   ]
 }
