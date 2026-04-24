@@ -15,5 +15,14 @@
   ],
   "lib/billing/usage.ts": [
     "app/api/billing/usage/route.ts"
+  ],
+  "lib/repo-pairs.ts": [
+    "app/api/github/callback/route.ts"
+  ],
+  "lib/github-app.ts": [
+    "app/api/github/callback/route.ts"
+  ],
+  "lib/github-installations.ts": [
+    "app/api/github/callback/route.ts"
   ]
 }
