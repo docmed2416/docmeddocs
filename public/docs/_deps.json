@@ -34,5 +34,15 @@
   ],
   "app/api/github/installations/route.ts": [
     "lib/repo-pairs.ts"
+  ],
+  "app/api/github/process-one-file/route.ts": [
+    "@upstash/qstash",
+    "@upstash/qstash",
+    "next/server",
+    "next/server",
+    "lib/gemini",
+    "lib/repo-pairs",
+    "lib/qstash",
+    "lib/stats"
   ]
 }
