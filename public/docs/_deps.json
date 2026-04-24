@@ -228,5 +228,8 @@
   "lib/github-app.ts": [],
   "lib/qstash.ts": [
     "./gemini"
+  ],
+  "lib/github-installations.ts": [
+    "./firebase-admin"
   ]
 }
