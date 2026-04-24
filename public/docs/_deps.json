@@ -23,5 +23,13 @@
     "@clerk/nextjs/server",
     "lib/repo-pairs"
   ],
-  "app/api/github/connect/route.ts": []
+  "app/api/github/connect/route.ts": [],
+  "app/api/github/init-doc-repo/route.ts": [
+    "lib/repo-pairs.ts",
+    "lib/qstash.ts",
+    "lib/gemini.ts",
+    "lib/billing/usage.ts",
+    "lib/billing/subscription.ts",
+    "app/api/github/init-doc-repo/route.ts"
+  ]
 }
