@@ -68,5 +68,10 @@
     "filePath": "app/api/github/uninstall-app/route.ts",
     "title": "Uninstall GitHub App Installation API Route",
     "docKey": "app__api__github__uninstall-app__route.ts"
+  },
+  {
+    "filePath": "app/api/repo-pairs/[pairId]/route.ts",
+    "title": "Repository Pair API Route",
+    "docKey": "app__api__repo-pairs__[pairId]__route.ts"
   }
 ]
