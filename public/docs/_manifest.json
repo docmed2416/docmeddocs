@@ -88,5 +88,10 @@
     "filePath": "app/api/repo-pairs/switch-active/route.ts",
     "title": "Switch Active Repository Pairs API Route",
     "docKey": "app__api__repo-pairs__switch-active__route.ts"
+  },
+  {
+    "filePath": "app/api/user/delete/route.ts",
+    "title": "Delete User API Route",
+    "docKey": "app__api__user__delete__route.ts"
   }
 ]
