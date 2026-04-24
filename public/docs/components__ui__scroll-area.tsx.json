@@ -1,0 +1,19 @@
+{
+  "filePath": "components/ui/scroll-area.tsx",
+  "title": "ScrollArea Component",
+  "content": "## ScrollArea Component\n\nThis component provides a customizable scrollable area using Radix UI's ScrollArea primitive.\n\n### Purpose\n\nTo create flexible and visually appealing scrollable containers within the UI, allowing content to overflow gracefully while providing a clear scrollbar.\n\n### Key Exports\n\n*   **ScrollArea**: The main component for creating a scrollable viewport. It accepts standard `React.ComponentProps` for the ScrollArea primitive, including `className` for styling and `children` for the content within the scrollable area.\n*   **ScrollBar**: A component that renders the scrollbar for the `ScrollArea`. It supports `orientation` (vertical or horizontal) and can be styled via `className`.\n\n### Usage Example\n\n```tsx\nimport { ScrollArea } from '@/components/ui/scroll-area';\n\nfunction MyComponent() {\n  return (\n    <ScrollArea className=\"h-64 w-full rounded-md border\">\n      <div className=\"p-4\">\n        {/* Your scrollable content goes here */}\n        <p>This is some content that will make the scroll area scroll.</p>\n        <p>More content...</p>\n        <p>Even more content...</p>\n        <p>...</p>\n        <p>The end of the content.</p>\n      </div>\n    </ScrollArea>\n  );\n}\n```",
+  "dependencies": [
+    "lib/utils.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:26:43.572Z",
+      "title": "ScrollArea Component",
+      "content": "## ScrollArea Component\n\nThis component provides a customizable scrollable area using Radix UI's ScrollArea primitive.\n\n### Purpose\n\nTo create flexible and visually appealing scrollable containers within the UI, allowing content to overflow gracefully while providing a clear scrollbar.\n\n### Key Exports\n\n*   **ScrollArea**: The main component for creating a scrollable viewport. It accepts standard `React.ComponentProps` for the ScrollArea primitive, including `className` for styling and `children` for the content within the scrollable area.\n*   **ScrollBar**: A component that renders the scrollbar for the `ScrollArea`. It supports `orientation` (vertical or horizontal) and can be styled via `className`.\n\n### Usage Example\n\n```tsx\nimport { ScrollArea } from '@/components/ui/scroll-area';\n\nfunction MyComponent() {\n  return (\n    <ScrollArea className=\"h-64 w-full rounded-md border\">\n      <div className=\"p-4\">\n        {/* Your scrollable content goes here */}\n        <p>This is some content that will make the scroll area scroll.</p>\n        <p>More content...</p>\n        <p>Even more content...</p>\n        <p>...</p>\n        <p>The end of the content.</p>\n      </div>\n    </ScrollArea>\n  );\n}\n```",
+      "dependencies": [
+        "lib/utils.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
