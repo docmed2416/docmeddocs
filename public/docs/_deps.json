@@ -201,5 +201,8 @@
     "./DependencyMapView",
     "./DocView",
     "./FolderView"
+  ],
+  "doc-repo-template/src/TabBar.tsx": [
+    "./types"
   ]
 }
