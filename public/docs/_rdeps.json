@@ -260,5 +260,8 @@
   ],
   "@/lib/rate-limit": [
     "lib/billing/usage.ts"
+  ],
+  "./firebase-admin": [
+    "lib/commits.ts"
   ]
 }
