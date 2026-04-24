@@ -220,5 +220,8 @@
     "./subscription",
     "./tiers",
     "@/lib/rate-limit"
+  ],
+  "lib/commits.ts": [
+    "./firebase-admin"
   ]
 }
