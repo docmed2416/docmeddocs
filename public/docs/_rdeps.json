@@ -247,5 +247,8 @@
   ],
   "./FolderView": [
     "doc-repo-template/src/App.tsx"
+  ],
+  "doc-repo-template/src/App.tsx": [
+    "doc-repo-template/src/main.tsx"
   ]
 }
