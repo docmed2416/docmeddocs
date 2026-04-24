@@ -137,5 +137,9 @@
     "app/api/billing/checkout"
   ],
   "app/layout.tsx": [],
-  "app/globals.css": []
+  "app/globals.css": [],
+  "app/page.tsx": [
+    "@/components/ui/globe-hero",
+    "@/components/ui/pricing-section"
+  ]
 }
