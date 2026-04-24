@@ -140,7 +140,8 @@
     "app/dashboard/page.tsx"
   ],
   "lucide-react": [
-    "app/dashboard/page.tsx"
+    "app/dashboard/page.tsx",
+    "components/ui/modern-animated-sign-in.tsx"
   ],
   "@clerk/nextjs": [
     "app/dashboard/settings/page.tsx"
@@ -187,5 +188,14 @@
   ],
   "@radix-ui/react-dropdown-menu": [
     "components/ui/dropdown-menu.tsx"
+  ],
+  "@/lib/utils.ts": [
+    "components/ui/modern-animated-sign-in.tsx"
+  ],
+  "motion/react": [
+    "components/ui/modern-animated-sign-in.tsx"
+  ],
+  "next/image": [
+    "components/ui/modern-animated-sign-in.tsx"
   ]
 }
