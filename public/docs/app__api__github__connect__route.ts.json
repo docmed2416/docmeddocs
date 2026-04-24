@@ -1,0 +1,15 @@
+{
+  "filePath": "app/api/github/connect/route.ts",
+  "title": "GitHub OAuth Connection Route",
+  "content": "This API route handles the initiation of the GitHub OAuth flow for DocMed.\n\nIt redirects the user to GitHub's app installation page, generating a state parameter to maintain context and security. This state includes the `type` of integration (target or doc), a `pairId` to link the integration to a specific entity, and a `nonce` for CSRF protection.\n\nUpon successful redirection back from GitHub, the `github_oauth_state` cookie will be used to verify the request.\n\n**Purpose:**\n- Initiate the GitHub OAuth flow for application installation.\n- Securely manage the OAuth state using cookies.\n\n**Key Exports/Functions:**\n- `GET`: Handles GET requests to initiate the OAuth flow.\n\n**Usage Example:**\nNavigating to `/api/github/connect?type=target&pairId=123` will start the process of connecting a GitHub app for a target with ID `123`.",
+  "dependencies": [],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:19:48.668Z",
+      "title": "GitHub OAuth Connection Route",
+      "content": "This API route handles the initiation of the GitHub OAuth flow for DocMed.\n\nIt redirects the user to GitHub's app installation page, generating a state parameter to maintain context and security. This state includes the `type` of integration (target or doc), a `pairId` to link the integration to a specific entity, and a `nonce` for CSRF protection.\n\nUpon successful redirection back from GitHub, the `github_oauth_state` cookie will be used to verify the request.\n\n**Purpose:**\n- Initiate the GitHub OAuth flow for application installation.\n- Securely manage the OAuth state using cookies.\n\n**Key Exports/Functions:**\n- `GET`: Handles GET requests to initiate the OAuth flow.\n\n**Usage Example:**\nNavigating to `/api/github/connect?type=target&pairId=123` will start the process of connecting a GitHub app for a target with ID `123`.",
+      "dependencies": [],
+      "commitId": null
+    }
+  ]
+}
