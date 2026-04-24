@@ -25,5 +25,6 @@
   "lib/billing/subscription.ts": [
     "@/lib/firebase-admin",
     "lib/billing/tiers"
-  ]
+  ],
+  "lib/billing/tiers.ts": []
 }
