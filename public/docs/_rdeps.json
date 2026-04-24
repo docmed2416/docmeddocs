@@ -263,5 +263,8 @@
   ],
   "./firebase-admin": [
     "lib/commits.ts"
+  ],
+  "./gemini": [
+    "lib/qstash.ts"
   ]
 }
