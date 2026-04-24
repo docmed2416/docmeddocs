@@ -5,22 +5,22 @@
   "lib/billing/stripe.ts": [
     "app/api/billing/checkout/route.ts",
     "app/api/billing/portal/route.ts",
-    "app/api/webhooks/stripe/route.ts",
-    "lib/user-deletion.ts"
+    "lib/user-deletion.ts",
+    "app/api/webhooks/stripe/route.ts"
   ],
   "lib/billing/tiers.ts": [
     "app/api/billing/checkout/route.ts",
-    "app/api/webhooks/stripe/route.ts",
     "lib/billing/subscription.ts",
-    "lib/billing/usage.ts"
+    "lib/billing/usage.ts",
+    "app/api/webhooks/stripe/route.ts"
   ],
   "lib/billing/subscription.ts": [
     "app/api/billing/checkout/route.ts",
     "app/api/billing/portal/route.ts",
     "app/api/github/init-doc-repo/route.ts",
-    "app/api/webhooks/stripe/route.ts",
     "lib/billing/usage.ts",
-    "lib/user-deletion.ts"
+    "lib/user-deletion.ts",
+    "app/api/webhooks/stripe/route.ts"
   ],
   "lib/billing/usage.ts": [
     "app/api/billing/usage/route.ts",
@@ -39,8 +39,8 @@
     "app/api/repo-pairs/[pairId]/route.ts",
     "app/api/repo-pairs/route.ts",
     "app/api/webhooks/github/[userId]/[pairId]/route.ts",
-    "app/api/webhooks/stripe/route.ts",
-    "app/dashboard/integrations/page.tsx"
+    "app/dashboard/integrations/page.tsx",
+    "app/api/webhooks/stripe/route.ts"
   ],
   "lib/github-app.ts": [
     "app/api/github/callback/route.ts",
