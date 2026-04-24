@@ -78,5 +78,8 @@
     "lib/billing/subscription",
     "lib/billing/tiers",
     "lib/repo-pairs"
+  ],
+  "app/api/user/delete/route.ts": [
+    "@/lib/user-deletion"
   ]
 }
