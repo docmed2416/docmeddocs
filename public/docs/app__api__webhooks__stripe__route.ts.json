@@ -1,0 +1,25 @@
+{
+  "filePath": "app/api/webhooks/stripe/route.ts",
+  "title": "Stripe Webhook Handler",
+  "content": "This file handles incoming Stripe webhook events to manage user subscriptions and their associated tier limits. It verifies webhook signatures, processes events based on their type, and updates subscription status and active webhook limits accordingly.\n\n**Key Functions:**\n\n*   **`POST(request: NextRequest)`**: The main API route handler that receives Stripe webhooks.\n    *   It verifies the incoming `stripe-signature` against the configured webhook secret.\n    *   It constructs the Stripe event object.\n    *   It extracts the `userId` from the event metadata or client reference ID.\n    *   It checks if the event has already been processed for the user.\n    *   It calls `handleEvent` to process the event and `markStripeEventProcessed` upon success.\n*   **`extractUserId(event: Stripe.Event)`**: Extracts the `userId` from different Stripe event types (e.g., `checkout.session.completed`, `customer.subscription.updated`, `customer.subscription.deleted`).\n*   **`handleEvent(event: Stripe.Event, userId: string)`**: Processes specific Stripe event types:\n    *   **`checkout.session.completed`**: Creates or updates a user's subscription, setting their tier, status, and customer/subscription IDs. It also adjusts active webhook limits based on the new tier.\n    *   **`customer.subscription.updated`**: Updates the user's subscription details (tier, status, period, cancellation status) and adjusts active webhook limits.\n    *   **`customer.subscription.deleted`**: Resets the user's subscription to a 'free' tier with 'canceled' status and sets active webhook limits to the free tier's default.\n\n**Usage Example:**\n\nWhen Stripe sends a `checkout.session.completed` event after a user successfully purchases a subscription, this handler will:\n\n1.  Verify the webhook signature.\n2.  Extract the `userId` and `tierId` from the checkout session metadata.\n3.  Retrieve the subscription details from Stripe.\n4.  Update the user's subscription record in the database with their new tier, active dates, and Stripe customer/subscription IDs.\n5.  Adjust the user's allowed active webhooks based on the newly assigned tier.\n\n```bash\n# Stripe CLI command to forward events to this local endpoint\nstripe listen --forward-to localhost:3000/api/webhooks/stripe\n```",
+  "dependencies": [
+    "lib/billing/stripe",
+    "lib/billing/subscription",
+    "lib/billing/tiers",
+    "lib/repo-pairs"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T16:40:46.172Z",
+      "title": "Stripe Webhook Handler",
+      "content": "This file handles incoming Stripe webhook events to manage user subscriptions and their associated tier limits. It verifies webhook signatures, processes events based on their type, and updates subscription status and active webhook limits accordingly.\n\n**Key Functions:**\n\n*   **`POST(request: NextRequest)`**: The main API route handler that receives Stripe webhooks.\n    *   It verifies the incoming `stripe-signature` against the configured webhook secret.\n    *   It constructs the Stripe event object.\n    *   It extracts the `userId` from the event metadata or client reference ID.\n    *   It checks if the event has already been processed for the user.\n    *   It calls `handleEvent` to process the event and `markStripeEventProcessed` upon success.\n*   **`extractUserId(event: Stripe.Event)`**: Extracts the `userId` from different Stripe event types (e.g., `checkout.session.completed`, `customer.subscription.updated`, `customer.subscription.deleted`).\n*   **`handleEvent(event: Stripe.Event, userId: string)`**: Processes specific Stripe event types:\n    *   **`checkout.session.completed`**: Creates or updates a user's subscription, setting their tier, status, and customer/subscription IDs. It also adjusts active webhook limits based on the new tier.\n    *   **`customer.subscription.updated`**: Updates the user's subscription details (tier, status, period, cancellation status) and adjusts active webhook limits.\n    *   **`customer.subscription.deleted`**: Resets the user's subscription to a 'free' tier with 'canceled' status and sets active webhook limits to the free tier's default.\n\n**Usage Example:**\n\nWhen Stripe sends a `checkout.session.completed` event after a user successfully purchases a subscription, this handler will:\n\n1.  Verify the webhook signature.\n2.  Extract the `userId` and `tierId` from the checkout session metadata.\n3.  Retrieve the subscription details from Stripe.\n4.  Update the user's subscription record in the database with their new tier, active dates, and Stripe customer/subscription IDs.\n5.  Adjust the user's allowed active webhooks based on the newly assigned tier.\n\n```bash\n# Stripe CLI command to forward events to this local endpoint\nstripe listen --forward-to localhost:3000/api/webhooks/stripe\n```",
+      "dependencies": [
+        "lib/billing/stripe",
+        "lib/billing/subscription",
+        "lib/billing/tiers",
+        "lib/repo-pairs"
+      ],
+      "commitId": null
+    }
+  ]
+}
