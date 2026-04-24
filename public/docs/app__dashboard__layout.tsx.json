@@ -1,0 +1,21 @@
+{
+  "filePath": "app/dashboard/layout.tsx",
+  "title": "Dashboard Layout",
+  "content": "The `DashboardLayout` component serves as the main layout for the dashboard section of the application. It wraps the dashboard content with a `ToastProvider` for managing toast notifications and arranges a `Sidebar` alongside the main content area.\n\n**Key Exports/Functions:**\n\n*   `DashboardLayout`: A React component that defines the structure of the dashboard. It accepts `children` as a prop, which represents the content to be displayed within the layout.\n\n**Props:**\n\n*   `children`: `React.ReactNode` - The content that will be rendered within the main area of the dashboard.\n\n**Usage Example:**\n\n```typescript\n// app/dashboard/page.tsx\nimport DashboardLayout from './layout';\n\nexport default function DashboardPage() {\n  return (\n    <DashboardLayout>\n      {/* Dashboard specific content goes here */}\n      <h1>Welcome to your Dashboard!</h1>\n    </DashboardLayout>\n  );\n}\n```",
+  "dependencies": [
+    "@/components/ui/sidebar",
+    "@/components/ui/toast"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:24:52.096Z",
+      "title": "Dashboard Layout",
+      "content": "The `DashboardLayout` component serves as the main layout for the dashboard section of the application. It wraps the dashboard content with a `ToastProvider` for managing toast notifications and arranges a `Sidebar` alongside the main content area.\n\n**Key Exports/Functions:**\n\n*   `DashboardLayout`: A React component that defines the structure of the dashboard. It accepts `children` as a prop, which represents the content to be displayed within the layout.\n\n**Props:**\n\n*   `children`: `React.ReactNode` - The content that will be rendered within the main area of the dashboard.\n\n**Usage Example:**\n\n```typescript\n// app/dashboard/page.tsx\nimport DashboardLayout from './layout';\n\nexport default function DashboardPage() {\n  return (\n    <DashboardLayout>\n      {/* Dashboard specific content goes here */}\n      <h1>Welcome to your Dashboard!</h1>\n    </DashboardLayout>\n  );\n}\n```",
+      "dependencies": [
+        "@/components/ui/sidebar",
+        "@/components/ui/toast"
+      ],
+      "commitId": null
+    }
+  ]
+}
