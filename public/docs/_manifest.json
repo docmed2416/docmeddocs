@@ -290,6 +290,11 @@
     "docKey": "lib__github-app.ts"
   },
   {
+    "filePath": "lib/github-installations.ts",
+    "title": "DocMed GitHub Installations Management",
+    "docKey": "lib__github-installations.ts"
+  },
+  {
     "filePath": "lib/qstash.ts",
     "title": "QStash Client and File Job Publishing",
     "docKey": "lib__qstash.ts"
