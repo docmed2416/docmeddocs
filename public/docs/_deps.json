@@ -18,5 +18,9 @@
     "lib/repo-pairs.ts",
     "lib/github-app.ts",
     "lib/github-installations.ts"
+  ],
+  "app/api/github/clear-slot/route.ts": [
+    "@clerk/nextjs/server",
+    "lib/repo-pairs"
   ]
 }
