@@ -135,5 +135,6 @@
     "app/api/billing/usage",
     "app/api/billing/portal",
     "app/api/billing/checkout"
-  ]
+  ],
+  "app/layout.tsx": []
 }
