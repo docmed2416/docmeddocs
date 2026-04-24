@@ -263,5 +263,10 @@
     "filePath": "lib/billing/subscription.ts",
     "title": "Billing Subscription Management",
     "docKey": "lib__billing__subscription.ts"
+  },
+  {
+    "filePath": "lib/billing/tiers.ts",
+    "title": "Billing Tiers Configuration",
+    "docKey": "lib__billing__tiers.ts"
   }
 ]
