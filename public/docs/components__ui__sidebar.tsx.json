@@ -1,0 +1,25 @@
+{
+  "filePath": "components/ui/sidebar.tsx",
+  "title": "Sidebar Component",
+  "content": "The `Sidebar` component provides a persistent navigation menu for the application. It's designed to be collapsed or expanded, offering a compact view or full navigation options.\n\n## Purpose\n\n- Displays primary navigation links (Dashboard, Integrations, Settings).\n- Shows the user's avatar and name, with a sign-out option.\n- Supports collapsing and expanding to save screen real estate.\n- Dynamically highlights the active navigation item based on the current URL.\n\n## Key Exports\n\n- `Sidebar`: A React functional component.\n\n## Key Logic and Features\n\n- **State Management**: Uses `useState` to manage the `collapsed` and `signingOut` states.\n- **Navigation**: Leverages `next/navigation`'s `usePathname` to determine the active link.\n- **Authentication**: Integrates with `@clerk/nextjs` to display user information (`useUser`) and handle sign-out (`useClerk`).\n- **Dynamic Styling**: Uses `clsx` (via `cn` utility) to apply conditional CSS classes for collapsed/expanded states and active links.\n- **Loading States**: Displays placeholder UI elements while user data is loading or during the sign-out process.\n- **Avatar Handling**: Generates initials for the `AvatarFallback` if the user's image or full name is not available.\n\n## Usage Example\n\n```typescript\nimport { Sidebar } from '@/components/ui/sidebar';\n\nfunction Layout() {\n  return (\n    <div className=\"flex\">\n      <Sidebar />\n      <main className=\"flex-1 p-4\">\n        {/* Main content goes here */}\n      </main>\n    </div>\n  );\n}\n\nexport default Layout;\n```",
+  "dependencies": [
+    "components/ui/avatar",
+    "components/ui/scroll-area",
+    "components/ui/separator",
+    "lib/utils"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:26:57.114Z",
+      "title": "Sidebar Component",
+      "content": "The `Sidebar` component provides a persistent navigation menu for the application. It's designed to be collapsed or expanded, offering a compact view or full navigation options.\n\n## Purpose\n\n- Displays primary navigation links (Dashboard, Integrations, Settings).\n- Shows the user's avatar and name, with a sign-out option.\n- Supports collapsing and expanding to save screen real estate.\n- Dynamically highlights the active navigation item based on the current URL.\n\n## Key Exports\n\n- `Sidebar`: A React functional component.\n\n## Key Logic and Features\n\n- **State Management**: Uses `useState` to manage the `collapsed` and `signingOut` states.\n- **Navigation**: Leverages `next/navigation`'s `usePathname` to determine the active link.\n- **Authentication**: Integrates with `@clerk/nextjs` to display user information (`useUser`) and handle sign-out (`useClerk`).\n- **Dynamic Styling**: Uses `clsx` (via `cn` utility) to apply conditional CSS classes for collapsed/expanded states and active links.\n- **Loading States**: Displays placeholder UI elements while user data is loading or during the sign-out process.\n- **Avatar Handling**: Generates initials for the `AvatarFallback` if the user's image or full name is not available.\n\n## Usage Example\n\n```typescript\nimport { Sidebar } from '@/components/ui/sidebar';\n\nfunction Layout() {\n  return (\n    <div className=\"flex\">\n      <Sidebar />\n      <main className=\"flex-1 p-4\">\n        {/* Main content goes here */}\n      </main>\n    </div>\n  );\n}\n\nexport default Layout;\n```",
+      "dependencies": [
+        "components/ui/avatar",
+        "components/ui/scroll-area",
+        "components/ui/separator",
+        "lib/utils"
+      ],
+      "commitId": null
+    }
+  ]
+}
