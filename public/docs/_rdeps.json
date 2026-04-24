@@ -256,7 +256,8 @@
     "doc-repo-template/src/main.tsx"
   ],
   "lib/firebase-admin.ts": [
-    "lib/billing/subscription.ts"
+    "lib/billing/subscription.ts",
+    "lib/github-installations.ts"
   ],
   "@/lib/rate-limit": [
     "lib/billing/usage.ts"
