@@ -31,5 +31,8 @@
     "lib/billing/usage.ts",
     "lib/billing/subscription.ts",
     "app/api/github/init-doc-repo/route.ts"
+  ],
+  "app/api/github/installations/route.ts": [
+    "lib/repo-pairs.ts"
   ]
 }
