@@ -1,0 +1,8 @@
+{
+  "app/api/github/process-one-file/route.ts": [
+    "lib/gemini",
+    "lib/repo-pairs",
+    "lib/stats",
+    "lib/qstash"
+  ]
+}
