@@ -1,0 +1,15 @@
+{
+  "filePath": "app/layout.tsx",
+  "title": "Root Layout Component (`app/layout.tsx`)",
+  "content": "This file defines the root layout for the entire application. It sets up the basic HTML structure, includes global CSS, and applies font variables.\n\n**Purpose:**\n\n*   Establishes the foundational HTML document structure (`<html>`, `<body>`).\n*   Applies global styling and dark mode.\n*   Integrates Clerk authentication provider.\n*   Defines metadata for the application (title and description).\n*   Loads custom fonts (Geist Sans and Geist Mono) for consistent typography.\n\n**Key Exports/Functions/Props:**\n\n*   **`metadata`**: An object containing SEO-related metadata for the application.\n*   **`RootLayout`**: The default export, a React component that wraps all other application pages. It accepts `children` as a prop, which represents the content of the current page.\n\n**Usage Example:**\n\nThis layout is automatically applied to all pages within the `app` directory. Developers don't typically need to import or use it directly. It serves as a wrapper for the entire application's content.\n\n```tsx\n// Example of how a page component would be rendered within this layout:\n// app/page.tsx\nexport default function HomePage() {\n  return (\n    <div>\n      <h1>Welcome to DocMed!</h1>\n      <p>This content is rendered inside the RootLayout.</p>\n    </div>\n  );\n}\n```",
+  "dependencies": [],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:25:26.085Z",
+      "title": "Root Layout Component (`app/layout.tsx`)",
+      "content": "This file defines the root layout for the entire application. It sets up the basic HTML structure, includes global CSS, and applies font variables.\n\n**Purpose:**\n\n*   Establishes the foundational HTML document structure (`<html>`, `<body>`).\n*   Applies global styling and dark mode.\n*   Integrates Clerk authentication provider.\n*   Defines metadata for the application (title and description).\n*   Loads custom fonts (Geist Sans and Geist Mono) for consistent typography.\n\n**Key Exports/Functions/Props:**\n\n*   **`metadata`**: An object containing SEO-related metadata for the application.\n*   **`RootLayout`**: The default export, a React component that wraps all other application pages. It accepts `children` as a prop, which represents the content of the current page.\n\n**Usage Example:**\n\nThis layout is automatically applied to all pages within the `app` directory. Developers don't typically need to import or use it directly. It serves as a wrapper for the entire application's content.\n\n```tsx\n// Example of how a page component would be rendered within this layout:\n// app/page.tsx\nexport default function HomePage() {\n  return (\n    <div>\n      <h1>Welcome to DocMed!</h1>\n      <p>This content is rendered inside the RootLayout.</p>\n    </div>\n  );\n}\n```",
+      "dependencies": [],
+      "commitId": null
+    }
+  ]
+}
