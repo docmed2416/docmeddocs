@@ -186,7 +186,8 @@
     "components/ui/badge.tsx",
     "components/ui/dropdown-menu.tsx",
     "components/ui/globe-hero.tsx",
-    "components/ui/scroll-area.tsx"
+    "components/ui/scroll-area.tsx",
+    "components/ui/separator.tsx"
   ],
   "@radix-ui/react-dropdown-menu": [
     "components/ui/dropdown-menu.tsx"
