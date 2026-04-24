@@ -1,0 +1,19 @@
+{
+  "filePath": "app/sign-in/[[...sign-in]]/page.tsx",
+  "title": "Sign-In Page (`[[...sign-in]]/page.tsx`)",
+  "content": "This file implements the sign-in page for the DocMed application. It utilizes Clerk for authentication, Next.js for routing, and custom UI components for a modern animated experience.\n\n## Purpose\n\nProvides a user interface for users to sign in to their DocMed accounts using email/password or Google OAuth. It features a visually engaging layout with animated elements.\n\n## Key Features & Exports\n\n-   **`SignInPage` Component**: The main React component that renders the sign-in form and the accompanying animated display.\n-   **Clerk Integration**: Uses `useSignIn` from `@clerk/nextjs/legacy` to handle authentication logic.\n-   **State Management**: Manages `email`, `password`, `error`, and `loading` states.\n-   **Form Handling**: Implements `handleSubmit` for email/password sign-in and `handleGoogleLogin` for OAuth flow.\n-   **UI Components**: Leverages `AnimatedForm`, `Ripple`, and `TechOrbitDisplay` from `@/components/ui/modern-animated-sign-in` for visual appeal.\n-   **Routing**: Uses `useRouter` from `next/navigation` to redirect users after successful sign-in.\n-   **Error Handling**: Displays user-friendly error messages from Clerk.\n\n## Dependencies\n\n-   `@clerk/nextjs/legacy`\n-   `next/navigation`\n-   `@/components/ui/modern-animated-sign-in`\n-   `lucide-react`\n\n## Usage Example\n\nThis component is rendered at the `/sign-in` route (and its dynamic segments) and handles user authentication. When a user successfully signs in, they are redirected to `/dashboard`.\n\n```tsx\n// In app/sign-in/[[...sign-in]]/page.tsx\nimport SignInPage from './page';\n\nexport default function Page() {\n  return <SignInPage />;\n}\n```",
+  "dependencies": [
+    "components/ui/modern-animated-sign-in"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:25:46.268Z",
+      "title": "Sign-In Page (`[[...sign-in]]/page.tsx`)",
+      "content": "This file implements the sign-in page for the DocMed application. It utilizes Clerk for authentication, Next.js for routing, and custom UI components for a modern animated experience.\n\n## Purpose\n\nProvides a user interface for users to sign in to their DocMed accounts using email/password or Google OAuth. It features a visually engaging layout with animated elements.\n\n## Key Features & Exports\n\n-   **`SignInPage` Component**: The main React component that renders the sign-in form and the accompanying animated display.\n-   **Clerk Integration**: Uses `useSignIn` from `@clerk/nextjs/legacy` to handle authentication logic.\n-   **State Management**: Manages `email`, `password`, `error`, and `loading` states.\n-   **Form Handling**: Implements `handleSubmit` for email/password sign-in and `handleGoogleLogin` for OAuth flow.\n-   **UI Components**: Leverages `AnimatedForm`, `Ripple`, and `TechOrbitDisplay` from `@/components/ui/modern-animated-sign-in` for visual appeal.\n-   **Routing**: Uses `useRouter` from `next/navigation` to redirect users after successful sign-in.\n-   **Error Handling**: Displays user-friendly error messages from Clerk.\n\n## Dependencies\n\n-   `@clerk/nextjs/legacy`\n-   `next/navigation`\n-   `@/components/ui/modern-animated-sign-in`\n-   `lucide-react`\n\n## Usage Example\n\nThis component is rendered at the `/sign-in` route (and its dynamic segments) and handles user authentication. When a user successfully signs in, they are redirected to `/dashboard`.\n\n```tsx\n// In app/sign-in/[[...sign-in]]/page.tsx\nimport SignInPage from './page';\n\nexport default function Page() {\n  return <SignInPage />;\n}\n```",
+      "dependencies": [
+        "components/ui/modern-animated-sign-in"
+      ],
+      "commitId": null
+    }
+  ]
+}
