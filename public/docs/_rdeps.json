@@ -20,7 +20,8 @@
   ],
   "lib/repo-pairs.ts": [
     "app/api/github/callback/route.ts",
-    "app/api/github/init-doc-repo/route.ts"
+    "app/api/github/init-doc-repo/route.ts",
+    "app/api/github/installations/route.ts"
   ],
   "lib/github-app.ts": [
     "app/api/github/callback/route.ts"
