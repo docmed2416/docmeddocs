@@ -1,0 +1,19 @@
+{
+  "filePath": "proxy.ts",
+  "title": "Clerk Authentication Middleware",
+  "content": "This file implements custom middleware for Clerk authentication in a Next.js application. It defines public routes that do not require authentication and routes that trigger a redirect to the dashboard if the user is authenticated.\n\nKey Exports/Functions:\n\n*   `isPublicRoute`: A `createRouteMatcher` function that returns `true` for routes defined as public.\n*   `isAuthRoute`: A `createRouteMatcher` function that returns `true` for routes that should trigger a redirect if the user is authenticated.\n*   `default` (clerkMiddleware): The main middleware function exported from `@clerk/nextjs/server`. It intercepts incoming requests and applies authentication logic.\n\nUsage Example:\n\nThe middleware automatically protects routes that are not public by calling `auth.protect()`. If a user is authenticated and attempts to access an authentication-only route (like sign-in or sign-up), they are redirected to `/dashboard`.\n\n```typescript\n// Example usage within the middleware itself:\n\n// Redirect authenticated users away from auth pages\nif (userId && isAuthRoute(request)) {\n  return NextResponse.redirect(new URL(\"/dashboard\", request.url));\n}\n\n// Protect non-public routes\nif (!isPublicRoute(request)) {\n  await auth.protect();\n}\n```",
+  "dependencies": [
+    "@clerk/nextjs/server"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:29:23.102Z",
+      "title": "Clerk Authentication Middleware",
+      "content": "This file implements custom middleware for Clerk authentication in a Next.js application. It defines public routes that do not require authentication and routes that trigger a redirect to the dashboard if the user is authenticated.\n\nKey Exports/Functions:\n\n*   `isPublicRoute`: A `createRouteMatcher` function that returns `true` for routes defined as public.\n*   `isAuthRoute`: A `createRouteMatcher` function that returns `true` for routes that should trigger a redirect if the user is authenticated.\n*   `default` (clerkMiddleware): The main middleware function exported from `@clerk/nextjs/server`. It intercepts incoming requests and applies authentication logic.\n\nUsage Example:\n\nThe middleware automatically protects routes that are not public by calling `auth.protect()`. If a user is authenticated and attempts to access an authentication-only route (like sign-in or sign-up), they are redirected to `/dashboard`.\n\n```typescript\n// Example usage within the middleware itself:\n\n// Redirect authenticated users away from auth pages\nif (userId && isAuthRoute(request)) {\n  return NextResponse.redirect(new URL(\"/dashboard\", request.url));\n}\n\n// Protect non-public routes\nif (!isPublicRoute(request)) {\n  await auth.protect();\n}\n```",
+      "dependencies": [
+        "@clerk/nextjs/server"
+      ],
+      "commitId": "initial"
+    }
+  ]
+}
