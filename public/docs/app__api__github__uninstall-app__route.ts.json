@@ -1,0 +1,23 @@
+{
+  "filePath": "app/api/github/uninstall-app/route.ts",
+  "title": "Uninstall GitHub App Installation API Route",
+  "content": "This API route handles the uninstallation of a GitHub App installation for a given user.\n\n### Purpose\n\nThe `POST /api/github/uninstall-app` route allows authenticated users to uninstall a GitHub App installation they previously authorized. It performs several checks before proceeding with the uninstallation:\n\n1.  **Authentication**: Verifies that the user is authenticated using Clerk.\n2.  **Valid Input**: Ensures that a valid `installationId` is provided in the request body.\n3.  **Installation Ownership**: Checks if the authenticated user actually owns the installation they are trying to uninstall.\n4.  **Dependency Check**: Prevents uninstallation if the installation is still connected to one or more repository pairs. Users must disconnect from all repo pairs first.\n\nIf all checks pass, the route proceeds to delete the installation from GitHub and remove the corresponding record from the application's database.\n\n### Key Exports/Functions\n\n*   `POST(request: NextRequest)`: The main handler for POST requests to this endpoint.\n\n### Dependencies\n\n*   `@clerk/nextjs/server`: For user authentication.\n*   `@clerk/nextjs/server`: For user authentication.\n*   `@/lib/repo-pairs`: Likely contains functions related to managing repository pair connections.\n*   `@/lib/github-app`: Likely contains functions for interacting with the GitHub App API, including uninstalling installations.\n*   `@/lib/github-installations`: Likely contains functions for managing installation records in the application's database.\n\n### Usage Example\n\n**Request Body:**\n\n```json\n{\n  \"installationId\": 12345678\n}\n```\n\n**Successful Response (Status 200):**\n\n```json\n{\n  \"ok\": true\n}\n```\n\n**Error Responses:**\n\n*   **401 Unauthorized**: If the user is not authenticated.\n*   **400 Invalid request**: If `installationId` is missing or invalid.\n*   **403 Installation not found**: If the provided `installationId` does not belong to the authenticated user.\n*   **409 Conflict**: If the installation is still connected to repository pairs.",
+  "dependencies": [
+    "lib/repo-pairs.ts",
+    "lib/github-app.ts",
+    "lib/github-installations.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:23:05.693Z",
+      "title": "Uninstall GitHub App Installation API Route",
+      "content": "This API route handles the uninstallation of a GitHub App installation for a given user.\n\n### Purpose\n\nThe `POST /api/github/uninstall-app` route allows authenticated users to uninstall a GitHub App installation they previously authorized. It performs several checks before proceeding with the uninstallation:\n\n1.  **Authentication**: Verifies that the user is authenticated using Clerk.\n2.  **Valid Input**: Ensures that a valid `installationId` is provided in the request body.\n3.  **Installation Ownership**: Checks if the authenticated user actually owns the installation they are trying to uninstall.\n4.  **Dependency Check**: Prevents uninstallation if the installation is still connected to one or more repository pairs. Users must disconnect from all repo pairs first.\n\nIf all checks pass, the route proceeds to delete the installation from GitHub and remove the corresponding record from the application's database.\n\n### Key Exports/Functions\n\n*   `POST(request: NextRequest)`: The main handler for POST requests to this endpoint.\n\n### Dependencies\n\n*   `@clerk/nextjs/server`: For user authentication.\n*   `@clerk/nextjs/server`: For user authentication.\n*   `@/lib/repo-pairs`: Likely contains functions related to managing repository pair connections.\n*   `@/lib/github-app`: Likely contains functions for interacting with the GitHub App API, including uninstalling installations.\n*   `@/lib/github-installations`: Likely contains functions for managing installation records in the application's database.\n\n### Usage Example\n\n**Request Body:**\n\n```json\n{\n  \"installationId\": 12345678\n}\n```\n\n**Successful Response (Status 200):**\n\n```json\n{\n  \"ok\": true\n}\n```\n\n**Error Responses:**\n\n*   **401 Unauthorized**: If the user is not authenticated.\n*   **400 Invalid request**: If `installationId` is missing or invalid.\n*   **403 Installation not found**: If the provided `installationId` does not belong to the authenticated user.\n*   **409 Conflict**: If the installation is still connected to repository pairs.",
+      "dependencies": [
+        "lib/repo-pairs.ts",
+        "lib/github-app.ts",
+        "lib/github-installations.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
