@@ -177,5 +177,8 @@
   ],
   "components/ui/scroll-area.tsx": [
     "lib/utils.ts"
+  ],
+  "components/ui/separator.tsx": [
+    "lib/utils.ts"
   ]
 }
