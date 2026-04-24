@@ -1,0 +1,35 @@
+{
+  "filePath": "doc-repo-template/src/App.tsx",
+  "title": "DocMed Main Application Component",
+  "content": "The `App` component is the root of the DocMed application. It manages the application state, including tabs, loading status, and fetched data (manifest, commits, dependency graphs, and documentation content).\n\nIt orchestrates the rendering of various views based on the active tab and provides core functionality for navigation, tab management, and theme switching.\n\n## Key Features & Logic\n\n*   **State Management:** Manages application-wide state using `useState` and `useMemo` for efficiency.\n*   **Data Fetching:** Fetches essential data like `_manifest.json`, `commits.json`, `_deps.json`, `_rdeps.json`, and individual doc files via `useEffect` hooks.\n*   **Tab Management:** Handles opening, closing, and switching between tabs using `makeTab`, `addTab`, and `closeTab` functions.\n*   **Theming:** Implements a `useTheme` hook for dark/light mode switching, persisting the preference in `localStorage`.\n*   **File Tree Construction:** Uses `buildTree` from `./lib/tree` to organize documentation files into a hierarchical structure.\n*   **View Rendering:** Conditionally renders different view components (`HomeView`, `CommitsView`, `DependencyMapView`, `DocView`, `FolderView`) based on the `view.type` of the active tab.\n*   **Navigation:** Facilitates navigation between different views and documents through the `onNavigate` prop passed to child components and internal functions like `openInActiveTab`.\n\n## Usage Example\n\nThis component is the entry point and is typically rendered by a framework's root component (e.g., `ReactDOM.render` in older React apps or directly in `main.tsx` for Vite/Next.js).\n\n```typescript\n// In src/main.tsx or similar entry point\n\nimport React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport App from './App';\nimport './index.css';\n\nReactDOM.createRoot(document.getElementById('root')!).render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n```",
+  "dependencies": [
+    "./types",
+    "./lib/tree",
+    "./FileTree",
+    "./TabBar",
+    "./HomeView",
+    "./CommitsView",
+    "./DependencyMapView",
+    "./DocView",
+    "./FolderView"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:27:22.564Z",
+      "title": "DocMed Main Application Component",
+      "content": "The `App` component is the root of the DocMed application. It manages the application state, including tabs, loading status, and fetched data (manifest, commits, dependency graphs, and documentation content).\n\nIt orchestrates the rendering of various views based on the active tab and provides core functionality for navigation, tab management, and theme switching.\n\n## Key Features & Logic\n\n*   **State Management:** Manages application-wide state using `useState` and `useMemo` for efficiency.\n*   **Data Fetching:** Fetches essential data like `_manifest.json`, `commits.json`, `_deps.json`, `_rdeps.json`, and individual doc files via `useEffect` hooks.\n*   **Tab Management:** Handles opening, closing, and switching between tabs using `makeTab`, `addTab`, and `closeTab` functions.\n*   **Theming:** Implements a `useTheme` hook for dark/light mode switching, persisting the preference in `localStorage`.\n*   **File Tree Construction:** Uses `buildTree` from `./lib/tree` to organize documentation files into a hierarchical structure.\n*   **View Rendering:** Conditionally renders different view components (`HomeView`, `CommitsView`, `DependencyMapView`, `DocView`, `FolderView`) based on the `view.type` of the active tab.\n*   **Navigation:** Facilitates navigation between different views and documents through the `onNavigate` prop passed to child components and internal functions like `openInActiveTab`.\n\n## Usage Example\n\nThis component is the entry point and is typically rendered by a framework's root component (e.g., `ReactDOM.render` in older React apps or directly in `main.tsx` for Vite/Next.js).\n\n```typescript\n// In src/main.tsx or similar entry point\n\nimport React from 'react';\nimport ReactDOM from 'react-dom/client';\nimport App from './App';\nimport './index.css';\n\nReactDOM.createRoot(document.getElementById('root')!).render(\n  <React.StrictMode>\n    <App />\n  </React.StrictMode>\n);\n```",
+      "dependencies": [
+        "./types",
+        "./lib/tree",
+        "./FileTree",
+        "./TabBar",
+        "./HomeView",
+        "./CommitsView",
+        "./DependencyMapView",
+        "./DocView",
+        "./FolderView"
+      ],
+      "commitId": null
+    }
+  ]
+}
