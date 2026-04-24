@@ -1,0 +1,23 @@
+{
+  "filePath": "app/api/github/callback/route.ts",
+  "title": "GitHub OAuth Callback API Route",
+  "content": "This API route handles the callback from GitHub after a user authorizes the DocMed application.\n\nIt validates the state parameter to prevent CSRF attacks, retrieves the GitHub installation ID, and then updates the repository connection settings in the database.\n\n**Purpose:**\n\n- Securely handle the OAuth callback from GitHub.\n- Associate a GitHub installation with a specific repository pair and user.\n- Update database records for repository connections and GitHub installations.\n\n**Key Logic:**\n\n1.  **Authentication:** Verifies if the user is authenticated using Clerk.\n2.  **State Validation:** Compares the `state` parameter from the GitHub callback with a `state` cookie stored during the initiation of the OAuth flow. This is crucial for preventing Cross-Site Request Forgery (CSRF) attacks.\n3.  **Parameter Extraction:** Extracts `installation_id` and `state` from the request URL search parameters.\n4.  **State Parsing:** Parses the `state` parameter, which is expected to be in the format `{type}:{pairId}:{nonce}` to determine the type of repository pair (`target` or `doc`) and the associated `pairId`.\n5.  **GitHub Login Retrieval:** Calls `getInstallationLogin` to fetch the GitHub account login associated with the `installationId`.\n6.  **Database Updates:**\n    *   Uses `setRepoConnection` to update the connection details for the specified `pairId` and `userId`, including setting `connected` to true and storing the `githubLogin` and `installationId`.\n    *   Uses `saveInstallation` to store the `installationId` and `githubLogin` for the user.\n7.  **Redirection:** Redirects the user back to the integrations page with parameters indicating the successful connection (`pick`, `pairId`).\n8.  **Cookie Cleanup:** Deletes the `github_oauth_state` cookie after successful processing.",
+  "dependencies": [
+    "lib/repo-pairs.ts",
+    "lib/github-app.ts",
+    "lib/github-installations.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:19:36.441Z",
+      "title": "GitHub OAuth Callback API Route",
+      "content": "This API route handles the callback from GitHub after a user authorizes the DocMed application.\n\nIt validates the state parameter to prevent CSRF attacks, retrieves the GitHub installation ID, and then updates the repository connection settings in the database.\n\n**Purpose:**\n\n- Securely handle the OAuth callback from GitHub.\n- Associate a GitHub installation with a specific repository pair and user.\n- Update database records for repository connections and GitHub installations.\n\n**Key Logic:**\n\n1.  **Authentication:** Verifies if the user is authenticated using Clerk.\n2.  **State Validation:** Compares the `state` parameter from the GitHub callback with a `state` cookie stored during the initiation of the OAuth flow. This is crucial for preventing Cross-Site Request Forgery (CSRF) attacks.\n3.  **Parameter Extraction:** Extracts `installation_id` and `state` from the request URL search parameters.\n4.  **State Parsing:** Parses the `state` parameter, which is expected to be in the format `{type}:{pairId}:{nonce}` to determine the type of repository pair (`target` or `doc`) and the associated `pairId`.\n5.  **GitHub Login Retrieval:** Calls `getInstallationLogin` to fetch the GitHub account login associated with the `installationId`.\n6.  **Database Updates:**\n    *   Uses `setRepoConnection` to update the connection details for the specified `pairId` and `userId`, including setting `connected` to true and storing the `githubLogin` and `installationId`.\n    *   Uses `saveInstallation` to store the `installationId` and `githubLogin` for the user.\n7.  **Redirection:** Redirects the user back to the integrations page with parameters indicating the successful connection (`pick`, `pairId`).\n8.  **Cookie Cleanup:** Deletes the `github_oauth_state` cookie after successful processing.",
+      "dependencies": [
+        "lib/repo-pairs.ts",
+        "lib/github-app.ts",
+        "lib/github-installations.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
