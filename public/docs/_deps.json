@@ -9,5 +9,9 @@
   ],
   "app/api/billing/usage/route.ts": [
     "lib/billing/usage.ts"
+  ],
+  "app/api/billing/portal/route.ts": [
+    "lib/billing/stripe.ts",
+    "lib/billing/subscription.ts"
   ]
 }
