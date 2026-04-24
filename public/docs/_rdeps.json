@@ -102,5 +102,11 @@
   ],
   "lib/user-deletion": [
     "app/api/webhooks/clerk/route.ts"
+  ],
+  "app/api/repo-pairs/route.ts": [
+    "app/dashboard/integrations/_components/AddPairButton.tsx"
+  ],
+  "components/ui/toast": [
+    "app/dashboard/integrations/_components/AddPairButton.tsx"
   ]
 }
