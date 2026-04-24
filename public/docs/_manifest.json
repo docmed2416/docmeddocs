@@ -83,5 +83,10 @@
     "filePath": "app/api/repo-pairs/route.ts",
     "title": "Repository Pair API Routes",
     "docKey": "app__api__repo-pairs__route.ts"
+  },
+  {
+    "filePath": "app/api/repo-pairs/switch-active/route.ts",
+    "title": "Switch Active Repository Pairs API Route",
+    "docKey": "app__api__repo-pairs__switch-active__route.ts"
   }
 ]
