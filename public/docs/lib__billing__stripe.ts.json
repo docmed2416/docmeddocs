@@ -1,0 +1,15 @@
+{
+  "filePath": "lib/billing/stripe.ts",
+  "title": "Stripe Billing Module",
+  "content": "This module provides a singleton instance of the Stripe client for interacting with the Stripe API.\n\n**Purpose:**\nTo ensure a single, consistent Stripe client is used throughout the application, managing its initialization and retrieval.\n\n**Key Exports:**\n* `getStripe()`: Returns the initialized Stripe client instance.\n\n**Usage Example:**\n```typescript\nimport { getStripe } from './lib/billing/stripe';\n\nconst stripe = getStripe();\n\nasync function createCharge() {\n  // Use the stripe client to create a charge\n  const charge = await stripe.charges.create({\n    amount: 1000,\n    currency: 'usd',\n    source: 'tok_visa',\n  });\n  console.log('Charge created:', charge);\n}\n\ncreateCharge();\n```",
+  "dependencies": [],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:27:53.796Z",
+      "title": "Stripe Billing Module",
+      "content": "This module provides a singleton instance of the Stripe client for interacting with the Stripe API.\n\n**Purpose:**\nTo ensure a single, consistent Stripe client is used throughout the application, managing its initialization and retrieval.\n\n**Key Exports:**\n* `getStripe()`: Returns the initialized Stripe client instance.\n\n**Usage Example:**\n```typescript\nimport { getStripe } from './lib/billing/stripe';\n\nconst stripe = getStripe();\n\nasync function createCharge() {\n  // Use the stripe client to create a charge\n  const charge = await stripe.charges.create({\n    amount: 1000,\n    currency: 'usd',\n    source: 'tok_visa',\n  });\n  console.log('Charge created:', charge);\n}\n\ncreateCharge();\n```",
+      "dependencies": [],
+      "commitId": null
+    }
+  ]
+}
