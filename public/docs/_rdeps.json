@@ -126,5 +126,11 @@
   ],
   "app/dashboard/integrations/_components/AddPairButton.tsx": [
     "app/dashboard/integrations/page.tsx"
+  ],
+  "@/components/ui/sidebar": [
+    "app/dashboard/layout.tsx"
+  ],
+  "@/components/ui/toast": [
+    "app/dashboard/layout.tsx"
   ]
 }
