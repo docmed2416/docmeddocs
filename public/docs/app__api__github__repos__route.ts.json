@@ -1,0 +1,19 @@
+{
+  "filePath": "app/api/github/repos/route.ts",
+  "title": "GitHub Repositories API Route",
+  "content": "This API route (`app/api/github/repos/route.ts`) handles requests to fetch GitHub repositories associated with a user's connected accounts.\n\nIt allows retrieving a list of repositories, either for a 'target' repository or a 'doc' repository, based on a provided `pairId`. The route leverages Clerk for authentication and interacts with the GitHub API to fetch repository data.\n\n**Key Functionality:**\n\n*   **Authentication:** Ensures the user is authenticated via Clerk.\n*   **Parameter Validation:** Checks for the presence and validity of `pairId` and `type` query parameters.\n*   **Repository Data Retrieval:** Fetches detailed repository information using helper functions (`getTargetRepoFull`, `getDocRepoFull`) which resolve necessary tokens and connection statuses.\n*   **GitHub API Interaction:** Makes requests to the GitHub API (`/installation/repositories` for installation tokens or `/user/repos` for OAuth tokens) to retrieve repository lists.\n*   **Pagination:** Handles paginated results from the GitHub API.\n*   **Response Formatting:** Returns a filtered list of repositories, including `full_name`, `private`, and `description`.\n\n**Usage Example:**\n\nTo fetch a user's target GitHub repositories associated with a `pairId` of `abc123xyz`:\n\n```bash\nGET /api/github/repos?pairId=abc123xyz&type=target\n```\n\nTo fetch a user's documentation GitHub repositories associated with a `pairId` of `def456uvw`:\n\n```bash\nGET /api/github/repos?pairId=def456uvw&type=doc\n```",
+  "dependencies": [
+    "lib/repo-pairs.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:22:52.449Z",
+      "title": "GitHub Repositories API Route",
+      "content": "This API route (`app/api/github/repos/route.ts`) handles requests to fetch GitHub repositories associated with a user's connected accounts.\n\nIt allows retrieving a list of repositories, either for a 'target' repository or a 'doc' repository, based on a provided `pairId`. The route leverages Clerk for authentication and interacts with the GitHub API to fetch repository data.\n\n**Key Functionality:**\n\n*   **Authentication:** Ensures the user is authenticated via Clerk.\n*   **Parameter Validation:** Checks for the presence and validity of `pairId` and `type` query parameters.\n*   **Repository Data Retrieval:** Fetches detailed repository information using helper functions (`getTargetRepoFull`, `getDocRepoFull`) which resolve necessary tokens and connection statuses.\n*   **GitHub API Interaction:** Makes requests to the GitHub API (`/installation/repositories` for installation tokens or `/user/repos` for OAuth tokens) to retrieve repository lists.\n*   **Pagination:** Handles paginated results from the GitHub API.\n*   **Response Formatting:** Returns a filtered list of repositories, including `full_name`, `private`, and `description`.\n\n**Usage Example:**\n\nTo fetch a user's target GitHub repositories associated with a `pairId` of `abc123xyz`:\n\n```bash\nGET /api/github/repos?pairId=abc123xyz&type=target\n```\n\nTo fetch a user's documentation GitHub repositories associated with a `pairId` of `def456uvw`:\n\n```bash\nGET /api/github/repos?pairId=def456uvw&type=doc\n```",
+      "dependencies": [
+        "lib/repo-pairs.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
