@@ -89,5 +89,8 @@
   ],
   "lib/billing/tiers": [
     "app/api/repo-pairs/switch-active/route.ts"
+  ],
+  "@/lib/user-deletion": [
+    "app/api/user/delete/route.ts"
   ]
 }
