@@ -1,0 +1,19 @@
+{
+  "filePath": "app/api/repo-pairs/[pairId]/route.ts",
+  "title": "Repository Pair API Route",
+  "content": "This file defines the API route handlers for managing individual repository pairs within the DocMed application. It handles the deletion of a repository pair and the updating of its name.\n\n### DELETE /api/repo-pairs/[pairId]\n\nDeletes a specific repository pair. It first attempts to delete the associated GitHub webhook and then removes the pair from the database.\n\n*   **Authentication**: Requires user authentication via Clerk.\n*   **Input**: `pairId` from the URL parameters.\n*   **Logic**: Fetches the target repository details, resolves the GitHub token, deletes the webhook if present, and finally deletes the repository pair from the database.\n*   **Response**: Returns a `204 No Content` on successful deletion, or an `401 Unauthorized` error if the user is not authenticated.\n\n### PATCH /api/repo-pairs/[pairId]\n\nUpdates the name of a specific repository pair.\n\n*   **Authentication**: Requires user authentication via Clerk.\n*   **Input**: \n    *   `pairId` from the URL parameters.\n    *   `name`: The new name for the repository pair, sent in the request body.\n*   **Logic**: Validates that a name is provided, then updates the repository pair's name in the database.\n*   **Response**: Returns `{ ok: true }` on successful update, or an `401 Unauthorized` error if the user is not authenticated, or a `400 Bad Request` if the `name` is missing.",
+  "dependencies": [
+    "lib/repo-pairs.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:23:16.942Z",
+      "title": "Repository Pair API Route",
+      "content": "This file defines the API route handlers for managing individual repository pairs within the DocMed application. It handles the deletion of a repository pair and the updating of its name.\n\n### DELETE /api/repo-pairs/[pairId]\n\nDeletes a specific repository pair. It first attempts to delete the associated GitHub webhook and then removes the pair from the database.\n\n*   **Authentication**: Requires user authentication via Clerk.\n*   **Input**: `pairId` from the URL parameters.\n*   **Logic**: Fetches the target repository details, resolves the GitHub token, deletes the webhook if present, and finally deletes the repository pair from the database.\n*   **Response**: Returns a `204 No Content` on successful deletion, or an `401 Unauthorized` error if the user is not authenticated.\n\n### PATCH /api/repo-pairs/[pairId]\n\nUpdates the name of a specific repository pair.\n\n*   **Authentication**: Requires user authentication via Clerk.\n*   **Input**: \n    *   `pairId` from the URL parameters.\n    *   `name`: The new name for the repository pair, sent in the request body.\n*   **Logic**: Validates that a name is provided, then updates the repository pair's name in the database.\n*   **Response**: Returns `{ ok: true }` on successful update, or an `401 Unauthorized` error if the user is not authenticated, or a `400 Bad Request` if the `name` is missing.",
+      "dependencies": [
+        "lib/repo-pairs.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
