@@ -305,6 +305,11 @@
     "docKey": "lib__rate-limit.ts"
   },
   {
+    "filePath": "lib/stats.ts",
+    "title": "Statistics Utility Module",
+    "docKey": "lib__stats.ts"
+  },
+  {
     "filePath": "lib/user-deletion.ts",
     "title": "User Deletion Utilities",
     "docKey": "lib__user-deletion.ts"
