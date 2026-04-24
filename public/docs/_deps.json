@@ -107,5 +107,6 @@
     "@/lib/repo-pairs",
     "app/dashboard/integrations/_components/RepoPicker",
     "app/dashboard/integrations/_components/ExistingAccountPicker"
-  ]
+  ],
+  "app/dashboard/integrations/_components/RepoPicker.tsx": []
 }
