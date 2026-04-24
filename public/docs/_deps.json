@@ -151,5 +151,8 @@
   ],
   "components/ui/avatar.tsx": [
     "lib/utils.ts"
+  ],
+  "components/ui/button.tsx": [
+    "lib/utils.ts"
   ]
 }
