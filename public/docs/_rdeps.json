@@ -24,7 +24,8 @@
     "app/api/github/installations/route.ts",
     "app/api/github/repos/route.ts",
     "app/api/github/reprocess-commit/route.ts",
-    "app/api/github/uninstall-app/route.ts"
+    "app/api/github/uninstall-app/route.ts",
+    "app/api/github/select-repo/route.ts"
   ],
   "lib/github-app.ts": [
     "app/api/github/callback/route.ts",
