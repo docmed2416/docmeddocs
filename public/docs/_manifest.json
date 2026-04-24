@@ -258,5 +258,10 @@
     "filePath": "lib/billing/stripe.ts",
     "title": "Stripe Billing Module",
     "docKey": "lib__billing__stripe.ts"
+  },
+  {
+    "filePath": "lib/billing/subscription.ts",
+    "title": "Billing Subscription Management",
+    "docKey": "lib__billing__subscription.ts"
   }
 ]
