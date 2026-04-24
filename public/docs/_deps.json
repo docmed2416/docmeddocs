@@ -61,5 +61,8 @@
   ],
   "app/api/github/select-repo/route.ts": [
     "lib/repo-pairs.ts"
+  ],
+  "app/api/repo-pairs/[pairId]/route.ts": [
+    "lib/repo-pairs.ts"
   ]
 }
