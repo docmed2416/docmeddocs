@@ -11,13 +11,16 @@
   ],
   "lib/billing/subscription.ts": [
     "app/api/billing/checkout/route.ts",
-    "app/api/billing/portal/route.ts"
+    "app/api/billing/portal/route.ts",
+    "app/api/github/init-doc-repo/route.ts"
   ],
   "lib/billing/usage.ts": [
-    "app/api/billing/usage/route.ts"
+    "app/api/billing/usage/route.ts",
+    "app/api/github/init-doc-repo/route.ts"
   ],
   "lib/repo-pairs.ts": [
-    "app/api/github/callback/route.ts"
+    "app/api/github/callback/route.ts",
+    "app/api/github/init-doc-repo/route.ts"
   ],
   "lib/github-app.ts": [
     "app/api/github/callback/route.ts"
@@ -30,5 +33,14 @@
   ],
   "lib/repo-pairs": [
     "app/api/github/clear-slot/route.ts"
+  ],
+  "lib/qstash.ts": [
+    "app/api/github/init-doc-repo/route.ts"
+  ],
+  "lib/gemini.ts": [
+    "app/api/github/init-doc-repo/route.ts"
+  ],
+  "app/api/github/init-doc-repo/route.ts": [
+    "app/api/github/init-doc-repo/route.ts"
   ]
 }
