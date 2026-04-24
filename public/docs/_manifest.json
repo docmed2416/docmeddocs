@@ -318,5 +318,10 @@
     "filePath": "lib/utils.ts",
     "title": "Class Name Utility (`cn`)",
     "docKey": "lib__utils.ts"
+  },
+  {
+    "filePath": "proxy.ts",
+    "title": "Clerk Authentication Middleware",
+    "docKey": "proxy.ts"
   }
 ]
