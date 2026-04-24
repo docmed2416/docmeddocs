@@ -1,0 +1,21 @@
+{
+  "filePath": "app/api/billing/portal/route.ts",
+  "title": "Billing Portal API Route",
+  "content": "Handles requests to create and manage Stripe Billing Portal sessions.\n\n## Purpose\n\nThis API route allows authenticated users to access their billing information through the Stripe Billing Portal. It ensures that the user is authenticated, has a Stripe customer ID associated with their subscription, and then generates a session URL for the portal.\n\n## Key Exports\n\n- `POST()`: An asynchronous function that handles POST requests to the `/api/billing/portal` endpoint.\n\n## Logic\n\n1.  **Authentication**: Verifies if the user is authenticated using `@clerk/nextjs/server`'s `auth()` function.\n2.  **Subscription Check**: Retrieves the user's subscription details using `getSubscription(userId)`.\n3.  **Customer ID Validation**: Checks if the retrieved subscription has a `stripeCustomerId`. If not, returns an error.\n4.  **Stripe Portal Session Creation**: Uses the `stripe.billingPortal.sessions.create()` method to generate a billing portal session.\n    - `customer`: Set to the user's `stripeCustomerId`.\n    - `return_url`: Configured to redirect the user back to the billing settings tab in the application after exiting the portal.\n5.  **Response**: Returns a JSON object containing the `url` of the created Stripe Billing Portal session.",
+  "dependencies": [
+    "lib/billing/stripe.ts",
+    "lib/billing/subscription.ts"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:19:30.021Z",
+      "title": "Billing Portal API Route",
+      "content": "Handles requests to create and manage Stripe Billing Portal sessions.\n\n## Purpose\n\nThis API route allows authenticated users to access their billing information through the Stripe Billing Portal. It ensures that the user is authenticated, has a Stripe customer ID associated with their subscription, and then generates a session URL for the portal.\n\n## Key Exports\n\n- `POST()`: An asynchronous function that handles POST requests to the `/api/billing/portal` endpoint.\n\n## Logic\n\n1.  **Authentication**: Verifies if the user is authenticated using `@clerk/nextjs/server`'s `auth()` function.\n2.  **Subscription Check**: Retrieves the user's subscription details using `getSubscription(userId)`.\n3.  **Customer ID Validation**: Checks if the retrieved subscription has a `stripeCustomerId`. If not, returns an error.\n4.  **Stripe Portal Session Creation**: Uses the `stripe.billingPortal.sessions.create()` method to generate a billing portal session.\n    - `customer`: Set to the user's `stripeCustomerId`.\n    - `return_url`: Configured to redirect the user back to the billing settings tab in the application after exiting the portal.\n5.  **Response**: Returns a JSON object containing the `url` of the created Stripe Billing Portal session.",
+      "dependencies": [
+        "lib/billing/stripe.ts",
+        "lib/billing/subscription.ts"
+      ],
+      "commitId": null
+    }
+  ]
+}
