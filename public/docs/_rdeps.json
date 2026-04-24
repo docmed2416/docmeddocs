@@ -182,6 +182,10 @@
   "lib/utils.ts": [
     "components/ui/avatar.tsx",
     "components/ui/button.tsx",
-    "components/ui/badge.tsx"
+    "components/ui/badge.tsx",
+    "components/ui/dropdown-menu.tsx"
+  ],
+  "@radix-ui/react-dropdown-menu": [
+    "components/ui/dropdown-menu.tsx"
   ]
 }
