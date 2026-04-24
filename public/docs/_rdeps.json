@@ -23,13 +23,16 @@
     "app/api/github/init-doc-repo/route.ts",
     "app/api/github/installations/route.ts",
     "app/api/github/repos/route.ts",
-    "app/api/github/reprocess-commit/route.ts"
+    "app/api/github/reprocess-commit/route.ts",
+    "app/api/github/uninstall-app/route.ts"
   ],
   "lib/github-app.ts": [
-    "app/api/github/callback/route.ts"
+    "app/api/github/callback/route.ts",
+    "app/api/github/uninstall-app/route.ts"
   ],
   "lib/github-installations.ts": [
-    "app/api/github/callback/route.ts"
+    "app/api/github/callback/route.ts",
+    "app/api/github/uninstall-app/route.ts"
   ],
   "@clerk/nextjs/server": [
     "app/api/github/clear-slot/route.ts"
