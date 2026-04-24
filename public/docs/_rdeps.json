@@ -3,13 +3,15 @@
     "app/api/billing/contact/route.ts"
   ],
   "lib/billing/stripe.ts": [
-    "app/api/billing/checkout/route.ts"
+    "app/api/billing/checkout/route.ts",
+    "app/api/billing/portal/route.ts"
   ],
   "lib/billing/tiers.ts": [
     "app/api/billing/checkout/route.ts"
   ],
   "lib/billing/subscription.ts": [
-    "app/api/billing/checkout/route.ts"
+    "app/api/billing/checkout/route.ts",
+    "app/api/billing/portal/route.ts"
   ],
   "lib/billing/usage.ts": [
     "app/api/billing/usage/route.ts"
