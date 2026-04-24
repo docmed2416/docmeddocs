@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "id": "3eb185712c12802c38f8976847fc1fec89f7e8bc",
+    "message": "refactor: remove dependency map view; show imports per doc page\n\n- Remove DependencyMapView component and deps nav item entirely\n- Remove depsGraph state and _deps.json fetch from frontend\n- Remove deps view type from View union\n- Strip @/ and ~/ path alias prefixes in resolveManifestKey and\n  resolveDepToFilePath so @/lib/types resolves to lib/types.ts\n- Imports and Imported by sections remain on each individual doc page",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-24T17:40:13.588Z"
+  }
+]
