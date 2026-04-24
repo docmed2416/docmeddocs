@@ -9,5 +9,11 @@
     "next/navigation",
     "react",
     "@/components/ui/avatar"
+  ],
+  "app/api/repo-pairs/switch-active/route.ts": [
+    "@clerk/nextjs/server",
+    "@/lib/billing/subscription",
+    "@/lib/billing/tiers",
+    "@/lib/repo-pairs"
   ]
 }
