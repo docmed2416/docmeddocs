@@ -218,5 +218,8 @@
   ],
   "lib/utils": [
     "components/ui/sidebar.tsx"
+  ],
+  "./lib/tree": [
+    "doc-repo-template/src/FileTree.tsx"
   ]
 }
