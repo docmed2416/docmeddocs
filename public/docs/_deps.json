@@ -58,5 +58,8 @@
     "lib/repo-pairs.ts",
     "lib/github-app.ts",
     "lib/github-installations.ts"
+  ],
+  "app/api/github/select-repo/route.ts": [
+    "lib/repo-pairs.ts"
   ]
 }
