@@ -33,7 +33,8 @@
     "app/api/github/clear-slot/route.ts"
   ],
   "lib/repo-pairs": [
-    "app/api/github/clear-slot/route.ts"
+    "app/api/github/clear-slot/route.ts",
+    "app/api/github/process-one-file/route.ts"
   ],
   "lib/qstash.ts": [
     "app/api/github/init-doc-repo/route.ts"
@@ -43,5 +44,20 @@
   ],
   "app/api/github/init-doc-repo/route.ts": [
     "app/api/github/init-doc-repo/route.ts"
+  ],
+  "@upstash/qstash": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "next/server": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "lib/gemini": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "lib/qstash": [
+    "app/api/github/process-one-file/route.ts"
+  ],
+  "lib/stats": [
+    "app/api/github/process-one-file/route.ts"
   ]
 }
