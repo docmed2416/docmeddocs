@@ -10,13 +10,15 @@
   "lib/billing/tiers.ts": [
     "app/api/billing/checkout/route.ts",
     "app/api/webhooks/stripe/route.ts",
-    "lib/billing/subscription.ts"
+    "lib/billing/subscription.ts",
+    "lib/billing/usage.ts"
   ],
   "lib/billing/subscription.ts": [
     "app/api/billing/checkout/route.ts",
     "app/api/billing/portal/route.ts",
     "app/api/github/init-doc-repo/route.ts",
-    "app/api/webhooks/stripe/route.ts"
+    "app/api/webhooks/stripe/route.ts",
+    "lib/billing/usage.ts"
   ],
   "lib/billing/usage.ts": [
     "app/api/billing/usage/route.ts",
@@ -93,7 +95,8 @@
   ],
   "@/lib/repo-pairs": [
     "app/api/github/use-installation/route.ts",
-    "app/dashboard/integrations/_components/RepoPairCard.tsx"
+    "app/dashboard/integrations/_components/RepoPairCard.tsx",
+    "lib/billing/usage.ts"
   ],
   "@/lib/github-installations": [
     "app/api/github/use-installation/route.ts"
@@ -254,5 +257,8 @@
   ],
   "lib/firebase-admin.ts": [
     "lib/billing/subscription.ts"
+  ],
+  "@/lib/rate-limit": [
+    "lib/billing/usage.ts"
   ]
 }
