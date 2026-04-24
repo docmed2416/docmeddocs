@@ -174,5 +174,8 @@
   ],
   "components/ui/globe-hero.tsx": [
     "lib/utils.ts"
+  ],
+  "components/ui/scroll-area.tsx": [
+    "lib/utils.ts"
   ]
 }
