@@ -219,7 +219,8 @@
     "components/ui/sidebar.tsx"
   ],
   "./lib/tree": [
-    "doc-repo-template/src/FileTree.tsx"
+    "doc-repo-template/src/FileTree.tsx",
+    "doc-repo-template/src/App.tsx"
   ],
   "./types": [
     "doc-repo-template/src/App.tsx",
@@ -266,9 +267,6 @@
     "app/api/github/process-one-file/route.ts"
   ],
   "doc-repo-template/src/types.ts": [
-    "doc-repo-template/src/App.tsx"
-  ],
-  "src/lib/tree.ts": [
     "doc-repo-template/src/App.tsx"
   ],
   "doc-repo-template/src/FileTree.tsx": [
