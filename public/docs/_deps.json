@@ -44,5 +44,8 @@
     "lib/repo-pairs",
     "lib/qstash",
     "lib/stats"
+  ],
+  "app/api/github/repos/route.ts": [
+    "lib/repo-pairs.ts"
   ]
 }
