@@ -1,0 +1,19 @@
+{
+  "filePath": "app/api/webhooks/clerk/route.ts",
+  "title": "Clerk Webhook Handler",
+  "content": "This file handles incoming webhooks from Clerk, specifically focusing on the `user.deleted` event to trigger a complete user deletion process within the application.\n\n**Purpose:**\nTo securely verify and process webhook events from Clerk, ensuring that when a user is deleted in Clerk, their corresponding data and resources within DocMed are also removed.\n\n**Key Exports/Functions:**\n- `POST(request: NextRequest)`: An asynchronous function that serves as the API route handler for POST requests.\n  - It verifies the incoming webhook signature using the `CLERK_WEBHOOK_SECRET`.\n  - If the event type is `user.deleted`, it extracts the `userId` and calls `deleteUserCompletely` to perform the necessary cleanup.\n  - Returns JSON responses indicating success or specific errors (e.g., invalid signature, missing secret, cleanup failure).\n\n**Dependencies:**\n- `NextRequest` and `NextResponse` from `next/server` for handling HTTP requests and responses.\n- `Webhook` from `svix` for verifying webhook signatures.\n- `deleteUserCompletely` from `@/lib/user-deletion` for performing the actual user data cleanup.\n\n**Usage Example:**\nWhen Clerk sends a `user.deleted` webhook event to this route, the `POST` function will: \n1. Extract the webhook payload and headers.\n2. Verify the signature using the `CLERK_WEBHOOK_SECRET`.\n3. If the signature is valid and the event type is `user.deleted`:\n   - Extract the `userId` from the event data.\n   - Call `await deleteUserCompletely(userId)`.\n4. Respond with `ok: true` upon successful processing or an appropriate error status.",
+  "dependencies": [
+    "lib/user-deletion"
+  ],
+  "versions": [
+    {
+      "timestamp": "2026-04-24T17:23:47.777Z",
+      "title": "Clerk Webhook Handler",
+      "content": "This file handles incoming webhooks from Clerk, specifically focusing on the `user.deleted` event to trigger a complete user deletion process within the application.\n\n**Purpose:**\nTo securely verify and process webhook events from Clerk, ensuring that when a user is deleted in Clerk, their corresponding data and resources within DocMed are also removed.\n\n**Key Exports/Functions:**\n- `POST(request: NextRequest)`: An asynchronous function that serves as the API route handler for POST requests.\n  - It verifies the incoming webhook signature using the `CLERK_WEBHOOK_SECRET`.\n  - If the event type is `user.deleted`, it extracts the `userId` and calls `deleteUserCompletely` to perform the necessary cleanup.\n  - Returns JSON responses indicating success or specific errors (e.g., invalid signature, missing secret, cleanup failure).\n\n**Dependencies:**\n- `NextRequest` and `NextResponse` from `next/server` for handling HTTP requests and responses.\n- `Webhook` from `svix` for verifying webhook signatures.\n- `deleteUserCompletely` from `@/lib/user-deletion` for performing the actual user data cleanup.\n\n**Usage Example:**\nWhen Clerk sends a `user.deleted` webhook event to this route, the `POST` function will: \n1. Extract the webhook payload and headers.\n2. Verify the signature using the `CLERK_WEBHOOK_SECRET`.\n3. If the signature is valid and the event type is `user.deleted`:\n   - Extract the `userId` from the event data.\n   - Call `await deleteUserCompletely(userId)`.\n4. Respond with `ok: true` upon successful processing or an appropriate error status.",
+      "dependencies": [
+        "lib/user-deletion"
+      ],
+      "commitId": null
+    }
+  ]
+}
