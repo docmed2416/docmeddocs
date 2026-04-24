@@ -224,7 +224,8 @@
     "doc-repo-template/src/App.tsx"
   ],
   "./types": [
-    "doc-repo-template/src/App.tsx"
+    "doc-repo-template/src/App.tsx",
+    "doc-repo-template/src/TabBar.tsx"
   ],
   "doc-repo-template/src/FileTree.tsx": [
     "doc-repo-template/src/App.tsx"
