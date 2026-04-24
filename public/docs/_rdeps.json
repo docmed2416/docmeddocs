@@ -141,5 +141,29 @@
   ],
   "lucide-react": [
     "app/dashboard/page.tsx"
+  ],
+  "@clerk/nextjs": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "components/ui/avatar": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/user/delete": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/repo-pairs": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/repo-pairs/switch-active": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/billing/usage": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/billing/portal": [
+    "app/dashboard/settings/page.tsx"
+  ],
+  "app/api/billing/checkout": [
+    "app/dashboard/settings/page.tsx"
   ]
 }
