@@ -208,5 +208,6 @@
   "doc-repo-template/src/types.ts": [],
   "doc-repo-template/src/main.tsx": [
     "./App.tsx"
-  ]
+  ],
+  "lib/billing/stripe.ts": []
 }
