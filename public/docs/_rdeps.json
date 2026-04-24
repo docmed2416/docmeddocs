@@ -5,7 +5,8 @@
   "lib/billing/stripe.ts": [
     "app/api/billing/checkout/route.ts",
     "app/api/billing/portal/route.ts",
-    "app/api/webhooks/stripe/route.ts"
+    "app/api/webhooks/stripe/route.ts",
+    "lib/user-deletion.ts"
   ],
   "lib/billing/tiers.ts": [
     "app/api/billing/checkout/route.ts",
@@ -18,7 +19,8 @@
     "app/api/billing/portal/route.ts",
     "app/api/github/init-doc-repo/route.ts",
     "app/api/webhooks/stripe/route.ts",
-    "lib/billing/usage.ts"
+    "lib/billing/usage.ts",
+    "lib/user-deletion.ts"
   ],
   "lib/billing/usage.ts": [
     "app/api/billing/usage/route.ts",
@@ -258,7 +260,8 @@
   "lib/firebase-admin.ts": [
     "lib/billing/subscription.ts",
     "lib/github-installations.ts",
-    "lib/rate-limit.ts"
+    "lib/rate-limit.ts",
+    "lib/user-deletion.ts"
   ],
   "@/lib/rate-limit": [
     "lib/billing/usage.ts"
@@ -268,5 +271,8 @@
   ],
   "./gemini": [
     "lib/qstash.ts"
+  ],
+  "./repo-pairs": [
+    "lib/user-deletion.ts"
   ]
 }
