@@ -187,5 +187,8 @@
     "components/ui/separator",
     "lib/utils"
   ],
-  "components/ui/toast.tsx": []
+  "components/ui/toast.tsx": [],
+  "doc-repo-template/src/FileTree.tsx": [
+    "./lib/tree"
+  ]
 }
