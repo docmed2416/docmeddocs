@@ -213,5 +213,6 @@
   "lib/billing/subscription.ts": [
     "lib/firebase-admin.ts",
     "lib/billing/tiers.ts"
-  ]
+  ],
+  "lib/billing/tiers.ts": []
 }
