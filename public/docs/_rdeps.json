@@ -73,5 +73,11 @@
   ],
   "lib/rate-limit.ts": [
     "app/api/github/reprocess-commit/route.ts"
+  ],
+  "@/lib/repo-pairs": [
+    "app/api/github/use-installation/route.ts"
+  ],
+  "@/lib/github-installations": [
+    "app/api/github/use-installation/route.ts"
   ]
 }
