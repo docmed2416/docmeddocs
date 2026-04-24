@@ -193,7 +193,8 @@
     "components/ui/dropdown-menu.tsx",
     "components/ui/globe-hero.tsx",
     "components/ui/scroll-area.tsx",
-    "components/ui/separator.tsx"
+    "components/ui/separator.tsx",
+    "lib/utils.ts"
   ],
   "@radix-ui/react-dropdown-menu": [
     "components/ui/dropdown-menu.tsx"
