@@ -214,5 +214,11 @@
     "lib/firebase-admin.ts",
     "lib/billing/tiers.ts"
   ],
-  "lib/billing/tiers.ts": []
+  "lib/billing/tiers.ts": [],
+  "lib/billing/usage.ts": [
+    "@/lib/repo-pairs",
+    "./subscription",
+    "./tiers",
+    "@/lib/rate-limit"
+  ]
 }
