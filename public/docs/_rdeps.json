@@ -28,7 +28,8 @@
     "app/api/github/uninstall-app/route.ts",
     "app/api/github/select-repo/route.ts",
     "app/api/repo-pairs/[pairId]/route.ts",
-    "app/api/repo-pairs/route.ts"
+    "app/api/repo-pairs/route.ts",
+    "app/api/webhooks/github/[userId]/[pairId]/route.ts"
   ],
   "lib/github-app.ts": [
     "app/api/github/callback/route.ts",
@@ -49,7 +50,8 @@
   ],
   "lib/qstash.ts": [
     "app/api/github/init-doc-repo/route.ts",
-    "app/api/github/reprocess-commit/route.ts"
+    "app/api/github/reprocess-commit/route.ts",
+    "app/api/webhooks/github/[userId]/[pairId]/route.ts"
   ],
   "lib/gemini.ts": [
     "app/api/github/init-doc-repo/route.ts"
@@ -73,7 +75,8 @@
     "app/api/github/process-one-file/route.ts"
   ],
   "lib/commits.ts": [
-    "app/api/github/reprocess-commit/route.ts"
+    "app/api/github/reprocess-commit/route.ts",
+    "app/api/webhooks/github/[userId]/[pairId]/route.ts"
   ],
   "lib/rate-limit.ts": [
     "app/api/github/reprocess-commit/route.ts"
