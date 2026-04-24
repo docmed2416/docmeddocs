@@ -94,5 +94,11 @@
     "message": "Update README.md",
     "pusher": "ashad767",
     "timestamp": "2026-04-21T01:59:44.229Z"
+  },
+  {
+    "id": "cbaeac2ff8d23234de4501231c55e86d1571b5bd",
+    "message": "feat: pause/resume webhooks on plan change with active-pair switching\n\n- adjustActiveWebhooks() pauses newest-active pairs on downgrade and\n  re-activates oldest-paused pairs on upgrade; called from all three\n  Stripe webhook events (checkout, updated, deleted)\n- GitHub webhook handler gates on webhookActive field and returns a\n  silent 200 when paused so GitHub never retries or disables the hook\n- getPairForWebhook() replaces two parallel Firestore reads with one\n- POST /api/repo-pairs/switch-active lets users choose which pairs\n  stay active within their plan limit, enforced by a 1-hour cooldown\n- UsageSnapshot exposes pausedPairIds + webhookSwitchCooldownEndsAt\n- Settings billing panel shows an amber banner when pairs are paused\n  and opens a SwitchActiveDialog with live cooldown countdown\n\nAlso expands gemini.ts shouldSkipFile with skip-path patterns for\nRuby, JVM, .NET, Swift, Elixir, Haskell, OCaml, R, Zig, D, Lua, Nim,\nCrystal, Perl, Clojure, CMake, Terraform, and game engine asset dirs\n(Godot addons/.import/.mono, Unity Assets/Plugins, Unreal Plugins\nbinaries/ThirdParty); adds Python packaging filenames to SKIP_FILENAMES\nand .cfg/.in to SKIP_EXTENSIONS.",
+    "pusher": "AliGhosn1",
+    "timestamp": "2026-04-24T16:40:13.162Z"
   }
 ]
