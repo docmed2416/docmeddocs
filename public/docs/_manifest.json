@@ -198,5 +198,10 @@
     "filePath": "components/ui/modern-animated-sign-in.tsx",
     "title": "Modern Animated Sign-In UI Components",
     "docKey": "components__ui__modern-animated-sign-in.tsx"
+  },
+  {
+    "filePath": "components/ui/pricing-section.tsx",
+    "title": "Pricing Section Component",
+    "docKey": "components__ui__pricing-section.tsx"
   }
 ]
