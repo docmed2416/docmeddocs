@@ -16,5 +16,11 @@
     "message": "feat: show paused state on pair cards and disable controls when paused\n\n- Add PausedBadge component shown in card header when webhookActive=false\n- Add amber banner on card explaining the pair is paused with link to billing\n- Disable Change/Select repo buttons and ExistingAccountPicker when paused\n- Disable Regenerate button when paused\n- Replace reprocess input with paused message when paused\n- Pass isPaused from integrations page using pair.webhookActive",
     "pusher": "AliGhosn1",
     "timestamp": "2026-04-24T21:21:47.535Z"
+  },
+  {
+    "id": "e767ae4ad18d534fa6dd18b83f0c9abb3cc14629",
+    "message": "Fix wording in README for documentation repository\n\nUpdated wording for consistency in documentation repository reference.",
+    "pusher": "ashad767",
+    "timestamp": "2026-04-25T06:48:43.485Z"
   }
 ]
